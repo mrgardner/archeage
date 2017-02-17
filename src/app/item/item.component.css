@@ -1,0 +1,175 @@
+.item-box {
+  width: 400px;
+  background-color: black;
+  color: white;
+  padding-left: 0.5em;
+}
+
+.item-id-box {
+  height: 135px;
+}
+
+.grade-box {
+  left: 40%;
+  padding-left: 1em;
+  padding-right: 1em;
+  position: absolute;
+  background-color: black;
+  border: solid 2px grey;
+}
+
+.gradeImage {
+  position: absolute;
+}
+
+.itemDisplayColor {
+  color: #e45e00;
+}
+
+.itemDungeonColor {
+  color: #27b1c6;
+}
+
+.item-dps-box,
+.item-type-box,
+.item-price-box {
+  position: relative;
+}
+
+.item-level-box,
+.item-type-box,
+.item-dps-box,
+.item-max-grade-box,
+.item-lunagem-slot-box,
+.item-use-effect-box,
+.item-combo-effect-box,
+.item-equip-effect-box,
+.item-set-effect-box,
+.item-set-items-box,
+.item-equip-points-box,
+.item-price-box {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-top: 1px solid grey;
+}
+
+.item-equip-points-box {
+  color: white;
+}
+
+.item-use-effect-box,
+.item-combo-effect-box,
+.item-equip-effect-box,
+.item-set-items-box {
+  color: #00a000;
+}
+
+.lunagemColor {
+  color: #00a000;
+}
+
+.item-salvage-materials {
+  border-top: 1px solid grey;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+.item-id-box-info {
+  position: relative;
+  float: left;
+  padding-left: 1em;
+}
+
+.item-id-icon-box {
+  float: left;
+}
+
+.use-effect-color,
+.combo-effect-color,
+.equip-effect-color,
+.set-effect-color,
+.set-effect-item-count,
+.item-set-effect-box {
+  color: #fff;
+}
+
+.set-effect-title {
+  font-weight: 600;
+  color: #fff;
+}
+
+.grade-box div {
+  cursor: pointer;
+}
+.basicGradeColorInfoBox {
+  color: #BA976D;
+}
+
+.basicGradeColor {
+  color: #fff;
+}
+
+.grandGradeColor {
+  color: #77b064;
+}
+
+.rareGradeColor {
+  color: #558fd7;
+}
+
+.arcaneGradeColor {
+  color: #cb72d8;
+}
+
+.heroicGradeColor {
+  color: #d78b06;
+}
+
+.uniqueGradeColor {
+  color: #e17853;
+}
+
+.celestialGradeColor {
+  color: #f95252;
+}
+
+.divineGradeColor {
+  color: #cf7d5d;
+}
+
+.epicGradeColor {
+  color: #8fa5ca;
+}
+
+.legendaryGradeColor {
+  color: #bf7900;
+}
+
+.mythicGradeColor {
+  color: #c90b0b;
+}
+
+.item-id-box-info .item-title {
+  font-size: 16px;
+}
+
+.item-info-spacing {
+  position: absolute;
+  top: 0;
+  padding-top: 1em;
+  margin-left: 17em;
+}
+
+.salvageMaterialIcon,
+.set-item-icon {
+  height: 30px;
+  width: 30px;
+}
+
+.salvageMaterialGradeIcon,
+.set-item-grade-icon {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+}
+

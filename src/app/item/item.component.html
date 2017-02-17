@@ -1,0 +1,166 @@
+<div class="container">
+  <div class="item-box">
+    <div class="grade-box">
+      <div *ngFor="let grade of grades">
+        <div (click)="changeGrade($event.target.innerText)" [class]="grade.className">{{grade.name}}</div>
+      </div>
+    </div>
+    <div class="item-id-box">
+      <div>ID: {{item.id}}</div>
+      <span class="item-id-icon-box">
+        <img class="gradeImage" [src]="grade">
+        <img [src]="item.icon">
+      </span>
+
+      <span class="item-id-box-info">
+      <div>{{item.itemType}}</div>
+      <div [class]="itemInfoGrade.className">{{itemInfoGrade.name}}</div>
+      <div [class]="itemInfoGrade.className">
+        <span class="item-title">{{item.name}}</span>
+      </div>
+      <div>Loot type: {{item.lootType}}</div>
+      <div>Loot source: {{item.lootSource}}</div>
+    </span>
+    </div>
+
+    <div class="item-level-box">
+      <div>Req. Level: {{item.requiredLevel}}</div>
+      <div *ngIf="item.pickup !== 'none'">{{item.pickup}}</div>
+      <div>Item level: {{item.itemLevel}}</div>
+    </div>
+
+    <div class="item-type-box">
+      <div>{{item.weaponType}}</div>
+      <div>Attack Speed:</div>
+      <div>Durability:</div>
+      <div >
+        <span *ngIf="item.penetrationChance === true">Penetration Chance:</span>
+        <span *ngIf="item.amputationChance === true">Amputation Chance:</span>
+      </div>
+      <div class="item-info-spacing">
+        <br>
+        <div>{{item.attackSpeed}}</div>
+        <div>{{itemDurability}}</div>
+        <div>{{item.chanceText}}</div>
+      </div>
+    </div>
+
+    <div class="item-dps-box">
+      <div *ngIf="item.dps !== false">DPS:</div>
+      <div *ngIf="item.attributes.magicAttack > 0">Magic Attack: </div>
+      <div *ngIf="item.attributes.agility > 0">Agility:</div>
+      <div *ngIf="item.attributes.intelligence > 0">Intelligence: </div>
+      <div *ngIf="item.attributes.spirit > 0">Spirit: </div>
+      <div *ngIf="item.attributes.stamina > 0">Stamina: </div>
+      <div *ngIf="item.attributes.strength > 0">Strength: </div>
+      <div class="item-info-spacing">
+        <div *ngIf="item.dps !== false">{{itemDPS}} ({{itemDPSLowerCoeff}} - {{itemDPSUpperCoeff}})</div>
+        <div *ngIf="item.attributes.magicAttack > 0">+{{item.attributes.magicAttack}}</div>
+        <div *ngIf="item.attributes.agility > 0">{{itemAgility}}</div>
+        <div *ngIf="item.attributes.intelligence > 0">{{item.attributes.intelligence}}</div>
+        <div *ngIf="item.attributes.spirit > 0">{{item.attributes.spirit}}</div>
+        <div *ngIf="item.attributes.stamina > 0">{{item.attributes.stamina}}</div>
+        <div *ngIf="item.attributes.strength > 0">{{item.attributes.strength}}</div>
+      </div>
+    </div>
+
+    <div class="item-max-grade-box">
+      <div class="itemDisplayColor">Max Grade: {{item.maxGrade}}</div>
+      <div>{{item.temper}}</div>
+    </div>
+
+    <div class="item-lunagem-slot-box">
+      <div>
+        <span class="lunagemColor">Socket Lunagem</span><span>:</span>
+        <div *ngFor="let item of range(lunagem)">
+          <img [src]="lunagemSrc">
+        </div>
+      </div>
+    </div>
+
+    <div class="item-use-effect-box" *ngIf="item.useEffect !== false">
+      <span class="use-effect-color">Use Effect:</span>
+      <div>
+        <span> {{item.useEffectText1}}</span>
+        <span class="itemDisplayColor"> {{item.useEffectStat1}}</span>
+        <span> {{item.useEffectText2}}</span>
+        <span class="itemDisplayColor"> {{item.useEffectStat2}}</span>
+        <span> {{item.useEffectText3}}</span>
+        <span class="itemDisplayColor"> {{item.useEffectStat3}}</span>
+        <div>
+          <span>{{item.useEffectText4}}</span>
+          <span class="itemDisplayColor"> {{item.useEffectStat4}}</span>
+        </div>
+        <div class="itemDungeonColor"> {{item.useEffectStat5}}</div>
+      </div>
+    </div>
+    <div class="item-combo-effect-box" *ngIf="item.comboEffect !== false">
+      <span class="combo-effect-color">Combo Effect:</span>
+      <div>
+        <span>{{item.comboEffectText1}}</span>
+        <span class="itemDisplayColor">{{item.comboEffectStat1}}</span>
+        <span>{{item.comboEffectText2}}</span>
+        <span class="itemDisplayColor">{{item.comboEffectStat2}}</span>
+      </div>
+    </div>
+    <div class="item-equip-effect-box" *ngIf="item.equipEffect !== false">
+      <span class="equip-effect-color">Equip Effect:</span>
+      <div>
+        <span>{{item.equipEffectText1}}</span>
+        <span class="itemDisplayColor">{{item.equipEffectStat1}}</span>
+        <span>{{item.equipEffectText2}}</span>
+        <span class="itemDisplayColor">{{item.equipEffectStat2}}</span>
+        <span>{{item.equipEffectText3}}</span>
+        {{item.setEffectStat1}}
+      </div>
+    </div>
+    <div class="item-set-items-box" *ngIf="item.setItems != null">
+      <span class="set-effect-title">
+        {{item.setEffectTitle}}
+      </span>
+      <span class="set-effect-item-count">{{item.setEffectCountText}}</span>
+      <div *ngFor="let setItem of item.setItems">
+        <div>
+          <img class="set-item-grade-icon" [src]="setItem.gradeIcon">
+          <img class="set-item-icon" [src]="setItem.icon">
+          <span [class]="setItem.className" (click)="onItemPage(setItem.id)">{{setItem.name}}</span>
+        </div>
+      </div>
+    </div>
+    <div class="item-set-effect-box" *ngIf="item.setEffect !== false">
+      <span class="set-effect-color">Set Effect: </span>
+      <div>
+        <span>{{item.setEffectText1}}</span>
+        <span class="itemDisplayColor">{{item.setEffectStat1}}</span>
+        <span>{{item.setEffectText2}}</span>
+        <span class="itemDisplayColor">{{item.setEffectStat2}}</span>
+      </div>
+    </div>
+    <div class="item-equip-points-box">Equipment Points: <span>{{itemEquipmentPoints}}</span></div>
+    <div class="item-price-box">
+      <div>Price:</div>
+      <div>Shop Price:</div>
+      <div class="item-info-spacing">
+        <div>
+          <img *ngIf="goldCoinPrice != null" [src]="goldCoinSrc"> {{goldCoinPrice}}<img [src]="silverCoinSrc"> {{silverCoinPrice}}<img [src]="copperCoinSrc"> {{copperCoinPrice}}
+        </div>
+        <div>
+          <img *ngIf="goldCoinShopPrice != null" [src]="goldCoinSrc"> {{goldCoinShopPrice}}<img [src]="silverCoinSrc"> {{silverCoinShopPrice}}<img [src]="copperCoinSrc"> {{copperCoinShopPrice}}
+        </div>
+      </div>
+    </div>
+    <div class="item-salvage-materials" *ngIf="(materialLowerLimit > 0 && materialUpperLimit) > 0 || materialSalvageCount > 0">
+      <div *ngFor="let material of item.salvageMaterial">
+        <div *ngIf="(materialLowerLimit > 0 && materialUpperLimit) > 0 || material.salvageCount > 0">
+          <img class="salvageMaterialGradeIcon" [src]="material.gradeIcon">
+          <img class="salvageMaterialIcon" [src]="material.icon"> - <span [class]="material.className">{{material.material}}</span>
+          <span *ngIf="materialLowerLimit >= 0 && materialUpperLimit >=0 && material.upperLimit !== false && material.lowerLimit !== false">
+          ({{materialLowerLimit}} - {{materialUpperLimit}})
+        </span>
+          <span *ngIf="material.upperLimit === false && material.lowerLimit === false">({{material.salvageCount}})</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
