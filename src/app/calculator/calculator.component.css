@@ -213,3 +213,27 @@
 .skill-set-class-name {
   color: #2c73ee;
 }
+
+@media screen and (max-width: 990px) {
+  .skill-set-left {
+    margin-left: 10em;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .skill-set-left,
+  .skill-set-right,
+  .skill-set-middle{
+    margin-left: 7em;
+    margin-bottom: 3em;
+  }
+
+  .level-box {
+    padding-left: 0;
+    padding-right: 1em;
+  }
+
+  .skill-box {
+    padding-right: 1em;
+  }
+}
