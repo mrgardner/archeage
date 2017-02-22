@@ -229,11 +229,29 @@
   }
 
   .level-box {
-    padding-left: 0;
-    padding-right: 1em;
+    padding-left: 7em;
+    padding-right: 30em;
   }
 
   .skill-box {
-    padding-right: 1em;
+    padding-left: 7em;
+    padding-right: 30em;
+    position: relative;
+    top: 10px;
+  }
+
+  .occupation-box {
+    padding-left: 7em;
+    position: relative;
+    top: 20px;
+  }
+
+  .skill-set-container {
+    margin-top: 3em;
+  }
+
+  .class-name-button-button {
+    padding-left: 2em;
+    padding-right: 0;
   }
 }
