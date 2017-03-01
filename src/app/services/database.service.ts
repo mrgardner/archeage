@@ -8,6 +8,7 @@ export class ArcheageDatabaseService {
   private item: Object;
   private items: Array<Object>;
   private singleItem: Object = {};
+  private savedBuild: Object = {};
 
   removeItems() {
     firebase.database().ref(`Item/`).remove();
@@ -23,6 +24,31 @@ export class ArcheageDatabaseService {
 
   removeSkills(){
     firebase.database().ref(`Skill/`).remove();
+  }
+
+  saveBuild(id: number, item:Object) {
+    firebase.database().ref(`SavedBuilds/${id}`).update(item);
+  }
+
+  getSavedBuild(id: number) {
+    let that = this;
+    firebase.database().ref(`SavedBuilds/${id}`)
+      .once('value', function(snapshot) {
+        if(snapshot.val()) {
+            that.savedBuild["leftSkills"] = snapshot.val().leftSkills;
+            that.savedBuild["middleSkills"] = snapshot.val().middleSkills;
+            that.savedBuild["rightSkills"] = snapshot.val().rightSkills;
+            that.savedBuild["leftSkillsTitle"] = snapshot.val().leftSkillsTitle;
+            that.savedBuild["middleSkillsTitle"] = snapshot.val().middleSkillsTitle;
+            that.savedBuild["rightSkillsTitle"] = snapshot.val().rightSkillsTitle;
+            that.savedBuild["leftSkillsPoints"] = snapshot.val().leftSkillsPoints;
+            that.savedBuild["middleSkillsPoints"] = snapshot.val().middleSkillsPoints;
+            that.savedBuild["rightSkillsPoints"] = snapshot.val().rightSkillsPoints;
+            that.savedBuild["skillPoints"] = snapshot.val().skillPoints;
+            that.savedBuild["className"] = snapshot.val().className;
+        }
+      });
+    return that.savedBuild;
   }
 
   getAllSkills() {
