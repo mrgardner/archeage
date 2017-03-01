@@ -7,7 +7,8 @@ const APP_ROUTES: Routes = [
   { path: '', component: HomeComponent},
   { path: 'item', component: HomeComponent},
   { path: 'item/:itemId', component: ItemComponent},
-  { path: 'calculator', component: CalculatorComponent}
+  { path: 'calculator', component: CalculatorComponent},
+  { path: 'calculator/:buildId', component: CalculatorComponent}
 ];
 
 export const routing = RouterModule.forRoot(APP_ROUTES);
