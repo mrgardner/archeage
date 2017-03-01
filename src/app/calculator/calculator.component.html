@@ -32,140 +32,147 @@
                  || (class.skillSet1 == classNameFromSkills[1].name && class.skillSet2 == classNameFromSkills[2].name && class.skillSet3 == classNameFromSkills[0].name)
                  || (class.skillSet1 == classNameFromSkills[2].name && class.skillSet2 == classNameFromSkills[1].name && class.skillSet3 == classNameFromSkills[0].name)
                  || (class.skillSet1 == classNameFromSkills[2].name && class.skillSet2 == classNameFromSkills[0].name && class.skillSet3 == classNameFromSkills[1].name)"
-                class="skill-set-class-name">
-                  {{class.className}}
-                </span>
+                class="skill-set-class-name" id="skill-class-name">{{class.className}}</span>
               </span>
             </span>
           </span>
         </div>
-        <div class="skill-set-container">
-          <div class="skill-set-left">
-            <div class="skill-set-title">
-              <span *ngIf="leftSkillsTitle === ''">Select Skillset</span>
-              <div *ngIf="leftSkillsTitle !== ''">
-                {{leftSkillsTitle}}
-                <span class="skill-set-available-points">
-                  {{leftSkillPoints}}/19
-                </span>
-              </div>
-            </div>
-            <div *ngIf="showLeftSkills === false">
-              <div *ngFor="let skillName of customSkills">
-                <button class="skill-set-button" (click)="showLeftSkillSet($event.target.innerText)">{{skillName.name}}</button>
-              </div>
-            </div>
-            <div *ngIf="showLeftSkills === true">
-              <div>Combat</div>
-              <div *ngFor="let skill of allSkills">
-                <img *ngIf="skill.type === 'combat' && leftSkillsName === skill.className"
-                   [class]="leftSelectedClass(skill)" (click)="leftSkillPointSet(skill)" [src]="skill.icon">
-              </div>
-              <div>Passive</div>
-              <div *ngFor="let skill of allSkills" class="passive-skills">
-                <span *ngIf="skill.type === 'passive' && skill.className === leftSkillsName &&
-                  skill.skillPointsRequired !== 10 && leftSkillPoints <= skill.skillPointsRequired-1"
-                  class="passive-skills-overlay">
-                    {{skill.skillPointsRequired}}
-                </span>
-                <span *ngIf="skill.type === 'passive' && skill.className === leftSkillsName &&
-                  skill.skillPointsRequired === 10 && leftSkillPoints <= skill.skillPointsRequired-1"
-                  class="passive-skills-overlay-10">
-                    {{skill.skillPointsRequired}}
-                </span>
-                <img *ngIf="skill.type === 'passive' && skill.className === leftSkillsName"
-                  [class]="leftSelectedClass(skill)" (click)="leftSkillPointSet(skill)" [src]="skill.icon">
-              </div>
-              <div class="skill-set-left-button-container">
-                <button class="reset-skills-button" (click)="resetLeftSkillSet()">Reset Skills</button>
-                <button class="change-skill-set-button" (click)="hideLeftSkillSet()">Change Skillset</button>
-              </div>
-            </div>
-          </div>
-          <div class="skill-set-middle">
-            <div class="skill-set-title">
-              <span *ngIf="middleSkillsTitle === ''">Select Skillset</span>
-              <span *ngIf="middleSkillsTitle !== ''">
-                {{middleSkillsTitle}}
-                <span class="skill-set-available-points">
-                  {{middleSkillPoints}}/19
-                </span>
+      </div>
+      <div class="skill-set-container">
+        <div class="skill-set-left">
+          <div class="skill-set-title">
+            <span *ngIf="leftSkillsTitle === ''">Select Skillset</span>
+            <div *ngIf="leftSkillsTitle !== ''">
+              {{leftSkillsTitle}}
+              <span class="skill-set-available-points">
+                {{leftSkillPoints}}/19
               </span>
             </div>
-            <div *ngIf="showMiddleSkills === false">
-              <div *ngFor="let skill of customSkills">
-                <button class="skill-set-button" (click)="showMiddleSkillSet($event.target.innerText)">{{skill.name}}</button>
-              </div>
-            </div>
-            <div *ngIf="showMiddleSkills === true">
-              <div>Combat</div>
-              <div *ngFor="let skill of allSkills">
-                <img *ngIf="skill.type === 'combat' && skill.className === middleSkillsName"
-                  [class]="middleSelectedClass(skill)" (click)="middleSkillPointSet(skill)" [src]="skill.icon">
-              </div>
-              <div>Passive</div>
-              <div *ngFor="let skill of allSkills" class="passive-skills">
-                <span *ngIf="skill.type === 'passive' && skill.className === middleSkillsName &&
-                  skill.skillPointsRequired !== 10 && middleSkillPoints <= skill.skillPointsRequired-1"
-                      class="passive-skills-overlay">
-                    {{skill.skillPointsRequired}}
-                </span>
-                <span *ngIf="skill.type === 'passive' && skill.className === middleSkillsName &&
-                  skill.skillPointsRequired === 10 && middleSkillPoints <= skill.skillPointsRequired-1"
-                      class="passive-skills-overlay-10">
-                    {{skill.skillPointsRequired}}
-                </span>
-                <img *ngIf="skill.type === 'passive' && skill.className === middleSkillsName"
-                  [class]="middleSelectedClass(skill)" (click)="middleSkillPointSet(skill)" [src]="skill.icon">
-              </div>
-              <div class="skill-set-middle-button-container">
-                <button class="reset-skills-button" (click)="resetMiddleSkillSet()">Reset Skills</button>
-                <button class="change-skill-set-button" (click)="hideMiddleSkillSet()">Change Skillset</button>
-              </div>
+          </div>
+          <div *ngIf="showLeftSkills === false">
+            <div *ngFor="let skillName of customSkills">
+              <button class="skill-set-button" (click)="showLeftSkillSet($event.target.innerText)">{{skillName.name}}</button>
             </div>
           </div>
-          <div class="skill-set-right">
-            <div class="skill-set-title">
-              <span *ngIf="rightSkillsTitle === ''">Select Skillset</span>
-              <span *ngIf="rightSkillsTitle !== ''">
-                {{rightSkillsTitle}}
-                <span class="skill-set-available-points">
-                  {{rightSkillPoints}}/19
-                </span>
+          <div *ngIf="showLeftSkills === true">
+            <div>Combat</div>
+            <div *ngFor="let skill of allSkills">
+              <img *ngIf="skill.type === 'combat' && leftSkillsName === skill.className"
+                 [class]="leftSelectedClass(skill)" (click)="leftSkillPointSet(skill)" [src]="skill.icon">
+            </div>
+            <div>Passive</div>
+            <div *ngFor="let skill of allSkills" class="passive-skills">
+              <span *ngIf="skill.type === 'passive' && skill.className === leftSkillsName &&
+                skill.skillPointsRequired !== 10 && leftSkillPoints <= skill.skillPointsRequired-1"
+                class="passive-skills-overlay">
+                  {{skill.skillPointsRequired}}
               </span>
+              <span *ngIf="skill.type === 'passive' && skill.className === leftSkillsName &&
+                skill.skillPointsRequired === 10 && leftSkillPoints <= skill.skillPointsRequired-1"
+                class="passive-skills-overlay-10">
+                  {{skill.skillPointsRequired}}
+              </span>
+              <img *ngIf="skill.type === 'passive' && skill.className === leftSkillsName"
+                [class]="leftSelectedClass(skill)" (click)="leftSkillPointSet(skill)" [src]="skill.icon">
             </div>
-            <div *ngIf="showRightSkills === false">
-              <div *ngFor="let skill of customSkills">
-                <button class="skill-set-button" (click)="showRightSkillSet($event.target.innerText)">{{skill.name}}</button>
-              </div>
-            </div>
-            <div *ngIf="showRightSkills === true">
-              <div>Combat</div>
-              <div *ngFor="let skill of allSkills">
-                <img *ngIf="skill.type === 'combat' && skill.className === rightSkillsName"
-                  [class]="rightSelectedClass(skill)" (click)="rightSkillPointSet(skill)" [src]="skill.icon">
-              </div>
-              <div>Passive</div>
-              <div *ngFor="let skill of allSkills" class="passive-skills">
-                <span *ngIf="skill.type === 'passive' && skill.className === rightSkillsName &&
-                  skill.skillPointsRequired !== 10 && rightSkillPoints <= skill.skillPointsRequired-1"
-                      class="passive-skills-overlay">
-                    {{skill.skillPointsRequired}}
-                </span>
-                <span *ngIf="skill.type === 'passive' && skill.className === rightSkillsName &&
-                  skill.skillPointsRequired === 10 && rightSkillPoints <= skill.skillPointsRequired-1"
-                      class="passive-skills-overlay-10">
-                    {{skill.skillPointsRequired}}
-                </span>
-                <img *ngIf="skill.type === 'passive' && skill.className === rightSkillsName"
-                  [class]="rightSelectedClass(skill)" (click)="rightSkillPointSet(skill)" [src]="skill.icon">
-              </div>
-              <div class="skill-set-right-button-container">
-                <button class="reset-skills-button" (click)="resetRightSkillSet()">Reset Skills</button>
-                <button class="change-skill-set-button" (click)="hideRightSkillSet()">Change Skillset</button>
-              </div>
+            <div class="skill-set-left-button-container">
+              <button class="reset-skills-button" (click)="resetLeftSkillSet()">Reset Skills</button>
+              <button class="change-skill-set-button" (click)="hideLeftSkillSet()">Change Skillset</button>
             </div>
           </div>
+        </div>
+        <div class="skill-set-middle">
+          <div class="skill-set-title">
+            <span *ngIf="middleSkillsTitle === ''">Select Skillset</span>
+            <span *ngIf="middleSkillsTitle !== ''">
+              {{middleSkillsTitle}}
+              <span class="skill-set-available-points">
+                {{middleSkillPoints}}/19
+              </span>
+            </span>
+          </div>
+          <div *ngIf="showMiddleSkills === false">
+            <div *ngFor="let skill of customSkills">
+              <button class="skill-set-button" (click)="showMiddleSkillSet($event.target.innerText)">{{skill.name}}</button>
+            </div>
+          </div>
+          <div *ngIf="showMiddleSkills === true">
+            <div>Combat</div>
+            <div *ngFor="let skill of allSkills">
+              <img *ngIf="skill.type === 'combat' && skill.className === middleSkillsName"
+                [class]="middleSelectedClass(skill)" (click)="middleSkillPointSet(skill)" [src]="skill.icon">
+            </div>
+            <div>Passive</div>
+            <div *ngFor="let skill of allSkills" class="passive-skills">
+              <span *ngIf="skill.type === 'passive' && skill.className === middleSkillsName &&
+                skill.skillPointsRequired !== 10 && middleSkillPoints <= skill.skillPointsRequired-1"
+                    class="passive-skills-overlay">
+                  {{skill.skillPointsRequired}}
+              </span>
+              <span *ngIf="skill.type === 'passive' && skill.className === middleSkillsName &&
+                skill.skillPointsRequired === 10 && middleSkillPoints <= skill.skillPointsRequired-1"
+                    class="passive-skills-overlay-10">
+                  {{skill.skillPointsRequired}}
+              </span>
+              <img *ngIf="skill.type === 'passive' && skill.className === middleSkillsName"
+                [class]="middleSelectedClass(skill)" (click)="middleSkillPointSet(skill)" [src]="skill.icon">
+            </div>
+            <div class="skill-set-middle-button-container">
+              <button class="reset-skills-button" (click)="resetMiddleSkillSet()">Reset Skills</button>
+              <button class="change-skill-set-button" (click)="hideMiddleSkillSet()">Change Skillset</button>
+            </div>
+          </div>
+        </div>
+        <div class="skill-set-right">
+          <div class="skill-set-title">
+            <span *ngIf="rightSkillsTitle === ''">Select Skillset</span>
+            <span *ngIf="rightSkillsTitle !== ''">
+              {{rightSkillsTitle}}
+              <span class="skill-set-available-points">
+                {{rightSkillPoints}}/19
+              </span>
+            </span>
+          </div>
+          <div *ngIf="showRightSkills === false">
+            <div *ngFor="let skill of customSkills">
+              <button class="skill-set-button" (click)="showRightSkillSet($event.target.innerText)">{{skill.name}}</button>
+            </div>
+          </div>
+          <div *ngIf="showRightSkills === true">
+            <div>Combat</div>
+            <div *ngFor="let skill of allSkills">
+              <img *ngIf="skill.type === 'combat' && skill.className === rightSkillsName"
+                [class]="rightSelectedClass(skill)" (click)="rightSkillPointSet(skill)" [src]="skill.icon">
+            </div>
+            <div>Passive</div>
+            <div *ngFor="let skill of allSkills" class="passive-skills">
+              <span *ngIf="skill.type === 'passive' && skill.className === rightSkillsName &&
+                skill.skillPointsRequired !== 10 && rightSkillPoints <= skill.skillPointsRequired-1"
+                    class="passive-skills-overlay">
+                  {{skill.skillPointsRequired}}
+              </span>
+              <span *ngIf="skill.type === 'passive' && skill.className === rightSkillsName &&
+                skill.skillPointsRequired === 10 && rightSkillPoints <= skill.skillPointsRequired-1"
+                    class="passive-skills-overlay-10">
+                  {{skill.skillPointsRequired}}
+              </span>
+              <img *ngIf="skill.type === 'passive' && skill.className === rightSkillsName"
+                [class]="rightSelectedClass(skill)" (click)="rightSkillPointSet(skill)" [src]="skill.icon">
+            </div>
+            <div class="skill-set-right-button-container">
+              <button class="reset-skills-button" (click)="resetRightSkillSet()">Reset Skills</button>
+              <button class="change-skill-set-button" (click)="hideRightSkillSet()">Change Skillset</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="save-build-container">
+        <div class="save-build-button-container">
+          <button [disabled]="classNameFromSkills.length !== 3" class="btn btn-info save-build-button" (click)="saveBuild()">Save Build</button>
+        </div>
+        <div [hidden]="!showSavedBuildLink" class="save-build-input-container">
+          <input [(ngModel)]="savedBuildLink">
+          <button>Copy</button>
         </div>
       </div>
     </div>
