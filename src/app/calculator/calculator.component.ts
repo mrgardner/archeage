@@ -1,5 +1,7 @@
 import { Component} from '@angular/core';
 import {ArcheageDatabaseService} from "../services/database.service";
+import {ActivatedRoute} from "@angular/router";
+import {isUndefined} from "util";
 
 @Component({
   selector: 'app-calculator',
@@ -34,6 +36,7 @@ export class CalculatorComponent {
   private leftSkillPoints: number = 0;
   private middleSkillPoints: number = 0;
   private rightSkillPoints: number = 0;
+  private buildId: number;
   private leftSkillsResetArray: Array<Object>;
   private middleSkillsResetArray: Array<Object>;
   private rightSkillsResetArray: Array<Object>;
@@ -42,19 +45,75 @@ export class CalculatorComponent {
   private classNameFromSkills: Array<Object>;
   private classNames: Array<Object>;
   private sortColumns: any;
+  private showSavedBuildLink: boolean = false;
+  private savedBuildLink: string;
+  private savedBuild: any;
+  private leftSkills: any;
+  private middleSkills: any;
+  private rightSkills: any;
 
-  constructor(private _database: ArcheageDatabaseService) {
-    this.sortColumns = {
+  constructor(private _database: ArcheageDatabaseService, private route: ActivatedRoute) {
+    let that = this;
+    that.allSkills = this._database.getAllSkills();
+    that.route.params.subscribe(matrixParams => {
+      if (matrixParams.hasOwnProperty('buildId')) {
+        that.buildId = matrixParams["buildId"];
+        that.savedBuild = that._database.getSavedBuild(that.buildId);
+        setTimeout(function () {
+          that.leftSkillPoints = that.savedBuild['leftSkillsPoints'];
+          that.middleSkillPoints = that.savedBuild['middleSkillsPoints'];
+          that.rightSkillPoints = that.savedBuild['rightSkillsPoints'];
+          that.leftSkillsTitle = that.savedBuild['leftSkillsTitle'];
+          that.middleSkillsTitle = that.savedBuild['middleSkillsTitle'];
+          that.rightSkillsTitle = that.savedBuild['rightSkillsTitle'];
+          that.leftSkillsName = that.savedBuild['leftSkillsTitle'];
+          that.middleSkillsName = that.savedBuild['middleSkillsTitle'];
+          that.rightSkillsName = that.savedBuild['rightSkillsTitle'];
+          that.skillPointCount = that.savedBuild['skillPoints'];
+          that.showLeftSkillSet(that.savedBuild['leftSkillsTitle']);
+          that.showMiddleSkillSet(that.savedBuild['middleSkillsTitle']);
+          that.showRightSkillSet(that.savedBuild['rightSkillsTitle']);
+          that.leftSkills = that.savedBuild['leftSkills'];
+          that.middleSkills = that.savedBuild['middleSkills'];
+          that.rightSkills = that.savedBuild['rightSkills'];
+          for (let i = 0; i < that.allSkills.length; i++) {
+            if (that.allSkills[i]['className'] === that.savedBuild['leftSkillsTitle'].toLowerCase()) {
+              for (let j = 0; j < that.leftSkills.length; j++) {
+                if (that.allSkills[i]['name'] === that.leftSkills[j]['name']) {
+                  that.allSkills[i]['selected'] = that.leftSkills[j]['selected'];
+                }
+              }
+            }
+            if (that.allSkills[i]['className'] === that.savedBuild['middleSkillsTitle'].toLowerCase()) {
+              for (let j = 0; j < that.middleSkills.length; j++) {
+                if (that.allSkills[i]['name'] === that.middleSkills[j]['name']) {
+                  that.allSkills[i]['selected'] = that.middleSkills[j]['selected'];
+                }
+              }
+            }
+            if (that.allSkills[i]['className'] === that.savedBuild['rightSkillsTitle'].toLowerCase()) {
+              for (let j = 0; j < that.rightSkills.length; j++) {
+                if (that.allSkills[i]['name'] === that.rightSkills[j]['name']) {
+                  that.allSkills[i]['selected'] = that.rightSkills[j]['selected'];
+                }
+              }
+            }
+          }
+        },3000);
+      }
+
+    });
+    that.sortColumns = {
       active: false,
       descending: false
     };
-    this.level = 55;
-    this.skillPointCount = 28;
-    this.classNameFromSkills = [];
-    this.leftSkillsResetArray = [];
-    this.middleSkillsResetArray = [];
-    this.rightSkillsResetArray = [];
-    this.skills = [
+    that.level = 55;
+    that.skillPointCount = 28;
+    that.classNameFromSkills = [];
+    that.leftSkillsResetArray = [];
+    that.middleSkillsResetArray = [];
+    that.rightSkillsResetArray = [];
+    that.skills = [
       {
         name: 'Battlerage',
         selected: false
@@ -96,12 +155,12 @@ export class CalculatorComponent {
         selected: false
       }
     ];
-    this.customSkills = this.skills.slice();
-    this.leftSkillsTitle = '';
-    this.middleSkillsTitle = '';
-    this.rightSkillsTitle = '';
+    that.customSkills = this.skills.slice();
+    that.leftSkillsTitle = '';
+    that.middleSkillsTitle = '';
+    that.rightSkillsTitle = '';
 
-    this.classNames = [
+    that.classNames = [
       {
         className: 'Abolisher',
         skillSet1: 'Battlerage',
@@ -824,7 +883,7 @@ export class CalculatorComponent {
       }
     ];
 
-    this.battlerageSkills = [
+    that.battlerageSkills = [
       {
         id: 1,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/skills%2Fbattlerage%2Ficon_skill_battlerage_triple_slash.jpg?alt=media&token=76b7df8c-6f1e-4d4d-a1e3-f1c14ee48ef8',
@@ -998,7 +1057,7 @@ export class CalculatorComponent {
       }
     ];
 
-    this.defenseSkills = [
+    that.defenseSkills = [
       {
         id: 20,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/skills%2Fdefense%2Ficon_skill_defense_shield_slam.jpg?alt=media&token=9e3a1de4-e580-4691-9f91-b9537c94bf2b',
@@ -1172,7 +1231,7 @@ export class CalculatorComponent {
       }
     ];
 
-    this.occultismSkills = [
+    that.occultismSkills = [
       {
         id: 39,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/skills%2Foccultism%2Ficon_skill_occultism_mana_stars.jpg?alt=media&token=e6e741c2-37ce-416a-8f13-da9c05175bb2',
@@ -1346,7 +1405,7 @@ export class CalculatorComponent {
       }
     ];
 
-    this.sorcerySkills = [
+    that.sorcerySkills = [
       {
         id: 58,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/skills%2Fsorcery%2Ficon_skill_sorcery_flamebolt.jpg?alt=media&token=4af00be3-ae8d-433d-95e7-5fcc81aac6d9',
@@ -1520,7 +1579,7 @@ export class CalculatorComponent {
       }
     ];
 
-    this.songcraftSkills = [
+    that.songcraftSkills = [
       {
         id: 77,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/skills%2Fsongcraft%2Ficon_skill_songcraft_critical_discord.jpg?alt=media&token=27da2a27-9158-482b-9ea1-57a70d14d4b0',
@@ -1694,7 +1753,7 @@ export class CalculatorComponent {
       }
     ];
 
-    this.witchcraftSkills = [
+    that.witchcraftSkills = [
       {
         id: 96,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/skills%2Fwitchcraft%2Ficon_skill_witchcraft_earthen_grip.jpg?alt=media&token=dce935c3-f628-4e85-af57-4c856e946e10',
@@ -1868,7 +1927,7 @@ export class CalculatorComponent {
       }
     ];
 
-    this.auramancySkills = [
+    that.auramancySkills = [
       {
         id: 115,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/skills%2Fauramancy%2Ficon_skill_auramancy_thwart.jpg?alt=media&token=38a4ca73-56d3-405e-8260-d2c8467d5cf4',
@@ -2042,7 +2101,7 @@ export class CalculatorComponent {
       }
     ];
 
-    this.archerySkills = [
+    that.archerySkills = [
       {
         id: 134,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/skills%2Farchery%2Ficon_skill_archery_charged_bolt.jpg?alt=media&token=11c3bb5b-3bdd-4be8-86d8-f7cfd642d996',
@@ -2216,7 +2275,7 @@ export class CalculatorComponent {
       }
     ];
 
-    this.shadowplaySkills = [
+    that.shadowplaySkills = [
       {
         id: 153,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/skills%2Fshadowplay%2Ficon_skill_shadowplay_rapid_strike.jpg?alt=media&token=2474c23d-3b55-4fcc-afc7-43bc70d62662',
@@ -2390,7 +2449,7 @@ export class CalculatorComponent {
       }
     ];
 
-    this.vitalismSkills = [
+    that.vitalismSkills = [
       {
         id: 172,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/skills%2Fvitalism%2Ficon_skill_vitalism_holy_bolt.jpg?alt=media&token=cc1eb132-976a-493e-830f-745f27e83fb5',
@@ -2565,19 +2624,17 @@ export class CalculatorComponent {
     ];
 
     // for (let j = 0; j < 19; j++) {
-    //   this._database.createSkill(this.battlerageSkills[j],this.battlerageSkills[j]["id"]);
-    //   this._database.createSkill(this.defenseSkills[j],this.defenseSkills[j]["id"]);
-    //   this._database.createSkill(this.occultismSkills[j],this.occultismSkills[j]["id"]);
-    //   this._database.createSkill(this.sorcerySkills[j],this.sorcerySkills[j]["id"]);
-    //   this._database.createSkill(this.songcraftSkills[j],this.songcraftSkills[j]["id"]);
-    //   this._database.createSkill(this.witchcraftSkills[j],this.witchcraftSkills[j]["id"]);
-    //   this._database.createSkill(this.auramancySkills[j],this.auramancySkills[j]["id"]);
-    //   this._database.createSkill(this.archerySkills[j],this.archerySkills[j]["id"]);
-    //   this._database.createSkill(this.shadowplaySkills[j],this.shadowplaySkills[j]["id"]);
-    //   this._database.createSkill(this.vitalismSkills[j],this.vitalismSkills[j]["id"]);
+    //   that._database.createSkill(that.battlerageSkills[j],this.battlerageSkills[j]["id"]);
+    //   that._database.createSkill(that.defenseSkills[j],this.defenseSkills[j]["id"]);
+    //   that._database.createSkill(that.occultismSkills[j],this.occultismSkills[j]["id"]);
+    //   that._database.createSkill(that.sorcerySkills[j],this.sorcerySkills[j]["id"]);
+    //   that._database.createSkill(that.songcraftSkills[j],this.songcraftSkills[j]["id"]);
+    //   that._database.createSkill(that.witchcraftSkills[j],this.witchcraftSkills[j]["id"]);
+    //   that._database.createSkill(that.auramancySkills[j],this.auramancySkills[j]["id"]);
+    //   that._database.createSkill(that.archerySkills[j],this.archerySkills[j]["id"]);
+    //   that._database.createSkill(that.shadowplaySkills[j],this.shadowplaySkills[j]["id"]);
+    //   that._database.createSkill(that.vitalismSkills[j],this.vitalismSkills[j]["id"]);
     // }
-
-    this.allSkills = this._database.getAllSkills();
   }
   changeSkillPointCount(level: number) {
     if (level > 0 && level < 3) {
@@ -2860,24 +2917,60 @@ export class CalculatorComponent {
   }
 
   resetLeftSkillSet() {
+    let that = this;
     for(let i = 0; i < this.leftSkillsResetArray.length; i++) {
       this.leftSkillsResetArray[i]['selected'] = false;
+    }
+    if (!isUndefined(that.leftSkills)) {
+      for (let i = 0; i < that.allSkills.length; i++) {
+        if (that.allSkills[i]['className'] === that.savedBuild['leftSkillsTitle'].toLowerCase()) {
+          for (let j = 0; j < that.leftSkills.length; j++) {
+            if (that.allSkills[i]['name'] === that.leftSkills[j]['name']) {
+              that.allSkills[i]['selected'] = false;
+            }
+          }
+        }
+      }
     }
     this.skillPointCount = this.skillPointCount + this.leftSkillPoints;
     this.leftSkillPoints = 0;
   }
 
   resetMiddleSkillSet() {
+    let that = this;
     for(let i = 0; i < this.middleSkillsResetArray.length; i++) {
       this.middleSkillsResetArray[i]['selected'] = false;
+    }
+    if (!isUndefined(that.middleSkills)) {
+      for (let i = 0; i < that.allSkills.length; i++) {
+        if (that.allSkills[i]['className'] === that.savedBuild['middleSkillsTitle'].toLowerCase()) {
+          for (let j = 0; j < that.middleSkills.length; j++) {
+            if (that.allSkills[i]['name'] === that.middleSkills[j]['name']) {
+              that.allSkills[i]['selected'] = false;
+            }
+          }
+        }
+      }
     }
     this.skillPointCount = this.skillPointCount + this.middleSkillPoints;
     this.middleSkillPoints = 0;
   }
 
   resetRightSkillSet() {
+    let that = this;
     for(let i = 0; i < this.rightSkillsResetArray.length; i++) {
       this.rightSkillsResetArray[i]['selected'] = false;
+    }
+    if (!isUndefined(that.rightSkills)) {
+      for (let i = 0; i < that.allSkills.length; i++) {
+        if (that.allSkills[i]['className'] === that.savedBuild['rightSkillsTitle'].toLowerCase()) {
+          for (let j = 0; j < that.rightSkills.length; j++) {
+            if (that.allSkills[i]['name'] === that.rightSkills[j]['name']) {
+              that.allSkills[i]['selected'] = false;
+            }
+          }
+        }
+      }
     }
     this.skillPointCount = this.skillPointCount + this.rightSkillPoints;
     this.rightSkillPoints = 0;
@@ -2907,6 +3000,43 @@ export class CalculatorComponent {
         that.classNameFromSkills.splice(that.classNameFromSkills.indexOf(that.skills[i]),1);
       }
     }
+  }
+
+  saveBuild() {
+    let id = Math.floor(Math.random() * 100000) + 1;
+    let rightSkills = [];
+    let middleSkills = [];
+    let leftSkills = [];
+    let tuple = {};
+
+    for (let i = 0; i < this.allSkills.length; i++) {
+      if (this.allSkills[i]['className'] === this.rightSkillsName && this.allSkills[i]['selected'] === true) {
+        rightSkills.push(this.allSkills[i])
+      }
+      if (this.allSkills[i]['className'] === this.middleSkillsName && this.allSkills[i]['selected'] === true) {
+        middleSkills.push(this.allSkills[i]);
+      }
+      if (this.allSkills[i]['className'] === this.leftSkillsName && this.allSkills[i]['selected'] === true) {
+        leftSkills.push(this.allSkills[i])
+      }
+    }
+
+    let className = document.getElementById('skill-class-name').innerHTML;
+
+    tuple['leftSkills'] = leftSkills;
+    tuple['middleSkills'] = middleSkills;
+    tuple['rightSkills'] = rightSkills;
+    tuple['leftSkillsTitle'] = this.leftSkillsTitle;
+    tuple['middleSkillsTitle'] = this.middleSkillsTitle;
+    tuple['rightSkillsTitle'] = this.rightSkillsTitle;
+    tuple['leftSkillsPoints'] = this.leftSkillPoints;
+    tuple['middleSkillsPoints'] = this.middleSkillPoints;
+    tuple['rightSkillsPoints'] = this.rightSkillPoints;
+    tuple['skillPoints'] = this.skillPointCount;
+    tuple['className'] = className;
+    this._database.saveBuild(id, tuple);
+    this.savedBuildLink = 'https://archeage-database-a6d52.firebaseapp.com/#/calculator/' + id;
+    this.showSavedBuildLink = true;
   }
 
   unique(origArr) {
