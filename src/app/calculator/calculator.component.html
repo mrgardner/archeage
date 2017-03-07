@@ -171,8 +171,8 @@
           <button [disabled]="classNameFromSkills.length !== 3" class="btn btn-info save-build-button" (click)="saveBuild()">Save Build</button>
         </div>
         <div [hidden]="!showSavedBuildLink" class="save-build-input-container">
-          <input [(ngModel)]="savedBuildLink">
-          <button>Copy</button>
+          <input type="text" #copyTarget [(ngModel)]="savedBuildLink">
+          <button (click)="copyToClipboard(copyTarget)" class="btn btn-default btn-sm copy copy-button">Copy</button>
         </div>
       </div>
     </div>
