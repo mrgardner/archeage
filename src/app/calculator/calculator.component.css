@@ -43,6 +43,11 @@
   border-color: #204019;
 }
 
+.copy-button:focus {
+  color: white;
+  outline: 0;
+}
+
 .class-name-button {
   width: 160px;
   font-size: 14px;
