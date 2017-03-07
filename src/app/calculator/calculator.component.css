@@ -267,10 +267,15 @@
 
   .skill-set-container {
     margin-top: 3em;
+    height: 1350px;
   }
 
   .class-name-button-button {
     padding-left: 2em;
     padding-right: 0;
+  }
+
+  .calculator-container {
+    padding-bottom: 0;
   }
 }

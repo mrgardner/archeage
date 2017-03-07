@@ -1,6 +1,6 @@
 import { Component} from '@angular/core';
 import {ArcheageDatabaseService} from "../services/database.service";
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
 import {isUndefined} from "util";
 
 @Component({
@@ -52,54 +52,59 @@ export class CalculatorComponent {
   private middleSkills: any;
   private rightSkills: any;
 
-  constructor(private _database: ArcheageDatabaseService, private route: ActivatedRoute) {
+  constructor(private _database: ArcheageDatabaseService, private route: ActivatedRoute, private router: Router) {
     let that = this;
     that.allSkills = this._database.getAllSkills();
     that.route.params.subscribe(matrixParams => {
       if (matrixParams.hasOwnProperty('buildId')) {
         that.buildId = matrixParams["buildId"];
         that.savedBuild = that._database.getSavedBuild(that.buildId);
-        setTimeout(function () {
-          that.leftSkillPoints = that.savedBuild['leftSkillsPoints'];
-          that.middleSkillPoints = that.savedBuild['middleSkillsPoints'];
-          that.rightSkillPoints = that.savedBuild['rightSkillsPoints'];
-          that.leftSkillsTitle = that.savedBuild['leftSkillsTitle'];
-          that.middleSkillsTitle = that.savedBuild['middleSkillsTitle'];
-          that.rightSkillsTitle = that.savedBuild['rightSkillsTitle'];
-          that.leftSkillsName = that.savedBuild['leftSkillsTitle'];
-          that.middleSkillsName = that.savedBuild['middleSkillsTitle'];
-          that.rightSkillsName = that.savedBuild['rightSkillsTitle'];
-          that.skillPointCount = that.savedBuild['skillPoints'];
-          that.showLeftSkillSet(that.savedBuild['leftSkillsTitle']);
-          that.showMiddleSkillSet(that.savedBuild['middleSkillsTitle']);
-          that.showRightSkillSet(that.savedBuild['rightSkillsTitle']);
-          that.leftSkills = that.savedBuild['leftSkills'];
-          that.middleSkills = that.savedBuild['middleSkills'];
-          that.rightSkills = that.savedBuild['rightSkills'];
-          for (let i = 0; i < that.allSkills.length; i++) {
-            if (that.allSkills[i]['className'] === that.savedBuild['leftSkillsTitle'].toLowerCase()) {
-              for (let j = 0; j < that.leftSkills.length; j++) {
-                if (that.allSkills[i]['name'] === that.leftSkills[j]['name']) {
-                  that.allSkills[i]['selected'] = that.leftSkills[j]['selected'];
+        if (Object.keys(that.savedBuild).length !== 0) {
+          setTimeout(function () {
+            that.leftSkillPoints = that.savedBuild['leftSkillsPoints'];
+            that.middleSkillPoints = that.savedBuild['middleSkillsPoints'];
+            that.rightSkillPoints = that.savedBuild['rightSkillsPoints'];
+            that.leftSkillsTitle = that.savedBuild['leftSkillsTitle'];
+            that.middleSkillsTitle = that.savedBuild['middleSkillsTitle'];
+            that.rightSkillsTitle = that.savedBuild['rightSkillsTitle'];
+            that.leftSkillsName = that.savedBuild['leftSkillsTitle'];
+            that.middleSkillsName = that.savedBuild['middleSkillsTitle'];
+            that.rightSkillsName = that.savedBuild['rightSkillsTitle'];
+            that.skillPointCount = that.savedBuild['skillPoints'];
+            that.showLeftSkillSet(that.savedBuild['leftSkillsTitle']);
+            that.showMiddleSkillSet(that.savedBuild['middleSkillsTitle']);
+            that.showRightSkillSet(that.savedBuild['rightSkillsTitle']);
+            that.leftSkills = that.savedBuild['leftSkills'];
+            that.middleSkills = that.savedBuild['middleSkills'];
+            that.rightSkills = that.savedBuild['rightSkills'];
+            for (let i = 0; i < that.allSkills.length; i++) {
+              if (that.allSkills[i]['className'] === that.savedBuild['leftSkillsTitle'].toLowerCase()) {
+                for (let j = 0; j < that.leftSkills.length; j++) {
+                  if (that.allSkills[i]['name'] === that.leftSkills[j]['name']) {
+                    that.allSkills[i]['selected'] = that.leftSkills[j]['selected'];
+                  }
+                }
+              }
+              if (that.allSkills[i]['className'] === that.savedBuild['middleSkillsTitle'].toLowerCase()) {
+                for (let j = 0; j < that.middleSkills.length; j++) {
+                  if (that.allSkills[i]['name'] === that.middleSkills[j]['name']) {
+                    that.allSkills[i]['selected'] = that.middleSkills[j]['selected'];
+                  }
+                }
+              }
+              if (that.allSkills[i]['className'] === that.savedBuild['rightSkillsTitle'].toLowerCase()) {
+                for (let j = 0; j < that.rightSkills.length; j++) {
+                  if (that.allSkills[i]['name'] === that.rightSkills[j]['name']) {
+                    that.allSkills[i]['selected'] = that.rightSkills[j]['selected'];
+                  }
                 }
               }
             }
-            if (that.allSkills[i]['className'] === that.savedBuild['middleSkillsTitle'].toLowerCase()) {
-              for (let j = 0; j < that.middleSkills.length; j++) {
-                if (that.allSkills[i]['name'] === that.middleSkills[j]['name']) {
-                  that.allSkills[i]['selected'] = that.middleSkills[j]['selected'];
-                }
-              }
-            }
-            if (that.allSkills[i]['className'] === that.savedBuild['rightSkillsTitle'].toLowerCase()) {
-              for (let j = 0; j < that.rightSkills.length; j++) {
-                if (that.allSkills[i]['name'] === that.rightSkills[j]['name']) {
-                  that.allSkills[i]['selected'] = that.rightSkills[j]['selected'];
-                }
-              }
-            }
-          }
-        },3000);
+          },3000);
+        }
+        else {
+          that.router.navigate(['calculator']);
+        }
       }
 
     });
