@@ -3165,7 +3165,7 @@ export class ItemTableComponent {
   }
 
   onItemPage(itemId: any) {
-    this.router.navigate(['item', itemId], { relativeTo: this.route });
+    this.router.navigate(['item', itemId]);
   }
 
   selectedClass(column): string{
