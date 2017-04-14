@@ -1675,6 +1675,85 @@ export class NavMenuComponent implements OnInit {
     this.subMenu = true;
   }
 
+  updateDatabase(item1: any, item2: any, item3: any, item4: any) {
+    console.log(item1);
+    if (item1 === 'Item') {
+      if (item4 !== undefined) {
+        this.router.navigate(['item', item2.toLowerCase().replace(/ /g,"_"), item3.toLowerCase().replace(/ /g,"_"), item4.toLowerCase().replace(/ /g,"_")]);
+      }
+      else if (item3 !== undefined) {
+        this.router.navigate(['item', item2.toLowerCase().replace(/ /g,"_"), item3.toLowerCase().replace(/ /g,"_")]);
+      }
+      else if (item2 !== undefined) {
+        this.router.navigate(['item', item2.toLowerCase().replace(/ /g,"_")]);
+      }
+      else {
+        this.router.navigate(['item']);
+      }
+    }
+    else if (item1 === 'Quest') {
+      if (item4 !== undefined) {
+        this.router.navigate(['quest', item2.toLowerCase().replace(/ /g,"_"), item3.toLowerCase().replace(/ /g,"_"), item4.toLowerCase().replace(/ /g,"_")]);
+      }
+      else if (item3 !== undefined) {
+        this.router.navigate(['quest', item2.toLowerCase().replace(/ /g,"_"), item3.toLowerCase().replace(/ /g,"_")]);
+      }
+      else if (item2 !== undefined) {
+        this.router.navigate(['quest', item2.toLowerCase().replace(/ /g,"_")]);
+      }
+      else {
+        this.router.navigate(['quest']);
+      }
+    }
+    else if (item1 === 'Achievements') {
+      if (item4 !== undefined) {
+        this.router.navigate(['achievements', item2.toLowerCase().replace(/ /g,"_"), item3.toLowerCase().replace(/ /g,"_"), item4.toLowerCase().replace(/ /g,"_")]);
+      }
+      else if (item3 !== undefined) {
+        this.router.navigate(['achievements', item2.toLowerCase().replace(/ /g,"_"), item3.toLowerCase().replace(/ /g,"_")]);
+      }
+      else if (item2 !== undefined) {
+        this.router.navigate(['achievements', item2.toLowerCase().replace(/ /g,"_")]);
+      }
+      else {
+        this.router.navigate(['achievements']);
+      }
+    }
+    else if (item1 === 'NPC') {
+      if (item4 !== undefined) {
+        this.router.navigate(['npcs', item2.toLowerCase().replace(/ /g,"_"), item3.toLowerCase().replace(/ /g,"_"), item4.toLowerCase().replace(/ /g,"_")]);
+      }
+      else if (item3 !== undefined) {
+        this.router.navigate(['npcs', item2.toLowerCase().replace(/ /g,"_"), item3.toLowerCase().replace(/ /g,"_")]);
+      }
+      else if (item2 !== undefined) {
+        this.router.navigate(['npcs', item2.toLowerCase().replace(/ /g,"_")]);
+      }
+      else {
+        this.router.navigate(['npcs']);
+      }
+    }
+    else if (item1 === 'Design') {
+      if (item2 !== undefined) {
+        this.router.navigate(['recipe', item2.toLowerCase().replace(/ /g,"_")]);
+      }
+      else {
+        this.router.navigate(['recipe']);
+      }
+    }
+    else if (item1 === 'Skills') {
+      if (item2 !== undefined) {
+        this.router.navigate(['skills', item2.toLowerCase().replace(/ /g,"_")]);
+      }
+      else {
+        this.router.navigate(['skills']);
+      }
+    }
+    else if (item1 === 'Title') {
+      this.router.navigate(['titles']);
+    }
+  }
+
   mouseLeave(item: Object) {
     if ('section' in item) {
       item['section'].show = false;

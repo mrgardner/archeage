@@ -202,6 +202,11 @@
   color: white;
 }
 
+.item-title:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 /* Arrows */
 
 .database-sub-menu-arrow {

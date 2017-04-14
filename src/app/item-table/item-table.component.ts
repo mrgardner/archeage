@@ -85,7 +85,8 @@ export class ItemTableComponent {
     ];
     that.daggerNames = [
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2000,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_assassins_secret_dagger.jpg?alt=media&token=9a91e9c8-9e3e-4b29-9bfb-67901d2c2103',
         grade: 'Basic',
@@ -147,7 +148,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2001,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_assassins_secret_dagger.jpg?alt=media&token=9a91e9c8-9e3e-4b29-9bfb-67901d2c2103',
         grade: 'Basic',
@@ -209,7 +211,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2002,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_insanitys_point_dagger.jpg?alt=media&token=57d25cab-9ab4-4a2d-adbc-78783f40c59a',
         grade: 'Basic',
@@ -271,7 +274,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2003,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_insanitys_point_dagger.jpg?alt=media&token=57d25cab-9ab4-4a2d-adbc-78783f40c59a',
         grade: 'Basic',
@@ -333,7 +337,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2004,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_ayanad_earth_dagger.jpg?alt=media&token=861b0cd0-6856-409c-a380-74874478b9ed',
         grade: 'Basic',
@@ -397,7 +402,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2005,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_ayanad_gale_dagger.jpg?alt=media&token=de8758ec-3e35-4bf7-80a4-48d0a35af07a',
         grade: 'Basic',
@@ -461,7 +467,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2006,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_ayanad_life_dagger.jpg?alt=media&token=de1d7f39-95a9-46c1-9be8-93aaccf1a813',
         grade: 'Basic',
@@ -525,7 +532,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2007,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_ayanad_mist_dagger.jpg?alt=media&token=e2ff80cc-5147-4b49-be80-65692946ba5e',
         grade: 'Basic',
@@ -590,7 +598,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2008,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_ayanad_mountain_dagger.jpg?alt=media&token=d9c377fb-392d-41be-bdd3-ebe7699ab0af',
         grade: 'Basic',
@@ -654,7 +663,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2009,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_ayanad_squall_dagger.jpg?alt=media&token=fae28848-bf61-4016-b5f5-6ceba0206153',
         grade: 'Basic',
@@ -718,7 +728,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2010,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_ayanad_stone_dagger.jpg?alt=media&token=02f391da-c1c6-49f8-b073-2debb35f2507',
         grade: 'Basic',
@@ -782,7 +793,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2011,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_prime_wicked_whisper_dagger.jpg?alt=media&token=f2ab12e7-9826-48cb-ab06-cba7c162bf5f',
         grade: 'Basic',
@@ -838,7 +850,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2012,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_superior_wicked_whisper_dagger.jpg?alt=media&token=184a1dd9-a654-462b-97ad-4c3c0c568f01',
         grade: 'Basic',
@@ -894,7 +907,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2013,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_supreme_wicked_whisper_dagger.jpg?alt=media&token=b4053fdf-4a37-4c73-96d6-24c0a23d6885',
         grade: 'Basic',
@@ -950,7 +964,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2014,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_wicked_whisper_dagger.jpg?alt=media&token=1c273472-6adb-4d6e-9e97-8ddb82dbabf7',
         grade: 'Basic',
@@ -997,7 +1012,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2015,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_cursed_obsidian_dagger.jpg?alt=media&token=30ad9e21-6cc0-4ca0-9127-ef8138fd1727',
         grade: 'Basic',
@@ -1043,7 +1059,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2016,
         icon: "https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_dark_watcher's_dagger.jpg?alt=media&token=ecdcd951-fe30-4b54-9ec9-e0ec91703430",
         grade: 'Basic',
@@ -1121,7 +1138,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2017,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_delphinad_earth_dagger.jpg?alt=media&token=8ac7c272-ce2b-42e9-ae54-a8e84bc529e5',
         grade: 'Basic',
@@ -1163,7 +1181,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2018,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_delphinad_gale_dagger.jpg?alt=media&token=d337272c-88c6-42f9-b2d9-645552d89f9f',
         grade: 'Basic',
@@ -1205,7 +1224,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2019,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_delphinad_life_dagger.jpg?alt=media&token=d14dc08f-4df6-45e2-9d4b-622110e44c76',
         grade: 'Basic',
@@ -1246,7 +1266,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2020,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_delphinad_mist_dagger.jpg?alt=media&token=f65698df-e2fd-4f1c-b630-8d47da114770',
         grade: 'Basic',
@@ -1288,7 +1309,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2021,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_delphinad_mountain_dagger.jpg?alt=media&token=4cd16841-a684-4c82-bd4b-66852932bec6',
         grade: 'Basic',
@@ -1329,7 +1351,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2022,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_delphinad_squall_dagger.jpg?alt=media&token=5bc2c521-0423-48a6-86b0-d7d70c187aa8',
         grade: 'Basic',
@@ -1371,7 +1394,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2023,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_delphinad_stone_dagger.jpg?alt=media&token=22208ecf-b8e8-4ba4-976a-5f2eba794132',
         grade: 'Basic',
@@ -1413,7 +1437,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2024,
         icon: "https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_desire's_claw_dagger.jpg?alt=media&token=76c54174-2349-48b0-89e6-9a22ec71250f",
         grade: 'Basic',
@@ -1458,7 +1483,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2025,
         icon: "https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_dreamer's_point_dagger.jpg?alt=media&token=93cfcf27-9873-42d1-b319-3da0709b1543",
         grade: 'Basic',
@@ -1504,7 +1530,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2026,
         icon: "https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_epherium_earth_dagger.jpg?alt=media&token=d83ff199-6605-4465-8997-79e2be3172d9",
         grade: 'Basic',
@@ -1546,7 +1573,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2027,
         icon: "https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_epherium_gale_dagger.jpg?alt=media&token=901fddaa-6366-4e68-9cf5-7d6a05827125",
         grade: 'Basic',
@@ -1588,7 +1616,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2028,
         icon: "https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_epherium_life_dagger.jpg?alt=media&token=7103d73b-7cf2-4d5b-b2ec-f657f1706d07",
         grade: 'Basic',
@@ -1630,7 +1659,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2029,
         icon: "https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_epherium_mist_dagger.jpg?alt=media&token=9f045074-7cf0-4e81-8956-5d2bd3527e54",
         grade: 'Basic',
@@ -1672,7 +1702,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2030,
         icon: "https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_epherium_mountain_dagger.jpg?alt=media&token=a9b33fd5-8a4b-4872-a095-a14d4e45e0f8",
         grade: 'Basic',
@@ -1714,7 +1745,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2031,
         icon: "https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_epherium_squall_dagger.jpg?alt=media&token=b01e12d1-4252-42a8-8077-0e8eb93013b1",
         grade: 'Basic',
@@ -1755,7 +1787,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2032,
         icon: "https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_epherium_stone_dagger.jpg?alt=media&token=2548137d-f403-44f9-b629-e42b61cd70a7",
         grade: 'Basic',
@@ -1797,7 +1830,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2033,
         icon: "https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_faded_dark_watcher's_dagger.jpg?alt=media&token=2b0a9847-6d51-46ae-9601-af6cb263605e",
         grade: 'Basic',
@@ -1839,7 +1873,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2034,
         icon: "https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_hellkissed_dagger.jpg?alt=media&token=7e11bc98-26ee-45e9-b166-9a4e736708b9",
         grade: 'Basic',
@@ -1880,7 +1915,8 @@ export class ItemTableComponent {
         salvageMaterial: []
       },
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2035,
         icon: "https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_honor's_mighty_slashing_dagger.jpg?alt=media&token=9e636ae7-3eb4-4427-a1e3-26e799cbbc1b",
         grade: 'Basic',
@@ -1922,7 +1958,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2036,
         icon: "https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_honorable_bleeding_dagger.jpg?alt=media&token=8a673bff-db08-4e47-9989-762962544a3b",
         grade: 'Basic',
@@ -1964,7 +2001,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2037,
         icon: "https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_lost_garden_faded_dagger.jpg?alt=media&token=ae553d5b-f970-476d-ac9e-5daa15e03915",
         grade: 'Basic',
@@ -2006,7 +2044,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2038,
         icon: "https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_magnificent_mist_dagger.jpg?alt=media&token=2594af2c-d004-424c-befc-bbe7dc97661a",
         grade: 'Basic',
@@ -2048,7 +2087,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2039,
         icon: "https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_magnificent_mountain_dagger.jpg?alt=media&token=762a667a-84c6-41ea-9442-efa0098b359f",
         grade: 'Basic',
@@ -2090,7 +2130,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2040,
         icon: "https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_magnificent_squall_dagger.jpg?alt=media&token=f9be2717-d96c-4b8b-b733-92e0c45dd33f",
         grade: 'Basic',
@@ -2132,7 +2173,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2041,
         icon: "https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_magnificent_stone_dagger.jpg?alt=media&token=e2abb589-954d-465b-be78-57bc5985fdf2",
         grade: 'Basic',
@@ -2174,7 +2216,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2042,
         icon: "https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_nightmare_point_dagger.jpg?alt=media&token=979c150b-9cde-4999-8de7-71145b8b619b",
         grade: 'Basic',
@@ -2216,7 +2259,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2043,
         icon: "https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_obsidian_dagger_library.jpg?alt=media&token=6ea2ed56-2530-4e63-9294-74b7f337844b",
         grade: 'Basic',
@@ -2258,7 +2302,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2044,
         icon: "https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_obsidian_dagger.jpg?alt=media&token=97703c50-4fa9-4ac1-9ee3-438ed353c68b",
         grade: 'Basic',
@@ -2300,7 +2345,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2045,
         icon: "https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_ominous_obsidian_dagger.jpg?alt=media&token=c4a51524-4908-4704-a4a1-cc768bd8ca1b",
         grade: 'Basic',
@@ -2342,7 +2388,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2046,
         icon: "https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_sacrificial_desire_dagger.jpg?alt=media&token=6908ebb1-8c16-40f2-96a9-bbbc5461582b",
         grade: 'Basic',
@@ -2384,7 +2431,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2047,
         icon: "https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_screaming_void_leader_dagger.jpg?alt=media&token=9f768e4c-702a-4609-bcc8-e50afa19c64d",
         grade: 'Basic',
@@ -2426,7 +2474,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2048,
         icon: "https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_sinister_void_leader_dagger.jpg?alt=media&token=9d58d3f5-7bdc-4613-9805-91ac37652e30",
         grade: 'Basic',
@@ -2475,7 +2524,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2049,
         icon: "https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_sleeper's_point_dagger.jpg?alt=media&token=cb0f8b62-d4ca-40b6-900e-5f91d28958c2",
         grade: 'Basic',
@@ -2517,7 +2567,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2050,
         icon: "https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_titan%E2%80%99s_pinion_dagger.jpg?alt=media&token=6b4bff64-307b-4e7e-a400-a71e32b3f1a6",
         grade: 'Basic',
@@ -2557,7 +2608,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2051,
         icon: "https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_titan%E2%80%99s_rib_dagger.jpg?alt=media&token=784a0e69-a3c2-4b16-b602-786676078fe7",
         grade: 'Basic',
@@ -2599,7 +2651,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2052,
         icon: "https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Ficon_item_vexed_desire_dagger.jpg?alt=media&token=db482e5d-eaf7-4e9f-affd-6c6d3af9f686",
         grade: 'Basic',
@@ -2641,7 +2694,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2053,
         icon: "https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Ficon_item_void_leader_dagger.jpg?alt=media&token=9f927705-ab1e-481f-81a1-4313ac90ebfb",
         grade: 'Basic',
@@ -2683,7 +2737,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2054,
         icon: "https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Ficon_item_water-keened_blade_dagger.jpg?alt=media&token=e9300a92-cd8d-45c3-9f0a-646d1ce4d668",
         grade: 'Basic',
@@ -2725,7 +2780,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2055,
         icon: "",
         grade: 'Basic',
@@ -2766,7 +2822,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2056,
         icon: "",
         grade: 'Basic',
@@ -2807,7 +2864,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2057,
         icon: "",
         grade: 'Basic',
@@ -2848,7 +2906,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2058,
         icon: "",
         grade: 'Basic',
@@ -2887,9 +2946,9 @@ export class ItemTableComponent {
         price: '2g97s00c',
         shopPrice: '14s85c'
       },
-
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2059,
         icon: "",
         grade: 'Basic',
@@ -2930,7 +2989,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2060,
         icon: "",
         grade: 'Basic',
@@ -2971,7 +3031,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2061,
         icon: "",
         grade: 'Basic',
@@ -3013,7 +3074,8 @@ export class ItemTableComponent {
 
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2062,
         icon: "",
         grade: 'Basic',
@@ -3055,7 +3117,8 @@ export class ItemTableComponent {
 
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2063,
         icon: "",
         grade: 'Basic',
@@ -3096,7 +3159,8 @@ export class ItemTableComponent {
       },
 
       {
-        itemType: 'Dagger',
+        itemClass: 'Dagger',
+        itemType: 'weapons',
         id: 2064,
         icon: "",
         grade: 'Basic',
@@ -3140,6 +3204,27 @@ export class ItemTableComponent {
     ];
     that.test();
     that.items = that._database.getAllItems();
+    that.route.params.subscribe(matrixParams => {
+      if (matrixParams.hasOwnProperty('item3')) {
+        console.log('3 params');
+        // that.buildId = matrixParams["buildId"];
+        // that.savedBuild = that._database.getSavedBuild(that.buildId);
+      }
+      else if (matrixParams.hasOwnProperty('item2')) {
+        console.log('2 params');
+        // that.buildId = matrixParams["buildId"];
+        // that.savedBuild = that._database.getSavedBuild(that.buildId);
+      }
+      else if (matrixParams.hasOwnProperty('item1')) {
+        console.log('1 params');
+        // that.buildId = matrixParams["buildId"];
+        // that.savedBuild = that._database.getSavedBuild(that.buildId);
+      }
+      else {
+        console.log('no params');
+      }
+
+    });
 
     setTimeout(function(){
       that.setPage(1);
@@ -3165,7 +3250,7 @@ export class ItemTableComponent {
   }
 
   onItemPage(itemId: any) {
-    this.router.navigate(['item', itemId]);
+    this.router.navigate(['info', 'item', itemId]);
   }
 
   selectedClass(column): string{
@@ -3195,7 +3280,7 @@ export class ItemTableComponent {
       sort.active = column;
       sort.descending = false;
     }
-};
+  };
 
   convertSorting(): string{
     let that = this;
