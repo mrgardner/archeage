@@ -5,10 +5,10 @@ import {isUndefined} from "util";
 
 @Component({
   selector: 'app-calculator',
-  templateUrl: './calculator.component.html',
-  styleUrls: ['./calculator.component.css']
+  templateUrl: './skill-calculator.component.html',
+  styleUrls: ['./skill-calculator.component.css']
 })
-export class CalculatorComponent {
+export class SkillCalculatorComponent {
 
   private level: number;
   private skills: Array<any>;

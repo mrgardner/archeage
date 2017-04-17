@@ -13,7 +13,8 @@ import {routing} from "./app.routes";
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import {OrderByPipe} from "./item-table/item-table.pipe";
 import {LocationStrategy, HashLocationStrategy} from "@angular/common";
-import { CalculatorComponent } from './calculator/calculator.component';
+import { SkillCalculatorComponent } from './skill-calculator/skill-calculator.component';
+import { GearCalculatorComponent } from './gear-calculator/gear-calculator.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CalculatorComponent } from './calculator/calculator.component';
     ItemComponent,
     NavMenuComponent,
     OrderByPipe,
-    CalculatorComponent
+    SkillCalculatorComponent,
+    GearCalculatorComponent
   ],
   imports: [
     BrowserModule,
