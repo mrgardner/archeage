@@ -1654,8 +1654,12 @@ export class NavMenuComponent implements OnInit {
     this.router.navigate(['']);
   }
 
-  gotoCalculatorPage() {
-    this.router.navigate(['calculator']);
+  gotoSkillCalculatorPage() {
+    this.router.navigate(['skill-calculator']);
+  }
+
+  gotoGearCalculatorPage() {
+    this.router.navigate(['gear-calculator']);
   }
 
   gotoDatabase() {
