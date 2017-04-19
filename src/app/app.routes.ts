@@ -3,9 +3,7 @@ import {HomeComponent} from "./home/home.component";
 import {ItemComponent} from "./item/item.component";
 import { SkillCalculatorComponent} from "./skill-calculator/skill-calculator.component";
 import {ItemTableComponent} from "./item-table/item-table.component";
-<<<<<<< 1eff5b507727b2b748eba5bf15264dbdebcd905b
 import {GearCalculatorComponent} from "./gear-calculator/gear-calculator.component";
-=======
 import {QuestTableComponent} from "./quest-table/quest-table.component";
 import {AchievementsComponent} from "./achievements/achievements.component";
 import {AchievementsTableComponent} from "./achievements-table/achievements-table.component";
@@ -13,11 +11,11 @@ import {RecipeTableComponent} from "./recipe-table/recipe-table.component";
 import {SkillsTableComponent} from "./skills-table/skills-table.component";
 import {NpcTableComponent} from "./npc-table/npc-table.component";
 import {TitleTableComponent} from "./title-table/title-table.component";
-<<<<<<< a596f2aeeb43acb792f946a55d2a8f41980aaa4f
->>>>>>> Saving work for add database
-=======
 import {TitleComponent} from "./title/title.component";
->>>>>>> Continuing work and saving so far
+import {NpcComponent} from "./npc/npc.component";
+import {RecipeComponent} from "./recipe/recipe.component";
+import {SkillsComponent} from "./skills/skills.component";
+import {QuestComponent} from "./quest/quest.component";
 
 const APP_ROUTES: Routes = [
   { path: '', component: HomeComponent},
@@ -31,25 +29,24 @@ const APP_ROUTES: Routes = [
   { path: 'item/:item1/:item2/:item3', component: ItemTableComponent},
   { path: 'info/item/:itemId', component: ItemComponent},
   { path: 'quest', component: QuestTableComponent},
-  { path: 'quest/:item1', component: QuestTableComponent},
-  { path: 'quest/:item1/:item2', component: QuestTableComponent},
-  { path: 'quest/:item1/:item2/:item3', component: QuestTableComponent},
+  { path: 'quest/:item1', component: QuestComponent},
+  { path: 'quest/:item1/:item2', component: QuestComponent},
+  { path: 'quest/:item1/:item2/:item3', component: QuestComponent},
   { path: 'achievements', component: AchievementsTableComponent},
-  { path: 'achievements/:item1', component: AchievementsTableComponent},
-  { path: 'achievements/:item1/:item2', component: AchievementsTableComponent},
-  { path: 'achievements/:item1/:item2/:item3', component: AchievementsTableComponent},
+  { path: 'achievements/:item1', component: AchievementsComponent},
+  { path: 'achievements/:item1/:item2', component: AchievementsComponent},
+  { path: 'achievements/:item1/:item2/:item3', component: AchievementsComponent},
   { path: 'npcs', component: NpcTableComponent},
-  { path: 'npcs/:item1', component: NpcTableComponent},
-  { path: 'npcs/:item1/:item2', component: NpcTableComponent},
-  { path: 'npcs/:item1/:item2/:item3', component: NpcTableComponent},
+  { path: 'npcs/:item1', component: NpcComponent},
+  { path: 'npcs/:item1/:item2', component: NpcComponent},
+  { path: 'npcs/:item1/:item2/:item3', component: NpcComponent},
   { path: 'recipe', component: RecipeTableComponent},
-  { path: 'recipe/:item1', component: RecipeTableComponent},
-  { path: 'recipe/:item1/:item2', component: RecipeTableComponent},
-  { path: 'recipe/:item1/:item2/:item3', component: RecipeTableComponent},
+  { path: 'recipe/:item1', component: RecipeComponent},
+  { path: 'recipe/:item1/:item2', component: RecipeComponent},
+  { path: 'recipe/:item1/:item2/:item3', component: RecipeComponent},
   { path: 'skills', component: SkillsTableComponent},
-  { path: 'skills/:item1', component: SkillsTableComponent},
+  { path: 'skills/:item1', component: SkillsComponent},
   { path: 'titles', component: TitleTableComponent},
-  { path: 'titles/:item1', component: TitleTableComponent},
   { path: 'titles/:item1', component: TitleComponent}
 ];
 
