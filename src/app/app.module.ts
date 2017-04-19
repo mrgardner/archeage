@@ -13,11 +13,8 @@ import {routing} from "./app.routes";
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import {OrderByPipe} from "./item-table/item-table.pipe";
 import {LocationStrategy, HashLocationStrategy} from "@angular/common";
-<<<<<<< 1eff5b507727b2b748eba5bf15264dbdebcd905b
 import { SkillCalculatorComponent } from './skill-calculator/skill-calculator.component';
 import { GearCalculatorComponent } from './gear-calculator/gear-calculator.component';
-=======
-import { CalculatorComponent } from './calculator/calculator.component';
 import { QuestTableComponent } from './quest-table/quest-table.component';
 import { QuestComponent } from './quest/quest.component';
 import { AchievementsTableComponent } from './achievements-table/achievements-table.component';
@@ -30,7 +27,6 @@ import { SkillsTableComponent } from './skills-table/skills-table.component';
 import { SkillsComponent } from './skills/skills.component';
 import { TitleTableComponent } from './title-table/title-table.component';
 import { TitleComponent } from './title/title.component';
->>>>>>> Saving work for add database
 
 @NgModule({
   declarations: [
@@ -40,11 +36,8 @@ import { TitleComponent } from './title/title.component';
     ItemComponent,
     NavMenuComponent,
     OrderByPipe,
-<<<<<<< 1eff5b507727b2b748eba5bf15264dbdebcd905b
     SkillCalculatorComponent,
-    GearCalculatorComponent
-=======
-    CalculatorComponent,
+    GearCalculatorComponent,
     QuestTableComponent,
     QuestComponent,
     AchievementsTableComponent,
@@ -57,7 +50,6 @@ import { TitleComponent } from './title/title.component';
     SkillsComponent,
     TitleTableComponent,
     TitleComponent
->>>>>>> Saving work for add database
   ],
   imports: [
     BrowserModule,

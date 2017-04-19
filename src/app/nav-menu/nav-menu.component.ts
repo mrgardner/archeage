@@ -1649,18 +1649,14 @@ export class NavMenuComponent implements OnInit {
     this.hideMenuSection();
   }
 
-<<<<<<< a596f2aeeb43acb792f946a55d2a8f41980aaa4f
   gotoSkillCalculatorPage() {
     this.router.navigate(['skill-calculator']);
+    this.hideMenuSection();
   }
 
   gotoGearCalculatorPage() {
     this.router.navigate(['gear-calculator']);
-=======
-  gotoCalculatorPage() {
-    this.router.navigate(['calculator']);
     this.hideMenuSection();
->>>>>>> Continuing work and saving so far
   }
 
   gotoDatabase() {
