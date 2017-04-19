@@ -13,7 +13,11 @@ import {RecipeTableComponent} from "./recipe-table/recipe-table.component";
 import {SkillsTableComponent} from "./skills-table/skills-table.component";
 import {NpcTableComponent} from "./npc-table/npc-table.component";
 import {TitleTableComponent} from "./title-table/title-table.component";
+<<<<<<< a596f2aeeb43acb792f946a55d2a8f41980aaa4f
 >>>>>>> Saving work for add database
+=======
+import {TitleComponent} from "./title/title.component";
+>>>>>>> Continuing work and saving so far
 
 const APP_ROUTES: Routes = [
   { path: '', component: HomeComponent},
@@ -44,12 +48,9 @@ const APP_ROUTES: Routes = [
   { path: 'recipe/:item1/:item2/:item3', component: RecipeTableComponent},
   { path: 'skills', component: SkillsTableComponent},
   { path: 'skills/:item1', component: SkillsTableComponent},
-  { path: 'skills/:item1/:item2', component: SkillsTableComponent},
-  { path: 'skills/:item1/:item2/:item3', component: SkillsTableComponent},
   { path: 'titles', component: TitleTableComponent},
   { path: 'titles/:item1', component: TitleTableComponent},
-  { path: 'titles/:item1/:item2', component: TitleTableComponent},
-  { path: 'titles/:item1/:item2/:item3', component: TitleTableComponent}
+  { path: 'titles/:item1', component: TitleComponent}
 ];
 
 export const routing = RouterModule.forRoot(APP_ROUTES);

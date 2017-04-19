@@ -98,6 +98,10 @@
   color: #fff;
 }
 
+.setItem {
+  cursor: pointer;
+}
+
 .grade-box div {
   cursor: pointer;
 }

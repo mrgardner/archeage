@@ -63,9 +63,27 @@ export class ItemComponent {
   private itemSpirit: number;
   private itemMagicAttack: number;
   private attributeCount: number;
+  private hasData: boolean = false;
 
   constructor(private route: ActivatedRoute, private _database: ArcheageDatabaseService, private router: Router) {
     let that = this;
+
+    that.route.params.subscribe(matrixParams => {
+      if (matrixParams.hasOwnProperty('itemId')) {
+        that.itemId = matrixParams["itemId"];
+        setTimeout(function () {
+          that.initSetup();
+        }, 500);
+      }
+      else {
+        that.initSetup();
+      }
+    });
+  }
+
+  initSetup() {
+    let that = this;
+    that.hasData = false;
     that.basicGrade = 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/misc%2Fitem-grades%2Fitem_icon_grade_basic.png?alt=media&token=9b501433-fa1a-48bc-bbc1-6d4cd163733d';
     that.grandGrade = 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/misc%2Fitem-grades%2Fitem_icon_grade_grand.png?alt=media&token=564ea674-24c8-459c-befe-6f5855108b61';
     that.rareGrade = 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/misc%2Fitem-grades%2Fitem_icon_grade_rare.png?alt=media&token=f2e2869e-3fbb-46b2-b746-e3ee158da55c';
@@ -83,7 +101,7 @@ export class ItemComponent {
     that.grade = that.basicGrade;
     that.grandCoeff = 1.04989550679206;
     that.rareCoeff = 1.09979101358412;
-    that. arcaneCoeff = 1.14994775339603;
+    that.arcaneCoeff = 1.14994775339603;
     that.heoricCoeff = 1.19984326018809;
     that.uniqueCoeff = 1.25;
     that.celestialCoeff = 1.34979101358412;
@@ -93,145 +111,142 @@ export class ItemComponent {
     that.mythicCoeff = 2;
     that.attributeCount = 0;
     that.lunagemSrc = 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/misc%2Flunagem%2Fmana-stone-socket.png?alt=media&token=0211ce42-e30d-4002-a367-ad0d4e43363b';
-
-    that.route.params.subscribe(matrixParams => {
-      that.itemId = matrixParams["itemId"];
-    });
-
     that.item = {};
     that.item = that._database.getItem(that.itemId);
-
-    that.itemPrice = that.item["price"];
-    that.itemShopPrice = that.item["shopPrice"];
-    that.goldCoinPrice = that.itemPrice.split('g')[0];
-    let tempSilverPrice = that.itemPrice.split('s');
-    that.silverCoinPrice = tempSilverPrice[0].split('g')[1];
-    let tempCopperPrice1 = that.itemPrice.split('c');
-    let tempCopperPrice2 = tempCopperPrice1[0].split('s');
-    that.copperCoinPrice = tempCopperPrice2[1];
-    if (that.item["shopPrice"].indexOf('g') >= 0) {
-      that.goldCoinShopPrice = that.itemShopPrice.split('g')[0];
-      let tempSilverShopPrice = that.itemShopPrice.split('s');
-      that.silverCoinShopPrice = tempSilverShopPrice[0].split('g')[1];
-      let tempCopperShopPrice1 = that.itemShopPrice.split('c');
-      let tempCopperShopPrice2 = tempCopperShopPrice1[0].split('s');
-      that.copperCoinShopPrice = tempCopperShopPrice2[1];
-    }
-    else {
-      that.silverCoinShopPrice = that.itemShopPrice.split('s')[0];
-      let tempCopperShopPrice1 = that.itemShopPrice.split('c');
-      let tempCopperShopPrice2 = tempCopperShopPrice1[0].split('s');
-      that.copperCoinShopPrice = tempCopperShopPrice2[1];
-    }
-    that.itemDPS = that.item['dps'];
-    that.itemEquipmentPoints = that.item['equipmentPoints'];
-    that.lunagem = that.item['lunagemSlots'];
-    that.itemDurability = that.item['durability'];
-    that.basicColor = {
+    console.log(that.item);
+    setTimeout(function () {
+      that.itemPrice = that.item["price"];
+      that.itemShopPrice = that.item["shopPrice"];
+      that.goldCoinPrice = that.itemPrice.split('g')[0];
+      console.log(that.itemPrice);
+      console.log(that.itemShopPrice);
+      console.log(that.goldCoinPrice);
+      let tempSilverPrice = that.itemPrice.split('s');
+      that.silverCoinPrice = tempSilverPrice[0].split('g')[1];
+      let tempCopperPrice1 = that.itemPrice.split('c');
+      let tempCopperPrice2 = tempCopperPrice1[0].split('s');
+      that.copperCoinPrice = tempCopperPrice2[1];
+      if (that.item["shopPrice"].indexOf('g') >= 0) {
+        that.goldCoinShopPrice = that.itemShopPrice.split('g')[0];
+        let tempSilverShopPrice = that.itemShopPrice.split('s');
+        that.silverCoinShopPrice = tempSilverShopPrice[0].split('g')[1];
+        let tempCopperShopPrice1 = that.itemShopPrice.split('c');
+        let tempCopperShopPrice2 = tempCopperShopPrice1[0].split('s');
+        that.copperCoinShopPrice = tempCopperShopPrice2[1];
+      }
+      else {
+        that.silverCoinShopPrice = that.itemShopPrice.split('s')[0];
+        let tempCopperShopPrice1 = that.itemShopPrice.split('c');
+        let tempCopperShopPrice2 = tempCopperShopPrice1[0].split('s');
+        that.copperCoinShopPrice = tempCopperShopPrice2[1];
+      }
+      that.itemDPS = that.item['dps'];
+      that.itemEquipmentPoints = that.item['equipmentPoints'];
+      that.lunagem = that.item['lunagemSlots'];
+      that.itemDurability = that.item['durability'];
+      that.basicColor = {
         name: 'Basic',
         className: 'basicGradeColor'
-    };
-
-    that.grades = [
-      {
-        name: 'Basic',
-        className: 'basicGradeColorInfoBox'
-      },
-      {
-        name: 'Grand',
-        className: 'grandGradeColor'
-      },
-      {
-        name: 'Rare',
-        className: 'rareGradeColor'
-      },
-      {
-        name: 'Arcane',
-        className: 'arcaneGradeColor'
-      },
-      {
-        name: 'Heroic',
-        className: 'heroicGradeColor'
-      },
-      {
-        name: 'Unique',
-        className: 'uniqueGradeColor'
-      },
-      {
-        name: 'Celestial',
-        className: 'celestialGradeColor'
-      },
-      {
-        name: 'Divine',
-        className: 'divineGradeColor'
-      },
-      {
-        name: 'Epic',
-        className: 'epicGradeColor'
-      },
-      {
-        name: 'Legendary',
-        className: 'legendaryGradeColor'
-      },
-      {
-        name: 'Mythic',
-        className: 'mythicGradeColor'
-      }
-    ];
-
-    that.itemInfoGrade = that.basicColor;
-    that.itemDPSLowerCoeff = that.item['dpsLowerText'];
-    that.itemDPSUpperCoeff = that.item['dpsUpperText'];
-    that.itemAgility= that.item['attributes']['agility'];
-    that.itemStamina = that.item['attributes']['stamina'];
-    that.itemStrength = that.item['attributes']['strength'];
-    that.itemIntelligence = that.item['attributes']['intelligence'];
-    that.itemSpirit = that.item['attributes']['spirit'];
-    that.itemMagicAttack = that.item['attributes']['magicAttack'];
-    if (that.item['salvageMaterial'] != null) {
-      for (let i = 0; i < that.item['salvageMaterial'].length; i++) {
-        if (that.item['salvageMaterial'][i].upperLimit !== false) {
-          that.materialLowerLimit = that.item['salvageMaterial'][i].lowerLimit;
-          that.materialUpperLimit = that.item['salvageMaterial'][i].upperLimit;
+      };
+      that.grades = [
+        {
+          name: 'Basic',
+          className: 'basicGradeColorInfoBox'
+        },
+        {
+          name: 'Grand',
+          className: 'grandGradeColor'
+        },
+        {
+          name: 'Rare',
+          className: 'rareGradeColor'
+        },
+        {
+          name: 'Arcane',
+          className: 'arcaneGradeColor'
+        },
+        {
+          name: 'Heroic',
+          className: 'heroicGradeColor'
+        },
+        {
+          name: 'Unique',
+          className: 'uniqueGradeColor'
+        },
+        {
+          name: 'Celestial',
+          className: 'celestialGradeColor'
+        },
+        {
+          name: 'Divine',
+          className: 'divineGradeColor'
+        },
+        {
+          name: 'Epic',
+          className: 'epicGradeColor'
+        },
+        {
+          name: 'Legendary',
+          className: 'legendaryGradeColor'
+        },
+        {
+          name: 'Mythic',
+          className: 'mythicGradeColor'
         }
+      ];
 
-        if (that.item['salvageMaterial'][i].salvageCount !== false) {
-          that.materialSalvageCount = that.item['salvageMaterial'][i].salvageCount;
+      that.itemInfoGrade = that.basicColor;
+      that.itemDPSLowerCoeff = that.item['dpsLowerText'];
+      that.itemDPSUpperCoeff = that.item['dpsUpperText'];
+      that.itemAgility= that.item['attributes']['agility'];
+      that.itemStamina = that.item['attributes']['stamina'];
+      that.itemStrength = that.item['attributes']['strength'];
+      that.itemIntelligence = that.item['attributes']['intelligence'];
+      that.itemSpirit = that.item['attributes']['spirit'];
+      that.itemMagicAttack = that.item['attributes']['magicAttack'];
+      if (that.item['salvageMaterial'] != null) {
+        for (let i = 0; i < that.item['salvageMaterial'].length; i++) {
+          if (that.item['salvageMaterial'][i].upperLimit !== false) {
+            that.materialLowerLimit = that.item['salvageMaterial'][i].lowerLimit;
+            that.materialUpperLimit = that.item['salvageMaterial'][i].upperLimit;
+          }
+
+          if (that.item['salvageMaterial'][i].salvageCount !== false) {
+            that.materialSalvageCount = that.item['salvageMaterial'][i].salvageCount;
+          }
         }
       }
-    }
-    if (that.item['attributes']['agility'] > 0) {
-      that.attributeCount +=1;
-    }
-    if (that.item['attributes']['stamina'] > 0) {
-      that.attributeCount +=1;
-    }
-    if (that.item['attributes']['strength'] > 0) {
-      that.attributeCount +=1;
-    }
-    if (that.item['attributes']['intelligence'] > 0) {
-      that.attributeCount +=1;
-    }
-    if (that.item['attributes']['spirit'] > 0) {
-      that.attributeCount +=1;
-    }
-    if (that.item['attributes']['magicAttack'] > 0) {
-      that.attributeCount +=1;
-    }
+      console.log(that.item['salvageMaterial']);
+      if (that.item['attributes']['agility'] > 0) {
+        that.attributeCount +=1;
+      }
+      if (that.item['attributes']['stamina'] > 0) {
+        that.attributeCount +=1;
+      }
+      if (that.item['attributes']['strength'] > 0) {
+        that.attributeCount +=1;
+      }
+      if (that.item['attributes']['intelligence'] > 0) {
+        that.attributeCount +=1;
+      }
+      if (that.item['attributes']['spirit'] > 0) {
+        that.attributeCount +=1;
+      }
+      if (that.item['attributes']['magicAttack'] > 0) {
+        that.attributeCount +=1;
+      }
+      that.hasData = true;
+    }, 500);
   }
 
   onItemPage(itemId: any) {
-    console.log(itemId);
-    this.router.navigate(['item', itemId], { relativeTo: this.route });
-    // this.router.navigate(['/item', itemId], { relativeTo: this.route });
-    // window.location.href = "/item/" + itemId;
+    window.location.href = "/#/info/item/" + itemId;
   }
 
   changeGrade (gradeText) {
     let that = this;
     switch (gradeText) {
       case 'Basic':
-        console.log(that.attributeCount);
         that.grade = that.basicGrade;
         that.itemDPS = that.item['dps'];
         that.lunagem = that.item['lunagemSlots'];
@@ -252,16 +267,16 @@ export class ItemComponent {
               that.itemAgility= that.item['attributes']['agility'];
             }
             else if (that.item['attributes']['strength'] > 0) {
-
+              that.itemStrength= that.item['attributes']['strength'];
             }
             else if (that.item['attributes']['stamina'] > 0) {
-
+              that.itemStamina= that.item['attributes']['stamina'];
             }
             else if (that.item['attributes']['spirit'] > 0) {
-
+              that.itemSpirit= that.item['attributes']['spirit'];
             }
             else if (that.item['attributes']['intelligence'] > 0) {
-
+              that.itemIntelligence= that.item['attributes']['intelligence'];
             }
             else if (that.item['attributes']['magicAttack'] > 0) {
 
@@ -283,7 +298,6 @@ export class ItemComponent {
         else {
 
         }
-        console.log(that.itemAgility);
         break;
       case 'Grand':
         that.grade = that.grandGrade;
@@ -302,16 +316,16 @@ export class ItemComponent {
               that.itemAgility = that.item['attributes']['agility'] + 5;
             }
             else if (that.item['attributes']['strength'] > 0) {
-
+              that.itemStrength = that.item['attributes']['strength'] + 5;
             }
             else if (that.item['attributes']['stamina'] > 0) {
-
+              that.itemStamina = that.item['attributes']['stamina'] + 5;
             }
             else if (that.item['attributes']['spirit'] > 0) {
-
+              that.itemSpirit = that.item['attributes']['spirit'] + 5;
             }
             else if (that.item['attributes']['intelligence'] > 0) {
-
+              that.itemIntelligence = that.item['attributes']['intelligence'] + 5;
             }
             else if (that.item['attributes']['magicAttack'] > 0) {
 
@@ -333,7 +347,6 @@ export class ItemComponent {
         else {
 
         }
-        console.log(that.itemAgility);
         break;
       case 'Rare':
         that.grade = that.rareGrade;
@@ -352,16 +365,36 @@ export class ItemComponent {
               that.itemAgility = that.item['attributes']['agility'] + 10;
             }
             else if (that.item['attributes']['strength'] > 0) {
-
+              that.itemStrength = that.item['attributes']['strength'] + 10;
             }
             else if (that.item['attributes']['stamina'] > 0) {
-
+              that.itemStamina = that.item['attributes']['stamina'] + 10;
             }
             else if (that.item['attributes']['spirit'] > 0) {
-
+              that.itemSpirit = that.item['attributes']['spirit'] + 10;
             }
             else if (that.item['attributes']['intelligence'] > 0) {
+              that.itemIntelligence = that.item['attributes']['intelligence'] + 10;
+            }
+            else if (that.item['attributes']['magicAttack'] > 0) {
 
+            }
+          }
+          if (that.item['itemLevel'] === 62) {
+            if (that.item['attributes']['agility'] > 0) {
+              that.itemAgility = that.item['attributes']['agility'] + 9;
+            }
+            else if (that.item['attributes']['strength'] > 0) {
+              that.itemStrength = that.item['attributes']['strength'] + 9;
+            }
+            else if (that.item['attributes']['stamina'] > 0) {
+              that.itemStamina = that.item['attributes']['stamina'] + 9;
+            }
+            else if (that.item['attributes']['spirit'] > 0) {
+              that.itemSpirit = that.item['attributes']['spirit'] + 9;
+            }
+            else if (that.item['attributes']['intelligence'] > 0) {
+              that.itemIntelligence = that.item['attributes']['intelligence'] + 9;
             }
             else if (that.item['attributes']['magicAttack'] > 0) {
 
@@ -401,16 +434,16 @@ export class ItemComponent {
               that.itemAgility = that.item['attributes']['agility'] + 14;
             }
             else if (that.item['attributes']['strength'] > 0) {
-
+              that.itemStrength = that.item['attributes']['strength'] + 14;
             }
             else if (that.item['attributes']['stamina'] > 0) {
-
+              that.itemStamina = that.item['attributes']['stamina'] + 14;
             }
             else if (that.item['attributes']['spirit'] > 0) {
-
+              that.itemSpirit = that.item['attributes']['spirit'] + 14;
             }
             else if (that.item['attributes']['intelligence'] > 0) {
-
+              that.itemIntelligence = that.item['attributes']['intelligence'] + 14;
             }
             else if (that.item['attributes']['magicAttack'] > 0) {
 
@@ -450,16 +483,16 @@ export class ItemComponent {
               that.itemAgility = that.item['attributes']['agility'] + 19;
             }
             else if (that.item['attributes']['strength'] > 0) {
-
+              that.itemStrength = that.item['attributes']['strength'] + 19;
             }
             else if (that.item['attributes']['stamina'] > 0) {
-
+              that.itemStamina = that.item['attributes']['stamina'] + 19;
             }
             else if (that.item['attributes']['spirit'] > 0) {
-
+              that.itemSpirit = that.item['attributes']['spirit'] + 19;
             }
             else if (that.item['attributes']['intelligence'] > 0) {
-
+              that.itemIntelligence = that.item['attributes']['intelligence'] + 19;
             }
             else if (that.item['attributes']['magicAttack'] > 0) {
 
@@ -499,16 +532,16 @@ export class ItemComponent {
               that.itemAgility = that.item['attributes']['agility'] + 24;
             }
             else if (that.item['attributes']['strength'] > 0) {
-
+              that.itemStrength = that.item['attributes']['strength'] + 24;
             }
             else if (that.item['attributes']['stamina'] > 0) {
-
+              that.itemStamina = that.item['attributes']['stamina'] + 24;
             }
             else if (that.item['attributes']['spirit'] > 0) {
-
+              that.itemSpirit = that.item['attributes']['spirit'] + 24;
             }
             else if (that.item['attributes']['intelligence'] > 0) {
-
+              that.itemIntelligence = that.item['attributes']['intelligence'] + 24;
             }
             else if (that.item['attributes']['magicAttack'] > 0) {
 
@@ -548,16 +581,16 @@ export class ItemComponent {
               that.itemAgility = that.item['attributes']['agility'] + 30;
             }
             else if (that.item['attributes']['strength'] > 0) {
-
+              that.itemStrength = that.item['attributes']['strength'] + 30;
             }
             else if (that.item['attributes']['stamina'] > 0) {
-
+              that.itemStamina = that.item['attributes']['stamina'] + 30;
             }
             else if (that.item['attributes']['spirit'] > 0) {
-
+              that.itemSpirit = that.item['attributes']['spirit'] + 30;
             }
             else if (that.item['attributes']['intelligence'] > 0) {
-
+              that.itemIntelligence = that.item['attributes']['intelligence'] + 30;
             }
             else if (that.item['attributes']['magicAttack'] > 0) {
 
@@ -597,16 +630,16 @@ export class ItemComponent {
               that.itemAgility = that.item['attributes']['agility'] + 36;
             }
             else if (that.item['attributes']['strength'] > 0) {
-
+              that.itemStrength = that.item['attributes']['strength'] + 36;
             }
             else if (that.item['attributes']['stamina'] > 0) {
-
+              that.itemStamina = that.item['attributes']['stamina'] + 36;
             }
             else if (that.item['attributes']['spirit'] > 0) {
-
+              that.itemSpirit = that.item['attributes']['spirit'] + 36;
             }
             else if (that.item['attributes']['intelligence'] > 0) {
-
+              that.itemIntelligence = that.item['attributes']['intelligence'] + 36;
             }
             else if (that.item['attributes']['magicAttack'] > 0) {
 
@@ -646,16 +679,16 @@ export class ItemComponent {
               that.itemAgility = that.item['attributes']['agility'] + 42;
             }
             else if (that.item['attributes']['strength'] > 0) {
-
+              that.itemStrength = that.item['attributes']['strength'] + 42;
             }
             else if (that.item['attributes']['stamina'] > 0) {
-
+              that.itemStamina = that.item['attributes']['stamina'] + 42;
             }
             else if (that.item['attributes']['spirit'] > 0) {
-
+              that.itemSpirit = that.item['attributes']['spirit'] + 42;
             }
             else if (that.item['attributes']['intelligence'] > 0) {
-
+              that.itemIntelligence = that.item['attributes']['intelligence'] + 42;
             }
             else if (that.item['attributes']['magicAttack'] > 0) {
 
@@ -695,16 +728,16 @@ export class ItemComponent {
               that.itemAgility = that.item['attributes']['agility'] + 51;
             }
             else if (that.item['attributes']['strength'] > 0) {
-
+              that.itemStrength = that.item['attributes']['strength'] + 51;
             }
             else if (that.item['attributes']['stamina'] > 0) {
-
+              that.itemStamina = that.item['attributes']['stamina'] + 51;
             }
             else if (that.item['attributes']['spirit'] > 0) {
-
+              that.itemSpirit = that.item['attributes']['spirit'] + 51;
             }
             else if (that.item['attributes']['intelligence'] > 0) {
-
+              that.itemIntelligence = that.item['attributes']['intelligence'] + 51;
             }
             else if (that.item['attributes']['magicAttack'] > 0) {
 
@@ -744,16 +777,16 @@ export class ItemComponent {
               that.itemAgility = that.item['attributes']['agility'] + 60;
             }
             else if (that.item['attributes']['strength'] > 0) {
-
+              that.itemStrength = that.item['attributes']['strength'] + 60;
             }
             else if (that.item['attributes']['stamina'] > 0) {
-
+              that.itemStamina = that.item['attributes']['stamina'] + 60;
             }
             else if (that.item['attributes']['spirit'] > 0) {
-
+              that.itemSpirit = that.item['attributes']['spirit'] + 60;
             }
             else if (that.item['attributes']['intelligence'] > 0) {
-
+              that.itemIntelligence = that.item['attributes']['intelligence'] + 60;
             }
             else if (that.item['attributes']['magicAttack'] > 0) {
 

@@ -1133,2858 +1133,2708 @@ export class TitleTableComponent implements OnInit {
       {
         id: 182,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Grand Conqueror',
         description: ''
       },
       {
         id: 183,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Just Conqueror',
         description: ''
       },
       {
         id: 184,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Monstrous Conqueror',
         description: ''
       },
       {
         id: 185,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Party Crasher	',
+        description: 'You engineered useful functions with wide benefits. Increases Machinery proficiency +1000.'
       },
       {
         id: 186,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Fearless Leader',
+        description: 'You engineered useful functions with wide benefits. Increases Machinery proficiency +1000.'
       },
       {
         id: 187,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'ArcheMaster',
         description: ''
       },
       {
         id: 188,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Fur-Friendly',
+        description: 'The energy of the Firran imbues you. Increases Spirit +3.'
       },
       {
         id: 189,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Team Player',
+        description: "You feel like you can't fail at anything. Increases Machining proficiency +1000."
       },
       {
         id: 190,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Discord Destroyer',
+        description: 'This feels like a day to teach those young kids a lesson. Increases Strength +3.'
       },
       {
         id: 191,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Arena Spark',
+        description: 'Akrites, God of Battles, blesses you. Increases Honor Points received at the end of the Arena +1. Increases Max HP +20.'
       },
       {
         id: 192,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Arena Flame',
+        description: 'Akrites, God of Battles, blesses you. Increases Honor Points received at the end of the Arena +2. Increases Max HP +40.'
       },
       {
         id: 193,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Arena Torch',
+        description: 'Akrites, God of Battles, blesses you. Increases Honor Points received at the end of the Arena +3. Increases Max HP +60.'
       },
       {
         id: 194,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Arena Wildfire',
+        description: 'Akrites, God of Battles, blesses you. Increases Honor Points received at the end of the Arena +4. Increases Max HP +80.'
       },
       {
         id: 195,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Royal Archivist',
+        description: 'You have collected all of the Gods and Heroes Commemorative Coins. Increases Max HP and Max Mana +40.'
       },
       {
         id: 196,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Timeless Warrior',
+        description: 'Grants martial arts training. Increases max mana +75.0. Increases Post-Cast Mana Regen +2.0. Ignores 30.0 Physical Defense.'
       },
       {
         id: 197,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Time Catcher',
+        description: 'You have fished for a great deal of time. Increases Fishing proficiency +2000.'
       },
       {
         id: 198,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'ArcheRacer',
+        description: "You're a speedster! Increases Machinery Proficiency +2,000. Increases Move Speed +2%."
       },
       {
         id: 199,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Poet Laureate',
+        description: 'You have reminded the people of the famous bard Lucius and his beautiful and clever prose. Increases your Strength, Agility, Stamina, Intelligence, and Spirit +1.'
       },
       {
         id: 200,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Silver Tongued',
+        description: 'This power is bestowed on poets with a silver tongue. Increases Stamina +1.'
       },
       {
         id: 201,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'First Fisherman',
+        description: 'You are the first person to fish a large fish. Increases Fishing proficiency +1000.'
       },
       {
         id: 202,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Arena King',
+        description: 'Akrites, God of Battles, blesses you. Increases Honor Points received at the end of the Arena +2. Increases Max HP +40.'
       },
       {
         id: 203,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Smarty Pants',
+        description: 'Your imaginative creation is an inspiration to all. Increases Handicraft proficiency +1000.'
       },
       {
         id: 204,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Brainstormer',
+        description: 'Your imaginative creation is an inspiration to all. Increases Handicraft proficiency +1000.'
       },
       {
         id: 205,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Star-Crossed',
+        description: "You have surpassed your peers and earned the gods' blessing! Increases max health and mana +50."
       },
       {
         id: 206,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Healing Hand',
+        description: "You have surpassed your peers and earned the gods' blessing! Increases max health and mana +50."
       },
       {
         id: 207,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Fearful',
+        description: "You have surpassed your peers and earned the gods' blessing! Increases max health and mana +50."
       },
       {
         id: 208,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Bloodscythe',
+        description: "You have surpassed your peers and earned the gods' blessing! Increases max health and mana +50."
       },
       {
         id: 209,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Catch of the Day',
+        description: "You have surpassed your peers and earned the gods' blessing! Increases max health and mana +50."
       },
       {
         id: 210,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Fishfiend',
+        description: "You have surpassed your peers and earned the gods' blessing! Increases max health and mana +50."
       },
       {
         id: 211,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Happy as a Clam',
+        description: "You have surpassed your peers and earned the gods' blessing! Increases max health and mana +50."
       },
       {
         id: 212,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Slightly Sticky',
+        description: "You have surpassed your peers and earned the gods' blessing! Increases max health and mana +50."
       },
       {
         id: 213,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Enchanted',
+        description: "You have surpassed your peers and earned the gods' blessing! Increases max health and mana +50."
       },
       {
         id: 214,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Crest Crafter',
+        description: "You have surpassed your peers and earned the gods' blessing! Increases max health and mana +50."
       },
       {
         id: 215,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Power Napper',
+        description: "You have surpassed your peers and earned the gods' blessing! Increases max health and mana +50."
       },
       {
         id: 216,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Layer It On',
+        description: "You have surpassed your peers and earned the gods' blessing! Increases max health and mana +50."
       },
       {
         id: 217,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Tango-mancer',
+        description: "You have surpassed your peers and earned the gods' blessing! Increases max health and mana +50."
       },
       {
         id: 218,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Lucky Pouch',
+        description: "You have surpassed your peers and earned the gods' blessing! Increases max health and mana +50."
       },
       {
         id: 219,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Ready to Rock',
+        description: "You have surpassed your peers and earned the gods' blessing! Increases max health and mana +50."
       },
       {
         id: 220,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Always Fresh',
+        description: "You have surpassed your peers and earned the gods' blessing! Increases max health and mana +50."
       },
       {
         id: 221,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Bouncing Back',
+        description: "You have surpassed your peers and earned the gods' blessing! Increases max health and mana +50."
       },
       {
         id: 222,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Skillmaster',
         description: ''
       },
       {
         id: 223,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Narcissist',
         description: ''
       },
       {
         id: 224,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Adventuring Addict',
         description: ''
       },
       {
         id: 225,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Workaholic',
         description: ''
       },
       {
         id: 226,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Shadowhunter',
         description: ''
       },
       {
         id: 227,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Fiendbreeder',
         description: ''
       },
       {
         id: 228,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Pack Leader',
         description: ''
       },
       {
         id: 229,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Dances with Wolfhounds',
         description: ''
       },
       {
         id: 230,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Pride Leader',
         description: ''
       },
       {
         id: 231,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Cat Whisperer',
         description: ''
       },
       {
         id: 232,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Bear Chaser',
         description: ''
       },
       {
         id: 233,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Bear Whisperer',
         description: ''
       },
       {
         id: 234,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Herd Racer',
         description: ''
       },
       {
         id: 235,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Horse Whisperer',
         description: ''
       },
       {
         id: 236,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Snowlion Collector',
         description: ''
       },
       {
         id: 237,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Lion Tamer',
         description: ''
       },
       {
         id: 238,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Elk Collector',
         description: ''
       },
       {
         id: 239,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Elk Tamer',
         description: ''
       },
       {
         id: 240,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Leomorph Collector',
         description: ''
       },
       {
         id: 241,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Leomorph Tamer',
         description: ''
       },
       {
         id: 242,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Shadowcat Collector',
         description: ''
       },
       {
         id: 243,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Shadowcat Tamer',
         description: ''
       },
       {
         id: 244,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Yata Collector',
         description: ''
       },
       {
         id: 245,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Yata Tamer',
         description: ''
       },
       {
         id: 246,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Animal Lover',
         description: ''
       },
       {
         id: 247,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Crop Whisperer',
         description: ''
       },
       {
         id: 248,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'A Whole New World',
         description: ''
       },
       {
         id: 249,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Fishphiliac',
         description: ''
       },
       {
         id: 250,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Bobble-Headed',
         description: ''
       },
       {
         id: 251,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Plushie Hearted',
         description: ''
       },
       {
         id: 252,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'En-Vogue',
         description: ''
       },
       {
         id: 253,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Gazillionaire',
         description: ''
       },
       {
         id: 254,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Party Animal',
         description: ''
       },
       {
         id: 255,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Ballsy and Lucky',
         description: ''
       },
       {
         id: 256,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Totally Forsaken',
         description: ''
       },
       {
         id: 257,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Big Spender',
         description: ''
       },
       {
         id: 258,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Tycoon',
         description: ''
       },
       {
         id: 259,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: "Another Man's Treasure",
         description: ''
       },
       {
         id: 260,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Durability Master',
         description: ''
       },
       {
         id: 261,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Beam Me Up',
         description: ''
       },
       {
         id: 262,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Auroran Defender',
         description: ''
       },
       {
         id: 263,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Auroran Knight',
         description: ''
       },
       {
         id: 264,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Auroran Ambitions',
         description: ''
       },
       {
         id: 265,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Auroran Sorrows',
         description: ''
       },
       {
         id: 266,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Dominator',
         description: ''
       },
       {
         id: 267,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: "A Crafter's Life for Me",
         description: ''
       },
       {
         id: 268,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Hasla Champion',
         description: ''
       },
       {
         id: 269,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Eternal Hasla Champion',
         description: ''
       },
       {
         id: 270,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Proven Warrior',
         description: ''
       },
       {
         id: 271,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Explosives Expert',
         description: ''
       },
       {
         id: 272,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'The Professional',
         description: ''
       },
       {
         id: 273,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Nothing Up My Sleeve',
         description: ''
       },
       {
         id: 274,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Phantom Thief',
         description: ''
       },
       {
         id: 275,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Weaponsmith',
         description: ''
       },
       {
         id: 276,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Armorsmith',
         description: ''
       },
       {
         id: 277,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Jewelsmith',
         description: ''
       },
       {
         id: 278,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Master Shipwright',
         description: ''
       },
       {
         id: 279,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Master Mechanic',
         description: ''
       },
       {
         id: 280,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Siege Engineer',
         description: ''
       },
       {
         id: 281,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Flight Engineer',
         description: ''
       },
       {
         id: 282,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Costs an Armoire and a Lathe',
         description: ''
       },
       {
         id: 283,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Lumenmancer',
         description: ''
       },
       {
         id: 284,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Interior Designer',
         description: ''
       },
       {
         id: 285,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Awl-Encompassing',
         description: ''
       },
       {
         id: 286,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Bedmaker',
         description: ''
       },
       {
         id: 287,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Chairman of Chairs',
         description: ''
       },
       {
         id: 288,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Periodic Tabler',
         description: ''
       },
       {
         id: 289,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Master Printer',
         description: ''
       },
       {
         id: 290,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Stuffed with Fluff',
         description: ''
       },
       {
         id: 291,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Top Chef Master',
         description: ''
       },
       {
         id: 292,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Haranya Trademaster',
         description: ''
       },
       {
         id: 293,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Nuia Trademaster',
         description: ''
       },
       {
         id: 294,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Island Trademaster',
         description: ''
       },
       {
         id: 295,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Ynystere Magnate',
         description: ''
       },
       {
         id: 296,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Cinderstone Magnate',
         description: ''
       },
       {
         id: 297,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Something Fishy',
         description: ''
       },
       {
         id: 298,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Udderly Fabulous',
         description: ''
       },
       {
         id: 299,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Sheep Follower',
         description: ''
       },
       {
         id: 300,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Swineherd',
         description: ''
       },
       {
         id: 301,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Egg-cellent',
         description: ''
       },
       {
         id: 302,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Plucky Plucker',
         description: ''
       },
       {
         id: 303,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Bronco Buster',
         description: ''
       },
       {
         id: 304,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Fowl Mood',
         description: ''
       },
       {
         id: 305,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Goatherd',
         description: ''
       },
       {
         id: 306,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Quacked Up',
         description: ''
       },
       {
         id: 307,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Busy Bee',
         description: ''
       },
       {
         id: 308,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Veteran Vet',
         description: ''
       },
       {
         id: 309,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Free Flowering',
         description: ''
       },
       {
         id: 310,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Seedful Sower',
         description: ''
       },
       {
         id: 311,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Out on a Limb',
         description: ''
       },
       {
         id: 312,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Lightning Rod',
         description: ''
       },
       {
         id: 313,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Earth Lover',
         description: ''
       },
       {
         id: 314,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Thirsty One',
         description: ''
       },
       {
         id: 315,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Greatest Explorer',
         description: ''
       },
       {
         id: 316,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Grand Historian',
         description: ''
       },
       {
         id: 317,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Salt of the Earth',
         description: ''
       },
       {
         id: 318,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'True Ascended',
         description: ''
       },
       {
         id: 319,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Master Beasthunter',
         description: ''
       },
       {
         id: 320,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Homewrecker',
         description: ''
       },
       {
         id: 321,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Sharpwind Vanquisher',
         description: ''
       },
       {
         id: 322,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Cellar Vanquisher',
         description: ''
       },
       {
         id: 323,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Armory Vanquisher',
         description: ''
       },
       {
         id: 324,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Hadir Vanquisher',
         description: ''
       },
       {
         id: 325,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Abyss Vanquisher',
         description: ''
       },
       {
         id: 326,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Kroloal Vanquisher',
         description: ''
       },
       {
         id: 327,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Greater Abyssal Vanquisher',
         description: ''
       },
       {
         id: 328,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Serpentis Vanquisher',
         description: ''
       },
       {
         id: 329,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Drowned Vanquisher',
         description: ''
       },
       {
         id: 330,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Dragon Slayer',
         description: ''
       },
       {
         id: 331,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'True Adventurer',
         description: ''
       },
       {
         id: 332,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Divemaster',
         description: ''
       },
       {
         id: 333,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Best Bookworm',
         description: ''
       },
       {
         id: 334,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Ginseng Singer',
         description: ''
       },
       {
         id: 335,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Mining Engineer',
         description: ''
       },
       {
         id: 336,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Solzreed Cartographer',
         description: ''
       },
       {
         id: 337,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Gweonid Cartographer',
         description: ''
       },
       {
         id: 338,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Lilyut Cartographer',
         description: ''
       },
       {
         id: 339,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Dewstone Cartographer',
         description: ''
       },
       {
         id: 340,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'White Arden Cartographer',
         description: ''
       },
       {
         id: 341,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Marianople Cartographer',
         description: ''
       },
       {
         id: 342,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Two Crowns Cartographer',
         description: ''
       },
       {
         id: 343,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Cinderstone Cartographer',
         description: ''
       },
       {
         id: 344,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Halcyona Cartographer',
         description: ''
       },
       {
         id: 345,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Hellswamp Cartographer',
         description: ''
       },
       {
         id: 346,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Sanddeep Cartographer',
         description: ''
       },
       {
         id: 347,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Arcum Iris Cartographer',
         description: ''
       },
       {
         id: 348,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Falcorth Cartographer',
         description: ''
       },
       {
         id: 349,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Tigerspine Cartographer',
         description: ''
       },
       {
         id: 350,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Mahadevi Cartographer',
         description: ''
       },
       {
         id: 351,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Solis Cartographer',
         description: ''
       },
       {
         id: 352,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Villanelle Cartographer',
         description: ''
       },
       {
         id: 353,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Silent Forest Cartographer',
         description: ''
       },
       {
         id: 354,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Ynystere Cartographer',
         description: ''
       },
       {
         id: 355,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Rookborne Cartographer',
         description: ''
       },
       {
         id: 356,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Windscour Cartographer',
         description: ''
       },
       {
         id: 357,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Perinoor Cartographer',
         description: ''
       },
       {
         id: 358,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Hasla Cartographer',
         description: ''
       },
       {
         id: 359,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Karkasse Cartographer',
         description: ''
       },
       {
         id: 360,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Salty Sailor',
         description: ''
       },
       {
         id: 361,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Supreme Magistrate',
         description: ''
       },
       {
         id: 362,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Until Proven Guilty',
         description: ''
       },
       {
         id: 363,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Notorious Felon',
         description: ''
       },
       {
         id: 364,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Bounty Hunter',
         description: ''
       },
       {
         id: 365,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Desperado',
         description: ''
       },
       {
         id: 366,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Repentant',
         description: ''
       },
       {
         id: 367,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'United We Stand',
         description: ''
       },
       {
         id: 368,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Daru Friend',
         description: ''
       },
       {
         id: 369,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Daru Buddy',
         description: ''
       },
       {
         id: 370,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Auroran Ascended',
         description: ''
       },
       {
         id: 371,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Kingslayer',
         description: ''
       },
       {
         id: 372,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Transcendent',
         description: ''
       },
       {
         id: 373,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Above and Beyond',
         description: ''
       },
       {
         id: 374,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: "It's Over 90,000!",
         description: ''
       },
       {
         id: 375,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Expert Cutpurse',
         description: ''
       },
       {
         id: 376,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Ayanad Vanquisher',
         description: ''
       },
       {
         id: 377,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Guardian of Reading Rainbows',
         description: ''
       },
       {
         id: 378,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Relic Guardian',
         description: ''
       },
       {
         id: 379,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Master Lunagemologist',
         description: ''
       },
       {
         id: 380,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Halcyona Dominator',
         description: ''
       },
       {
         id: 381,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Cinderstone Dominator',
         description: ''
       },
       {
         id: 382,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Hellswamp Dominator',
         description: ''
       },
       {
         id: 383,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Sanddeep Dominator',
         description: ''
       },
       {
         id: 384,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Ynystere Dominator',
         description: ''
       },
       {
         id: 385,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Rookborne Dominator',
         description: ''
       },
       {
         id: 386,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Perinoor Dominator',
         description: ''
       },
       {
         id: 387,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Hasla Dominator',
         description: ''
       },
       {
         id: 388,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Karkasse Dominator',
         description: ''
       },
       {
         id: 389,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Freedich Dominator',
         description: ''
       },
       {
         id: 390,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Arcadian Dominator',
         description: ''
       },
       {
         id: 391,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Halcyona Gulf Dominator',
         description: ''
       },
       {
         id: 392,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Castaway Dominator',
         description: ''
       },
       {
         id: 393,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Halcyona Haunt',
         description: ''
       },
       {
         id: 394,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Cinderstone Haunt',
         description: ''
       },
       {
         id: 395,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Hellswamp Haunt',
         description: ''
       },
       {
         id: 396,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Sanddeep Haunt',
         description: ''
       },
       {
         id: 397,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Ynystere Haunt',
         description: ''
       },
       {
         id: 398,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Rookborne Haunt',
         description: ''
       },
       {
         id: 399,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Perinoor Haunt',
         description: ''
       },
       {
         id: 400,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Hasla Haunt',
         description: ''
       },
       {
         id: 401,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Karkasse Haunt',
         description: ''
       },
       {
         id: 402,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Freedich Haunt',
         description: ''
       },
       {
         id: 403,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Arcadian Haunt',
         description: ''
       },
       {
         id: 404,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Halcyona Gulf Haunt',
         description: ''
       },
       {
         id: 405,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Castaway Haunt',
         description: ''
       },
       {
         id: 406,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Taste of Victory',
         description: ''
       },
       {
         id: 407,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Head in the Clouds',
         description: ''
       },
       {
         id: 408,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Ultra-Chill',
         description: ''
       },
       {
         id: 409,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Dream Came True',
         description: ''
       },
       {
         id: 410,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Filthy Rich',
         description: ''
       },
       {
         id: 411,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Nuian Historian',
         description: ''
       },
       {
         id: 412,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Elf Historian',
         description: ''
       },
       {
         id: 413,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Harani Historian',
         description: ''
       },
       {
         id: 414,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Firran Historian',
         description: ''
       },
       {
         id: 415,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Lucky Strike',
         description: ''
       },
       {
         id: 416,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Year of the Horse',
+        description: 'A new year of the blue horse has dawned. Increases Magic Defense Penetration +30.0. Increases max HP +75.0. Increases Health Regen +2.0.'
       },
       {
         id: 417,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Lucius Reborn',
         description: ''
       },
       {
         id: 418,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Hungover',
         description: ''
       },
       {
         id: 419,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Overly Polite',
         description: ''
       },
       {
         id: 420,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Moneymaker',
         description: ''
       },
       {
         id: 421,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Ball Dropper',
         description: ''
       },
       {
         id: 422,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Windscour Dominator',
         description: ''
       },
       {
         id: 423,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Windscour Haunt',
         description: ''
       },
       {
         id: 424,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Star Recruiter',
         description: ''
       },
       {
         id: 425,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Haranyan Interpreter',
         description: ''
       },
       {
         id: 426,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Nuian Interpreter',
         description: ''
       },
       {
         id: 427,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Sugar-Sweet',
         description: ''
       },
       {
         id: 428,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Crimson Watch',
+        description: 'Increases max health and max mana +30.'
       },
       {
         id: 429,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Lord of the Dance',
         description: ''
       },
       {
         id: 430,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Highly Secretive',
         description: ''
       },
       {
         id: 431,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Busybody',
         description: ''
       },
       {
         id: 432,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: "Fortune's Favorite",
         description: ''
       },
       {
         id: 433,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Hapless',
         description: ''
       },
       {
         id: 434,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Expert Cutpurse',
+        description: 'Your dexterity is unquestioned; increases Larceny proficiency +8,000 and Agility +10.'
       },
       {
         id: 435,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Raises the Roof',
+        description: 'Your architectural skill is unquestioned; increases Construction proficiency +12,000 and Stamina +20.'
       },
       {
         id: 436,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Multifaceted',
+        description: 'Your craftsmanship is unquestioned; increases Handicraft proficiency +12,000 and Intelligence +20.'
       },
       {
         id: 437,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'METAL MAYHEM',
+        description: 'Your blacksmithing skill is unquestioned; increases Metalwork proficiency +12,000 and Stamina +20.'
       },
       {
         id: 438,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Car-diologist',
+        description: 'Your mechanical skill is unquestioned; increases Machining proficiency +12,000 and Strength +20.'
       },
       {
         id: 439,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Krilling It',
+        description: 'Your angling skill is unquestioned; increases Fishing proficiency +12,000 and Agility +20.'
       },
       {
         id: 440,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Grain Reaper',
+        description: 'Your agricultural skill is unquestioned; increases Farming proficiency +12,000 and Strength +20.'
       },
       {
         id: 441,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Got Hammered',
+        description: 'Your weaponsmithing skill is unquestioned; increases Weaponry proficiency +12,000 and Strength +20.'
       },
       {
         id: 442,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Maestro Thief',
+        description: 'Your dexterity is unquestioned; increases Larceny proficiency +12,000 and Agility +20.'
       },
       {
         id: 443,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Nailed It!',
+        description: 'Your dexterity is unquestioned; increases Larceny proficiency +12,000 and Agility +20.'
       },
       {
         id: 444,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Boiled and Oiled',
+        description: 'Your tanning skill is unquestioned; increases Leatherwork proficiency +12,000 and Spirit +20.'
       },
       {
         id: 445,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Never Strikes Twice',
+        description: 'Your woodcutting skill is unquestioned; increases Logging proficiency +12,000 and Stamina +20.'
       },
       {
         id: 446,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Taken for Granite',
+        description: 'Your chiseling skill is unquestioned; increases Masonry proficiency +12,000 and Strength +20.'
       },
       {
         id: 447,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Criminal Mastermind',
+        description: 'Your dexterity is unquestioned; increases Larceny proficiency +12,000 and Agility +20.'
       },
       {
         id: 448,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Periodically Epic',
+        description: 'Your alchemical skill is unquestioned; increases Alchemy proficiency +12,000 and Spirit +20.'
       },
       {
         id: 449,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Culinary Cutthroat',
+        description: 'Your culinary skill is unquestioned; increases Cooking proficiency +12,000 and Intelligence +20.'
       },
       {
         id: 450,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Bound for Greatness',
+        description: 'Your typography skill is unquestioned; increases Printing proficiency +12,000 and Agility +20.'
       },
       {
         id: 451,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Baller Status',
+        description: 'Your business skill is unquestioned; increases Commerce proficiency +12,000 and Intelligence +20.'
       },
       {
         id: 452,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Shear Genius',
+        description: 'Your sewing skill is unquestioned; increases Tailoring proficiency +12,000 and Spirit +20.'
       },
       {
         id: 453,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Rock Bottom',
+        description: 'Your prospecting skill is unquestioned; increases Mining proficiency +12,000 and Stamina +20.'
       },
       {
         id: 454,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Cutting Hedge Technology',
+        description: 'Your collecting skill is unquestioned; increases Gathering proficiency +12,000 and Agility +20.'
       },
       {
         id: 455,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Bleu Ribbon',
+        description: 'Your ranching skill is unquestioned; increases Husbandry proficiency +12,000 and Strength +20.'
       },
       {
         id: 456,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Chart Topper',
+        description: 'Your artistic skill is unquestioned; increases Artistry proficiency +12,000 and Spirit +20.'
       },
       {
         id: 457,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Sublime Songsmith',
+        description: 'Your artistic skill is unquestioned; increases Artistry proficiency +8,000 and Spirit +10.'
       },
       {
         id: 458,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Ageless Architect',
+        description: 'Your architectural knowledge deserves recognition; increases Construction proficiency +1000.'
       },
       {
         id: 459,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'New Beginnings Companion',
+        description: 'Increases Strength, Agility, Stamina, Intelligence, and Spirit +7.'
       },
       {
         id: 460,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Memory Keeper',
+        description: 'You honor the memory of noble dragons, long since dead. Increases Cannon Damage +1%. Increases Strength, Agility, Stamina, Intelligence, and Spirit +5.'
       },
       {
         id: 461,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Needs a Party',
         description: ''
       },
       {
         id: 462,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Needs a Guild',
         description: ''
       },
       {
         id: 463,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Be My Friend',
         description: ''
       },
       {
         id: 464,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Needs a Family',
         description: ''
       },
       {
         id: 465,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Needs Guild Recruits',
         description: ''
       },
       {
         id: 466,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Duel Seeker',
         description: ''
       },
       {
         id: 467,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Blackheart',
+        description: "You have absorbed a portion of the Leviathan's spirit. A small part of its strength now flows through you. Increases received healing and Cannon Damage +1%."
       },
       {
         id: 468,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Guild Combat Agent',
         description: ''
       },
       {
         id: 469,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Guild Production Agent',
         description: ''
       },
       {
         id: 470,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Guild Crafting Agent',
         description: ''
       },
       {
         id: 471,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Guild Trade Agent',
         description: ''
       },
       {
         id: 472,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Guild Dueling Agent',
         description: ''
       },
       {
         id: 473,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Snowdreamer',
         description: ''
       },
       {
         id: 474,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Stone Sprite',
+        description: "You have surpassed your peers and earned the gods' blessing! Increases max health and mana +50."
       },
       {
         id: 475,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Lore King',
+        description: 'Lore Kings are highly talented storytellers. Increases all Language Proficiencies +10,000.'
       },
       {
         id: 476,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Lore Queen',
+        description: 'Lore Queens are highly talented storytellers. Increases all Language Proficiencies +10,000.'
       },
       {
         id: 477,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Bow Constellation',
         description: ''
       },
       {
         id: 478,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Boat Horn Constellation',
         description: ''
       },
       {
         id: 479,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Bugle Constellation',
         description: ''
       },
       {
         id: 480,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Unicorn Constellation',
         description: ''
       },
       {
         id: 481,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Blind Eye Constellation',
         description: ''
       },
       {
         id: 482,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Chariot Constellation',
         description: ''
       },
       {
         id: 483,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Wand Constellation',
         description: ''
       },
       {
         id: 484,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Trident Constellation',
         description: ''
       },
       {
         id: 485,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Crown Constellation',
         description: ''
       },
       {
         id: 486,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Leopard Constellation',
         description: ''
       },
       {
         id: 487,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Brier Constellation',
         description: ''
       },
       {
         id: 488,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Hut Constellation',
         description: ''
       },
       {
         id: 489,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Ginseng Genius',
+        description: "You have surpassed your peers and earned the gods' blessing! Increases max health and mana +50."
       },
       {
         id: 490,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Hamtastic',
+        description: "You have surpassed your peers and earned the gods' blessing! Increases max health and mana +50."
       },
       {
         id: 491,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Woodland Wonder',
+        description: "You have surpassed your peers and earned the gods' blessing! Increases max health and mana +50."
       },
       {
         id: 492,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Oremonger',
+        description: "You have surpassed your peers and earned the gods' blessing! Increases max health and mana +50."
       },
       {
         id: 493,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Dawndrinker',
+        description: "You have surpassed your peers and earned the gods' blessing! Increases max health and mana +50."
       },
       {
         id: 494,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'In Grape Spirits',
+        description: "You have surpassed your peers and earned the gods' blessing! Increases max health and mana +50."
       },
       {
         id: 495,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'True Talent',
         description: ''
       },
       {
         id: 496,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Precious Voter',
+        description: 'Increases max health and mana +120.'
       },
       {
         id: 497,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'First Hero of Nuia',
+        description: 'Increases max health and mana +120.'
       },
       {
         id: 498,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'First Hero of Haranya',
+        description: 'Increases max health and mana +120.'
       },
       {
         id: 499,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'First Pirate Hero',
+        description: 'Increases max health and mana +120.'
       },
       {
         id: 500,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'First Auroran Hero',
+        description: 'Increases max health and mana +120.'
       },
       {
         id: 501,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Beastmaster',
         description: ''
       },
       {
         id: 502,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Anonymous',
         description: ''
       },
       {
         id: 503,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Enthusiastic Adventurer',
+        description: 'Increases Strength, Agility, Stamina, Intelligence, and Spirit +5.'
       },
       {
         id: 504,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Arche Webtoon Author',
         description: ''
       },
       {
         id: 505,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Idle-Handed',
         description: ''
       },
       {
         id: 506,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Tortured Artist',
+        description: 'Increases Artistry Proficiency +1,000.'
       },
       {
         id: 507,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Axis Mundi Pioneer',
+        description: 'Increases Max Health and Mana +50.'
       },
       {
         id: 508,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Cosmic Pioneer',
         description: ''
       },
       {
         id: 509,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Cutie Patootie',
         description: ''
       },
       {
         id: 510,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Catching Fire',
         description: ''
       },
       {
         id: 511,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Abyssal Archaeologist',
+        description: 'Increases Swim Speed +10%.'
       },
       {
         id: 512,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Disciple of Kyrios',
+        description: 'Increases Strength, Agility, Stamina, Intelligence, and Spirit +7.'
       },
       {
         id: 513,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Enlightened ArcheMaster',
         description: ''
       },
       {
         id: 514,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Moon Crasher',
+        description: 'Increases Strength, Agility, Stamina, Intelligence, and Spirit +7.'
       },
       {
         id: 515,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: '1st Ever-Charming Exterminator',
+        description: 'Increases Strength, Agility, Stamina, Intelligence, and Spirit +8.'
       },
       {
         id: 516,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: '1st *Stardreamer*',
+        description: 'Increases Strength, Agility, Stamina, Intelligence, and Spirit +8.'
       },
       {
         id: 517,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: '1st Deadly Despicable',
+        description: 'Increases Strength, Agility, Stamina, Intelligence, and Spirit +8.'
       },
       {
         id: 518,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Daydreamer',
+        description: 'Increases Strength, Agility, Stamina, Intelligence, and Spirit +3.'
       },
       {
         id: 519,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Despicable',
+        description: 'Increases Strength, Agility, Stamina, Intelligence, and Spirit +3.'
       },
       {
         id: 520,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Ever-Charming',
+        description: 'Increases Strength, Agility, Stamina, Intelligence, and Spirit +3.'
       },
       {
         id: 521,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: '*Stardreamer*',
+        description: 'Increases Strength, Agility, Stamina, Intelligence, and Spirit +7.'
       },
       {
         id: 522,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Deadly Despicable	',
+        description: 'Increases Strength, Agility, Stamina, Intelligence, and Spirit +7.'
       },
       {
         id: 523,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Ever-Charming Exterminator',
+        description: 'Increases Strength, Agility, Stamina, Intelligence, and Spirit +7.'
       },
       {
         id: 524,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Gallant Elk-Herder',
         description: ''
       },
       {
         id: 525,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Gallant Leomorph-Herder',
         description: ''
       },
       {
         id: 526,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Gallant Horse-Herder',
         description: ''
       },
       {
         id: 527,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Gallant Snowlion-Herder',
         description: ''
       },
       {
         id: 528,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Guardian of Nuia',
         description: ''
       },
       {
         id: 529,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Guardian of Haranya',
         description: ''
       },
       {
         id: 530,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Seasoned Seaknight',
         description: ''
       },
       {
         id: 531,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Frozen Fisherman',
+        description: 'Your efforts in the Miroir Tundra Fishing Cove have been recognized. Increases Fishing Proficiency +1000.'
       },
       {
         id: 532,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Storyteller',
         description: ''
       },
       {
         id: 533,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Solzreed Hunter',
         description: ''
       },
       {
         id: 534,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Lilyut Hunter',
         description: ''
       },
       {
         id: 535,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Gweonid Hunter',
         description: ''
       },
       {
         id: 536,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Dewstone Hunter',
         description: ''
       },
       {
         id: 537,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'White Arden Hunter',
         description: ''
       },
       {
         id: 538,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Marianople Hunter',
         description: ''
       },
       {
         id: 539,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Two Crowns Hunter',
         description: ''
       },
       {
         id: 540,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Cinderstone Hunter',
         description: ''
       },
       {
         id: 541,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Halcyona Hunter',
         description: ''
       },
       {
         id: 542,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Sanddeep Hunter',
         description: ''
       },
       {
         id: 543,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Hellswamp Hunter',
         description: ''
       },
       {
         id: 544,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Karkasse Hunter',
         description: ''
       },
       {
         id: 545,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Arcum Iris Hunter',
         description: ''
       },
       {
         id: 546,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Falcorth Hunter',
         description: ''
       },
       {
         id: 547,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Tigerspine Hunter',
         description: ''
       },
       {
         id: 548,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Mahadevi Hunter',
         description: ''
       },
       {
         id: 549,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Solis Hunter',
         description: ''
       },
       {
         id: 550,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Villanelle Hunter',
         description: ''
       },
       {
         id: 551,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Silent Forest Hunter',
         description: ''
       },
       {
         id: 552,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Ynystere Hunter',
         description: ''
       },
       {
         id: 553,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Rookborne Hunter',
         description: ''
       },
       {
         id: 554,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Windscour Hunter',
         description: ''
       },
       {
         id: 555,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Perinoor Hunter',
         description: ''
       },
       {
         id: 556,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Hasla Hunter',
         description: ''
       },
       {
         id: 557,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Golden Ruins Hunter',
         description: ''
       },
       {
         id: 558,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Inquisitor',
+        description: 'Increases Strength, Agility, Stamina, Intelligence, and Spirit +4.'
       },
       {
         id: 559,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Robotic Revenge',
+        description: 'Increases Strength, Agility, Stamina, Intelligence, and Spirit +10.'
       },
       {
         id: 560,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: "Nui's Blessed",
+        description: 'Increases Strength, Agility, Stamina, Intelligence, and Spirit +7.'
       },
       {
         id: 561,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Soulpainter',
+        description: "You have surpassed your peers and earned the gods' blessing! Increases max health and mana +50."
       },
       {
         id: 562,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Cold Hands, Fish Heart',
+        description: "You have surpassed your peers and earned the gods' blessing! Increases max health and mana +50."
       },
       {
         id: 563,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Songstopper',
+        description: "You have surpassed your peers and earned the gods' blessing! Increases max health and mana +50."
       },
       {
         id: 564,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Spar-Swagger',
+        description: "You have surpassed your peers and earned the gods' blessing! Increases max health and mana +50."
       },
       {
         id: 565,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Bittersweet',
+        description: "You have surpassed your peers and earned the gods' blessing! Increases max health and mana +50."
       },
       {
         id: 566,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'House of the Iris Sun',
+        description: "You have surpassed your peers and earned the gods' blessing! Increases max health and mana +50."
       },
       {
         id: 567,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Terminator',
+        description: "You have surpassed your peers and earned the gods' blessing! Increases max health and mana +50."
       },
       {
         id: 568,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Diamonds Are Forever',
+        description: "You have surpassed your peers and earned the gods' blessing! Increases max health and mana +50."
       },
       {
         id: 569,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Taste Tester',
+        description: "You have surpassed your peers and earned the gods' blessing! Increases max health and mana +50."
       },
       {
         id: 570,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Treasure Taker',
+        description: "You have surpassed your peers and earned the gods' blessing! Increases max health and mana +50."
       },
       {
         id: 571,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Traderunner',
+        description: "You have surpassed your peers and earned the gods' blessing! Increases max health and mana +50."
       },
       {
         id: 572,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Silver Heart',
+        description: "You have surpassed your peers and earned the gods' blessing! Increases max health and mana +50."
       },
       {
         id: 573,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Warm Hearted',
         description: ''
       },
       {
         id: 574,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: "Kyprosa's Spark",
         description: ''
       },
       {
         id: 575,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: "Gene's Wanderlust",
         description: ''
       },
       {
         id: 576,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: "Lucius's Promise",
         description: ''
       },
       {
         id: 577,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: "Eanna's Mercy",
         description: ''
       },
       {
         id: 578,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Fang of the Leviathan',
         description: ''
       },
       {
         id: 579,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Star Seeker',
         description: ''
       },
       {
         id: 580,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Monkeys Around',
         description: ''
       },
       {
         id: 581,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Inner Light',
         description: ''
       },
       {
         id: 582,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Anyfin is Possible',
+        description: 'You are a magnificent angler. Increases Agility +20 and Strength +10.'
       },
       {
         id: 583,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Leaf Me Alone',
+        description: 'You are a magnificent gatherer. Increases Agility +20 and Spirit +10.'
       },
       {
         id: 584,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Ink-redible',
+        description: 'You are a magnificent printer. Increases Agility +20 and Intelligence +10.'
       },
       {
         id: 585,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Can Be Abrasive',
+        description: 'You are a magnificent carpenter. Increases Agility +20 and Strength +10.'
       },
       {
         id: 586,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Elementally Talented',
+        description: 'You are a magnificent alchemist. Increases Spirit +20 and Intelligence +10.'
       },
       {
         id: 587,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Darns It All',
+        description: 'You are a magnificent tailor. Increases Spirit +20 and Stamina +10.'
       },
       {
         id: 588,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Cow-culating Killer',
+        description: 'You are a magnificent tanner. Increases Spirit +20 and Agility +10.'
       },
       {
         id: 589,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Barter $auce',
+        description: 'You are a magnificent trader. Increases Intelligence +20 and Spirit +10.'
       },
       {
         id: 590,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Art-official Intelligence',
+        description: 'You are a magnificent artist. Increases Spirit +20 and Intelligence +10.'
       },
       {
         id: 591,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Mustards the Strength',
+        description: 'You are a magnificent chef. Increases Intelligence +20 and Spirit +10.'
       },
       {
         id: 592,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Martial Arts and Crafts',
+        description: 'You are a magnificent craftsman. Increases Intelligence +20 and Stamina +10.'
       },
       {
         id: 593,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Rooting for Thunder',
+        description: 'You are a magnificent lumberjack. Increases Stamina +20 and Strength +10.'
       },
       {
         id: 594,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'So Basalty',
+        description: 'You are a magnificent miner. Increases Stamina +20 and Spirit +10.'
       },
       {
         id: 595,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Always Ironic',
+        description: 'You are a magnificent metalworker. Increases Stamina +20 and Agility +10.'
       },
       {
         id: 596,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: "It's All Cementics",
+        description: 'You are a magnificent architect. Increases Stamina +20 and Strength +10.'
       },
       {
         id: 597,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Needs Calf-eine',
+        description: 'You are a magnificent rancher. Increases Strength +20 and Spirit +10.'
       },
       {
         id: 598,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Transformative Farmer',
+        description: 'You are a magnificent farmer. Increases Strength +20 and Intelligence +10.'
       },
       {
         id: 599,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Driven to Distraction',
+        description: 'You are a magnificent mechanic. Increases Strength +20 and Agility +10.'
       },
       {
         id: 600,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Hard Rock Life',
+        description: 'You are a magnificent stonemason. Increases Strength +20 and Stamina +10.'
       },
       {
         id: 601,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Blacksmith',
+        description: 'You are a magnificent weaponsmith. Increases Strength +20 and Agility +10.'
       },
       {
         id: 602,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Internet Explorer',
+        description: 'You are a magnificent explorer. Increases Strength +20, and Agility and Stamina +10.'
       },
       {
         id: 603,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Stainless Steal',
+        description: 'You are a magnificent larcenist. Increases Agility +20 and Stamina +10.'
       },
       {
         id: 604,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Roses are Red, Daru are Blue',
         description: ''
       },
       {
         id: 605,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Indomitable',
         description: ''
       },
       {
         id: 606,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Abyssal Adept',
+        description: 'Increases Max Health +80 Decreases Mana Cost -5%'
       },
       {
         id: 607,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Founder',
+        description: 'Increases Strength, Agility, Stamina, Intelligence, and Spirit +1.'
       },
       {
         id: 608,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Traveler',
+        description: 'Increases Strength, Agility, Stamina, Intelligence, and Spirit +2.'
       },
       {
         id: 609,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Trailblazer',
+        description: 'Increases Strength, Agility, Stamina, Intelligence, and Spirit +3.'
       },
       {
         id: 610,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Sojourner',
+        description: 'Increases Strength, Agility, Stamina, Intelligence, and Spirit +1.'
       },
       {
         id: 611,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Spring Tidings',
         description: ''
       },
       {
         id: 612,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Freedich Fellowship',
+        description: 'An exclusive title for the former rulers of Freedich Island. Increases Health +100 and Mana +100.'
       },
       {
         id: 613,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Barrel Rider',
+        description: 'A title for those who participated in the Rum Runner Rapids event. Increases Swimming Speed +1%.'
       },
       {
         id: 614,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Soul Sworn',
+        description: 'Increases XP gain +1%, Loot Drop Rate +1%, and PvE damage +1%.'
       },
       {
         id: 615,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Wayfarer',
+        description: 'Increases XP gain +1% and Loot Drop Rate +1%.'
       },
       {
         id: 616,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Worldwalker',
+        description: 'Increases XP gain +1%, Loot Drop Rate +1%, and PvE Attacks +1%.'
       },
       {
         id: 617,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Diamond Soul',
+        description: 'Increases XP gain +1%, Loot Drop Rate +1%, and PvE Attacks +1%.'
       },
       {
         id: 618,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Northern Legion',
+        description: 'Increases XP gain +1%, Loot Drop Rate +1%, and PvE Attacks +1%.'
       },
       {
         id: 619,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: "Sheepie's Keeper",
         description: ''
       },
       {
         id: 620,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Mistsong Maverick',
+        description: 'Increases Loot Drop Rate +3% and decreases received PVE damage -1%.'
       },
       {
         id: 621,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Friend of Daru',
         description: ''
       },
       {
         id: 622,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Elixir Mixer',
         description: ''
       },
       {
         id: 623,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'A-List',
+        description: 'A-List Title: Increases all Attacks and Healing Power+3 Increases Health and Mana +150'
       },
       {
         id: 624,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Idol',
+        description: 'Idol	Idol Title: Increases all Attacks and Healing Power+4 Increases Health and Mana +200 Increases Defense and Magic Defense +15'
       },
       {
         id: 625,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'VIP',
+        description: 'VIP Title: Increases all Attacks and Healing Power +6 Increases Health and Mana +250 Increases Defense and Magic Defense +30 Increases Defense and Magic Defense Penetration +15'
       },
       {
         id: 626,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Fiesta Fisherman',
+        description: 'Increases Fishing Proficiency +10,000'
       },
       {
         id: 627,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Legendary Assassin',
+        description: 'Increases all attacks and healing +4 Increases Health and Mana +150 Increases Defense and Magic Defense +10'
       },
       {
         id: 628,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Erenor PvP Grand Champion',
         description: ''
       },
       {
         id: 629,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Erenor PvP Champion',
         description: ''
       },
       {
         id: 630,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
+        title: 'Erenor PvP Celebrant',
         description: ''
       },
       {
         id: 631,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Abyssal Hunter',
+        description: 'Increases PvE Damage +2% and XP gain +5%.'
       },
       {
         id: 632,
         icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
-      },
-      {
-        id: 633,
-        icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
-      },
-      {
-        id: 634,
-        icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
-      },
-      {
-        id: 635,
-        icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
-      },
-      {
-        id: 636,
-        icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
-      },
-      {
-        id: 637,
-        icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
-      },
-      {
-        id: 638,
-        icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
-      },
-      {
-        id: 639,
-        icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
-      },
-      {
-        id: 640,
-        icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
-      },
-      {
-        id: 641,
-        icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
-      },
-      {
-        id: 642,
-        icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
-      },
-      {
-        id: 643,
-        icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
-      },
-      {
-        id: 644,
-        icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
-      },
-      {
-        id: 645,
-        icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
-      },
-      {
-        id: 646,
-        icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
-      },
-      {
-        id: 647,
-        icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
-      },
-      {
-        id: 648,
-        icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
-      },
-      {
-        id: 649,
-        icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
-      },
-      {
-        id: 650,
-        icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
-      },
-      {
-        id: 651,
-        icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
-      },
-      {
-        id: 652,
-        icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
-      },
-      {
-        id: 653,
-        icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
-      },
-      {
-        id: 654,
-        icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
-      },
-      {
-        id: 655,
-        icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
-      },
-      {
-        id: 656,
-        icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
-      },
-      {
-        id: 657,
-        icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/titles%2Ficon_title.png?alt=media&token=65ace588-9a3f-4181-8cb3-3e2db0a0d96c',
-        title: '',
-        description: ''
+        title: 'Legendary Founder',
+        description: 'One of the founders of ArcheAge. Increases Strength, Agility, Stamina, Intelligence, and Spirit +3.'
       }
     ];
     for (let j = 0; j < that.titlesNames.length; j++) {
@@ -4018,7 +3868,7 @@ export class TitleTableComponent implements OnInit {
   }
 
   onItemPage(itemId: any) {
-    this.router.navigate(['item', itemId]);
+    this.router.navigate(['titles', itemId]);
   }
 
   selectedClass(column): string{

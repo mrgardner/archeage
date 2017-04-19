@@ -1120,7 +1120,7 @@ export class ItemTableComponent {
             icon: "https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_dark_watcher's_dagger.jpg?alt=media&token=ecdcd951-fe30-4b54-9ec9-e0ec91703430",
             grade: 'basic',
             gradeIcon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/misc%2Fitem-grades%2Fitem_icon_grade_basic.png?alt=media&token=9b501433-fa1a-48bc-bbc1-6d4cd163733d',
-            className: 'basicGradeColor'
+            className: 'basicGradeColor setItem'
           },
           {
             name: 'Sinister Void Leader Dagger',
@@ -1128,7 +1128,7 @@ export class ItemTableComponent {
             icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Ficon_item_void_leader_dagger.jpg?alt=media&token=9f927705-ab1e-481f-81a1-4313ac90ebfb',
             grade: 'basic',
             gradeIcon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/misc%2Fitem-grades%2Fitem_icon_grade_basic.png?alt=media&token=9b501433-fa1a-48bc-bbc1-6d4cd163733d',
-            className: 'basicGradeColor'
+            className: 'basicGradeColor setItem'
           }
         ],
         equipmentPoints: 384,
@@ -1948,7 +1948,7 @@ export class ItemTableComponent {
         lunagemSlots: 0,
         useEffect: 'Deals #{min_damage}-#{max_damage} Physical Damage and inflicts Bleed for 14 sec. Cooldown: 2 min Shares a cooldown with other Honor items.',
         comboEffect: false,
-        equipEffect: 'none',
+        equipEffect: false,
         setEffect: false,
         setItems: [],
         equipmentPoints: 352,
@@ -2034,7 +2034,7 @@ export class ItemTableComponent {
         lunagemSlots: 0,
         useEffect: 'Restores 305 Health per second over 10 seconds. Cooldown: 2 minutes Shares a cooldown with other Honor items.',
         comboEffect: false,
-        equipEffect: 'none',
+        equipEffect: false,
         setEffect: false,
         setItems: [],
         equipmentPoints: 368,
@@ -2508,15 +2508,30 @@ export class ItemTableComponent {
         useEffect: false,
         comboEffect: "Melee attacks have a chance of decreasing their targets' Attack Speeds -100 and Move Speeds -10% for #{buff_duration}, up to 3 times. The targets become immune to this effect for 90 seconds.",
         equipEffect: 'Activates Dimensional Destroyer in Lv50+ dungeons.',
-        setEffect: '(2Set) Increases Attack Speed +2, and Move Speed +3%',
+        setEffectText1: '(2Set) Increases Attack Speed',
+        setEffectText2: 'and Move Speed',
+        setEffectStat1: '+2',
+        setEffectStat2: '+3%',
+        setEffectTitle: "Void Leader's Mercy",
+        setEffectCountText: "(2/2)",
         setItems: [
           {
+            id: 2016,
             name: "Dark Watcher's Dagger",
-            id: 2016},
+            icon: "https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_dark_watcher's_dagger.jpg?alt=media&token=ecdcd951-fe30-4b54-9ec9-e0ec91703430",
+            grade: 'basic',
+            gradeIcon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/misc%2Fitem-grades%2Fitem_icon_grade_basic.png?alt=media&token=9b501433-fa1a-48bc-bbc1-6d4cd163733d',
+            className: 'basicGradeColor setItem'
+          },
           {
             name: 'Sinister Void Leader Dagger',
-            id: 2048}
-          ],
+            id: 2048,
+            icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Ficon_item_void_leader_dagger.jpg?alt=media&token=9f927705-ab1e-481f-81a1-4313ac90ebfb',
+            grade: 'basic',
+            gradeIcon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/misc%2Fitem-grades%2Fitem_icon_grade_basic.png?alt=media&token=9b501433-fa1a-48bc-bbc1-6d4cd163733d',
+            className: 'basicGradeColor setItem'
+          }
+        ],
         equipmentPoints: 384,
         price: '2g83s80c',
         shopPrice: '14s19c',
@@ -2598,9 +2613,31 @@ export class ItemTableComponent {
         lunagemSlots: 0,
         useEffect: false,
         comboEffect: false,
-        equipEffect: 'none',
-        setEffect: '(2Set) Increases Skill Damage +2%. Stuns all enemies hit by Titan’s Rib.',
-        setItems: [{name: "Titan’s Rib", id: 2051},{name: "Titan’s Pinion", id: 2050}],
+        equipEffect: false,
+        setEffectText1: '(2Set) Increases Skill Damage',
+        setEffectText2: 'Stuns all enemies hit by Titan’s Rib.',
+        setEffectStat1: '+2%.',
+        setEffectStat2: '',
+        setEffectTitle: "Howling Thundergod Dagger",
+        setEffectCountText: "(2/2)",
+        setItems: [
+          {
+            id: 2051,
+            name: "Titan’s Rib",
+            icon: "https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_titan%E2%80%99s_rib_dagger.jpg?alt=media&token=784a0e69-a3c2-4b16-b602-786676078fe7",
+            grade: 'basic',
+            gradeIcon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/misc%2Fitem-grades%2Fitem_icon_grade_basic.png?alt=media&token=9b501433-fa1a-48bc-bbc1-6d4cd163733d',
+            className: 'basicGradeColor setItem'
+          },
+          {
+            name: "Titan’s Pinion",
+            id: 2050,
+            icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_titan%E2%80%99s_pinion_dagger.jpg?alt=media&token=6b4bff64-307b-4e7e-a400-a71e32b3f1a6',
+            grade: 'basic',
+            gradeIcon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/misc%2Fitem-grades%2Fitem_icon_grade_basic.png?alt=media&token=9b501433-fa1a-48bc-bbc1-6d4cd163733d',
+            className: 'basicGradeColor setItem'
+          }
+        ],
         equipmentPoints: 496,
         price: '4g09s20c',
         shopPrice: '20s46c',
@@ -2641,9 +2678,31 @@ export class ItemTableComponent {
         lunagemSlots: 0,
         useEffect: 'Lets caster zoom 12m forward, dealing 1037.4 Physical Damage to any enemies in its path. Cooldown: 45 seconds Shares a cooldown with some item skills.',
         comboEffect: false,
-        equipEffect: 'none',
-        setEffect: '(2Set) Increases Skill Damage +2%. Stuns all enemies hit by Titan’s Rib.',
-        setItems: [{name: "Titan’s Rib", id: 2051},{name: "Titan’s Pinion", id: 2050}],
+        equipEffect: false,
+        setEffectText1: '(2Set) Increases Skill Damage',
+        setEffectText2: 'Stuns all enemies hit by Titan’s Rib.',
+        setEffectStat1: '+2%.',
+        setEffectStat2: '',
+        setEffectTitle: "Howling Thundergod Dagger",
+        setEffectCountText: "(2/2)",
+        setItems: [
+          {
+            id: 2051,
+            name: "Titan’s Rib",
+            icon: "https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_titan%E2%80%99s_rib_dagger.jpg?alt=media&token=784a0e69-a3c2-4b16-b602-786676078fe7",
+            grade: 'basic',
+            gradeIcon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/misc%2Fitem-grades%2Fitem_icon_grade_basic.png?alt=media&token=9b501433-fa1a-48bc-bbc1-6d4cd163733d',
+            className: 'basicGradeColor setItem'
+          },
+          {
+            name: "Titan’s Pinion",
+            id: 2050,
+            icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/weapons%2F1h%20Weapons%2Fdaggers%2Fitem_icon_titan%E2%80%99s_pinion_dagger.jpg?alt=media&token=6b4bff64-307b-4e7e-a400-a71e32b3f1a6',
+            grade: 'basic',
+            gradeIcon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/misc%2Fitem-grades%2Fitem_icon_grade_basic.png?alt=media&token=9b501433-fa1a-48bc-bbc1-6d4cd163733d',
+            className: 'basicGradeColor setItem'
+          }
+        ],
         equipmentPoints: 496,
         price: '4g09s20c',
         shopPrice: '20s46c',
@@ -3288,6 +3347,7 @@ export class ItemTableComponent {
   }
 
   test() {
+    console.log('tsts');
     // this._database.removeItems();
     // for (let i = 2000; i <= (this.maxItems + 2000); i++) {
     for (let j = 0; j < 55; j++) {

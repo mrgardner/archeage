@@ -74,6 +74,7 @@ export class ArcheageDatabaseService {
             that.skills["type"] = snapshot.val()[id].type;
             that.skills["skillPointsRequired"] = snapshot.val()[id].skillPointsRequired;
             that.skills["selected"] = snapshot.val()[id].selected;
+            that.skills["level"] = snapshot.val()[id].level;
             items.push(that.skills)
           }
         }
