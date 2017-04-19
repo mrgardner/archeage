@@ -1,0 +1,66 @@
+table {
+  background-color: #19412f;
+  color: white;
+}
+
+table tbody tr td {
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: Tahoma,Verdana,Helvetica,sans-serif;
+  border-right: solid 1px black;
+}
+
+table tbody tr:hover {
+  background-color: #32835f;
+}
+
+table tbody tr {
+  border-bottom: solid 1px black;
+}
+
+table tbody tr td:nth-child(1) {
+  border-left: solid 1px black;
+}
+
+table thead tr th:nth-child(1) {
+  border-left: solid 1px black;
+}
+
+table thead tr th {
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  border-bottom: solid 1px black;
+  font-size: 14px;
+  vertical-align: bottom;
+  border-right: solid 1px black;
+}
+
+.title-id {
+  width: 39px;
+}
+
+.title-icon {
+  width: 60px;
+}
+
+.title-name {
+  width: 500px;
+}
+
+.title-description {
+  width: 550px;
+}
+
+.item-link {
+  cursor: pointer;
+  color: white;
+}
+
+.item-link:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.noData {
+  text-align: center;
+}

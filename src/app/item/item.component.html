@@ -1,5 +1,8 @@
 <div class="container">
-  <div class="item-box">
+  <div *ngIf="!hasData">
+    LOADING DATA....
+  </div>
+  <div *ngIf="hasData" class="item-box">
     <div class="grade-box">
       <div *ngFor="let grade of grades">
         <div (click)="changeGrade($event.target.innerText)" [class]="grade.className">{{grade.name}}</div>
@@ -13,7 +16,7 @@
       </span>
 
       <span class="item-id-box-info">
-      <div>{{item.itemType}}</div>
+      <div>{{item.itemClass}}</div>
       <div [class]="itemInfoGrade.className">{{itemInfoGrade.name}}</div>
       <div [class]="itemInfoGrade.className">
         <span class="item-title">{{item.name}}</span>
@@ -31,36 +34,36 @@
 
     <div class="item-type-box">
       <div>{{item.weaponType}}</div>
-      <div>Attack Speed:</div>
+      <div *ngIf="item.attackSpeed !== 'none'">Attack Speed:</div>
       <div>Durability:</div>
-      <div >
+      <div>
         <span *ngIf="item.penetrationChance === true">Penetration Chance:</span>
         <span *ngIf="item.amputationChance === true">Amputation Chance:</span>
       </div>
       <div class="item-info-spacing">
         <br>
-        <div>{{item.attackSpeed}}</div>
+        <div *ngIf="item.attackSpeed !== 'none'">{{item.attackSpeed}}</div>
         <div>{{itemDurability}}</div>
-        <div>{{item.chanceText}}</div>
+        <div *ngIf="item.penetrationChance === true || item.amputationChance === true">{{item.chanceText}}</div>
       </div>
     </div>
 
     <div class="item-dps-box">
       <div *ngIf="item.dps !== false">DPS:</div>
-      <div *ngIf="item.attributes.magicAttack > 0">Magic Attack: </div>
-      <div *ngIf="item.attributes.agility > 0">Agility:</div>
-      <div *ngIf="item.attributes.intelligence > 0">Intelligence: </div>
-      <div *ngIf="item.attributes.spirit > 0">Spirit: </div>
-      <div *ngIf="item.attributes.stamina > 0">Stamina: </div>
-      <div *ngIf="item.attributes.strength > 0">Strength: </div>
+      <div *ngIf="itemMagicAttack > 0">Magic Attack: </div>
+      <div *ngIf="itemAgility > 0">Agility:</div>
+      <div *ngIf="itemIntelligence > 0">Intelligence: </div>
+      <div *ngIf="itemSpirit > 0">Spirit: </div>
+      <div *ngIf="itemStamina > 0">Stamina: </div>
+      <div *ngIf="itemStrength > 0">Strength: </div>
       <div class="item-info-spacing">
         <div *ngIf="item.dps !== false">{{itemDPS}} ({{itemDPSLowerCoeff}} - {{itemDPSUpperCoeff}})</div>
-        <div *ngIf="item.attributes.magicAttack > 0">+{{item.attributes.magicAttack}}</div>
-        <div *ngIf="item.attributes.agility > 0">{{itemAgility}}</div>
-        <div *ngIf="item.attributes.intelligence > 0">{{item.attributes.intelligence}}</div>
-        <div *ngIf="item.attributes.spirit > 0">{{item.attributes.spirit}}</div>
-        <div *ngIf="item.attributes.stamina > 0">{{item.attributes.stamina}}</div>
-        <div *ngIf="item.attributes.strength > 0">{{item.attributes.strength}}</div>
+        <div *ngIf="itemMagicAttack > 0">+{{itemMagicAttack}}</div>
+        <div *ngIf="itemAgility > 0">{{itemAgility}}</div>
+        <div *ngIf="itemIntelligence > 0">{{itemIntelligence}}</div>
+        <div *ngIf="itemSpirit > 0">{{itemSpirit}}</div>
+        <div *ngIf="itemStamina > 0">{{itemStamina}}</div>
+        <div *ngIf="itemStrength > 0">{{itemStrength}}</div>
       </div>
     </div>
 

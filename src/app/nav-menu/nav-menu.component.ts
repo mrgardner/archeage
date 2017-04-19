@@ -1636,13 +1636,7 @@ export class NavMenuComponent implements OnInit {
       },
       {
         name: 'Title',
-        showArrow: false,
-        section: {
-          name: 'Skills',
-          show: false,
-          class: 'title-menu section',
-          items: []
-        }
+        showArrow: false
       }
     ];
   }
@@ -1652,18 +1646,26 @@ export class NavMenuComponent implements OnInit {
 
   gotoHome() {
     this.router.navigate(['']);
+    this.hideMenuSection();
   }
 
+<<<<<<< a596f2aeeb43acb792f946a55d2a8f41980aaa4f
   gotoSkillCalculatorPage() {
     this.router.navigate(['skill-calculator']);
   }
 
   gotoGearCalculatorPage() {
     this.router.navigate(['gear-calculator']);
+=======
+  gotoCalculatorPage() {
+    this.router.navigate(['calculator']);
+    this.hideMenuSection();
+>>>>>>> Continuing work and saving so far
   }
 
   gotoDatabase() {
     this.router.navigate(['item']);
+    this.hideMenuSection();
   }
   mouseOver(item: Object) {
     if ('section' in item) {
@@ -1675,41 +1677,130 @@ export class NavMenuComponent implements OnInit {
     this.subMenu = true;
   }
 
+  updateDatabase(item1: any, item2: any, item3: any, item4: any) {
+    if (item1 === 'Item') {
+      if (item4 !== undefined) {
+        this.router.navigate(['item', item2.toLowerCase().replace(/ /g,"_"), item3.toLowerCase().replace(/ /g,"_"), item4.toLowerCase().replace(/ /g,"_")]);
+      }
+      else if (item3 !== undefined) {
+        this.router.navigate(['item', item2.toLowerCase().replace(/ /g,"_"), item3.toLowerCase().replace(/ /g,"_")]);
+      }
+      else if (item2 !== undefined) {
+        this.router.navigate(['item', item2.toLowerCase().replace(/ /g,"_")]);
+      }
+      else {
+        this.router.navigate(['item']);
+      }
+      this.hideMenuSection();
+    }
+    else if (item1 === 'Quest') {
+      if (item4 !== undefined) {
+        this.router.navigate(['quest', item2.toLowerCase().replace(/ /g,"_"), item3.toLowerCase().replace(/ /g,"_"), item4.toLowerCase().replace(/ /g,"_")]);
+      }
+      else if (item3 !== undefined) {
+        this.router.navigate(['quest', item2.toLowerCase().replace(/ /g,"_"), item3.toLowerCase().replace(/ /g,"_")]);
+      }
+      else if (item2 !== undefined) {
+        this.router.navigate(['quest', item2.toLowerCase().replace(/ /g,"_")]);
+      }
+      else {
+        this.router.navigate(['quest']);
+      }
+      this.hideMenuSection();
+    }
+    else if (item1 === 'Achievements') {
+      if (item4 !== undefined) {
+        this.router.navigate(['achievements', item2.toLowerCase().replace(/ /g,"_"), item3.toLowerCase().replace(/ /g,"_"), item4.toLowerCase().replace(/ /g,"_")]);
+      }
+      else if (item3 !== undefined) {
+        this.router.navigate(['achievements', item2.toLowerCase().replace(/ /g,"_"), item3.toLowerCase().replace(/ /g,"_")]);
+      }
+      else if (item2 !== undefined) {
+        this.router.navigate(['achievements', item2.toLowerCase().replace(/ /g,"_")]);
+      }
+      else {
+        this.router.navigate(['achievements']);
+      }
+      this.hideMenuSection();
+    }
+    else if (item1 === 'NPC') {
+      if (item4 !== undefined) {
+        this.router.navigate(['npcs', item2.toLowerCase().replace(/ /g,"_"), item3.toLowerCase().replace(/ /g,"_"), item4.toLowerCase().replace(/ /g,"_")]);
+      }
+      else if (item3 !== undefined) {
+        this.router.navigate(['npcs', item2.toLowerCase().replace(/ /g,"_"), item3.toLowerCase().replace(/ /g,"_")]);
+      }
+      else if (item2 !== undefined) {
+        this.router.navigate(['npcs', item2.toLowerCase().replace(/ /g,"_")]);
+      }
+      else {
+        this.router.navigate(['npcs']);
+      }
+      this.hideMenuSection();
+    }
+    else if (item1 === 'Design') {
+      if (item2 !== undefined) {
+        this.router.navigate(['recipe', item2.toLowerCase().replace(/ /g,"_")]);
+      }
+      else {
+        this.router.navigate(['recipe']);
+      }
+      this.hideMenuSection();
+    }
+    else if (item1 === 'Skills') {
+      if (item2 !== undefined) {
+        this.router.navigate(['skills', item2.toLowerCase().replace(/ /g,"_")]);
+      }
+      else {
+        this.router.navigate(['skills']);
+      }
+      this.hideMenuSection();
+    }
+    else if (item1 === 'Title') {
+      this.router.navigate(['titles']);
+    }
+    this.hideMenuSection();
+  }
+
   mouseLeave(item: Object) {
     if ('section' in item) {
       item['section'].show = false;
     }
     var isHovered = $('.database-sub-menu').is(":hover");
     if (isHovered === false) {
-      for (let i = 0; i < this.subMenuItems.length; i++) {
-        if ('section' in this.subMenuItems[i]) {
-          if (this.subMenuItems[i]['section'].show === true) {
-            for (let j = 0; j < this.subMenuItems[i]['section'].items.length; j++) {
-              if ('section' in this.subMenuItems[i]['section'].items[j]) {
-                if (this.subMenuItems[i]['section'].items[j].show === true) {
-                  for (let k = 0; k < this.subMenuItems[i]['section'].items[j]['section'].items.length; j++) {
-                    if ('section' in this.subMenuItems[i]['section'].items[j]['section'].items[k]) {
-                      if (this.subMenuItems[i]['section'].items[j]['section'].items[k]['section'].show === true) {
-                        for (let l = 0; l < this.subMenuItems[i]['section'].items[j]['section'].items[k]['section'].items.length; l++) {
-                          if ('section' in this.subMenuItems[i]['section'].items[j]['section'].items[k]['section'].items[l]) {
-                            if (this.subMenuItems[i]['section'].items[j]['section'].items[k]['section'].items[l]['section'].show === true) {
-                              this.subMenuItems[i]['section'].items[j]['section'].items[k]['section'].items[l]['section'].show = false;
-                            }
+      this.hideMenuSection();
+    }
+  }
+
+  hideMenuSection() {
+    for (let i = 0; i < this.subMenuItems.length; i++) {
+      if ('section' in this.subMenuItems[i]) {
+        if (this.subMenuItems[i]['section'].show === true) {
+          for (let j = 0; j < this.subMenuItems[i]['section'].items.length; j++) {
+            if ('section' in this.subMenuItems[i]['section'].items[j]) {
+              if (this.subMenuItems[i]['section'].items[j].show === true) {
+                for (let k = 0; k < this.subMenuItems[i]['section'].items[j]['section'].items.length; j++) {
+                  if ('section' in this.subMenuItems[i]['section'].items[j]['section'].items[k]) {
+                    if (this.subMenuItems[i]['section'].items[j]['section'].items[k]['section'].show === true) {
+                      for (let l = 0; l < this.subMenuItems[i]['section'].items[j]['section'].items[k]['section'].items.length; l++) {
+                        if ('section' in this.subMenuItems[i]['section'].items[j]['section'].items[k]['section'].items[l]) {
+                          if (this.subMenuItems[i]['section'].items[j]['section'].items[k]['section'].items[l]['section'].show === true) {
+                            this.subMenuItems[i]['section'].items[j]['section'].items[k]['section'].items[l]['section'].show = false;
                           }
                         }
                       }
-                      this.subMenuItems[i]['section'].items[j]['section'].items[k]['section'].show = false;
                     }
+                    this.subMenuItems[i]['section'].items[j]['section'].items[k]['section'].show = false;
                   }
-                  this.subMenuItems[i]['section'].items[j]['section'].show = false;
                 }
+                this.subMenuItems[i]['section'].items[j]['section'].show = false;
               }
             }
-            this.subMenuItems[i]['section'].show = false;
           }
+          this.subMenuItems[i]['section'].show = false;
         }
       }
-      this.subMenu = false;
     }
+    this.subMenu = false;
   }
 }

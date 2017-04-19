@@ -12,19 +12,19 @@
   <div class="database-menu-container">
     <div class="database-sub-menu" *ngIf="subMenu === true">
       <div  *ngFor="let item of subMenuItems" class="database-sub-menu-titles" (mouseover)="mouseOver(item)" (mouseleave)="mouseLeave(item)">
-        {{item.name}}
+        <span #item1 class="item-title" (click)="updateDatabase(item1.innerText)">{{item.name}}</span>
         <span *ngIf="item.showArrow === true" class="database-sub-menu-arrow fa fa-caret-right"></span>
         <div [class]="item.section.class" *ngIf="item?.section?.show === true">
           <div  *ngFor="let item of item?.section?.items" class="database-sub-menu-titles" (mouseover)="mouseOver(item)" (mouseleave)="mouseLeave(item)">
-            {{item.name}}
+            <span #item2 class="item-title" (click)="updateDatabase(item1.innerText,item2.innerText)">{{item.name}}</span>
             <span *ngIf="item.showArrow === true" class="database-sub-menu-arrow fa fa-caret-right"></span>
             <div [class]="item.section.class" *ngIf="item?.section?.show === true">
               <div  *ngFor="let item of item?.section?.items" class="database-sub-menu-titles" (mouseover)="mouseOver(item)" (mouseleave)="mouseLeave(item)">
-                {{item.name}}
+                <span #item3 class="item-title" (click)="updateDatabase(item1.innerText,item2.innerText,item3.innerText)">{{item.name}}</span>
                 <span *ngIf="item.showArrow === true" class="database-sub-menu-arrow fa fa-caret-right"></span>
                 <div [class]="item.section.class" *ngIf="item?.section?.show === true">
                   <div  *ngFor="let item of item?.section?.items" class="database-sub-menu-titles">
-                    {{item.name}}
+                    <span #item4 class="item-title" (click)="updateDatabase(item1.innerText,item2.innerText,item3.innerText,item4.innerText)">{{item.name}}</span>
                     <span *ngIf="item.showArrow === true" class="database-sub-menu-arrow fa fa-caret-right"></span>
                   </div>
                 </div>
