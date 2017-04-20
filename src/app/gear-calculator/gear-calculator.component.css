@@ -91,6 +91,10 @@
   border-bottom: 1px solid rgba(1,1,1,0.4);
 }
 
+.titleSection {
+  height: 25px;
+}
+
 .attributeSection {
   padding-left: 0;
   height: 70px;
@@ -118,8 +122,8 @@
 
 .wrench-button,
 .wrench-attribute-button {
-  position: relative;
-  left: 85%;
+  position: absolute;
+  left: 81%;
   width: 16px;
   border: none;
   background-color: #a49359;
@@ -129,10 +133,6 @@
 .infoText {
   text-align: center;
   padding-top: 0.5em;
-}
-
-.wrench-attribute-button {
-  left: 83%;
 }
 
 .tasks-button {
@@ -162,16 +162,22 @@
   color: orange;
 }
 
+.healthBarSection {
+  padding-bottom: 3em;
+  bottom: 50px;
+  position: relative;
+}
+
 .healthText {
   position: absolute;
-  right: 23%;
+  right: 21%;
   top: 41px;
   color: white;
 }
 
 .manaText {
   position: absolute;
-  right: 23%;
+  right: 21%;
   top: 56px;
   color: white;
 }
@@ -193,4 +199,109 @@
   top: 8px;
 }
 
+.titleModalContainer {
+  height: 303px;
+  position: absolute;
+  background-color: #a49359;
+  top: 25%;
+  left: 34%;
+  width: 303px;
+  z-index: 51;
+}
 
+.titleCloseButton {
+  font-size: 20px;
+  float: right;
+  cursor: pointer;
+}
+
+.overlay {
+  background-color: rgba(1, 1, 1, 0.7);
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 50;
+}
+
+.title-overlay {
+  bottom: 55px;
+  top: 40px;
+  left: 15px;
+  right: 30px;
+  position: absolute;
+  z-index: 50;
+  border: 1px solid;
+  z-index: 50;
+}
+
+.title-modal-inner-content {
+  width: 100%;
+  overflow: visible;
+  box-sizing: border-box;
+}
+
+.title-modal-outer-content {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 205px;
+  padding-left: 1em;
+  padding-right: 1em;
+  position: relative;
+  z-index: 52;
+}
+
+.titleItem {
+  cursor: pointer;
+  padding-left: 1em;
+}
+
+.titleResetButton {
+  position: absolute;
+  width: 100px;
+  font-size: 20px;
+  left: 90px;
+  bottom: 13px;
+}
+
+.titleSearchBox {
+  margin-bottom: 1em;
+}
+
+.buffOverlay {
+  background-color: rgba(59,36,9,.7);
+  width: 285px;
+  position: absolute;
+  color: white;
+  z-index: 49;
+}
+
+.playerBuffOverlayIcon {
+  float: left;
+  margin-left: 0.5em;
+  margin-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.playerBuffOverlayBuffText {
+  float: left;
+  margin-left: 0.5em;
+  margin-top: 0.5em;
+  color: white;
+  font-size: 11px;
+}
+
+.playerBuffOverlayBuffDesc {
+  float: left;
+  border-top: 1px solid black;
+  font-size: 12px;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.2em;
+}
+
+.titleLoadingData {
+  text-align: center;
+}

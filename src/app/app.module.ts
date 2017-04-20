@@ -27,6 +27,7 @@ import { SkillsTableComponent } from './skills-table/skills-table.component';
 import { SkillsComponent } from './skills/skills.component';
 import { TitleTableComponent } from './title-table/title-table.component';
 import { TitleComponent } from './title/title.component';
+import {TitleSearchPipe} from "./gear-calculator/title-search.pipe";
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { TitleComponent } from './title/title.component';
     ItemComponent,
     NavMenuComponent,
     OrderByPipe,
+    TitleSearchPipe,
     SkillCalculatorComponent,
     GearCalculatorComponent,
     QuestTableComponent,
