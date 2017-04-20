@@ -14,6 +14,19 @@
           <span class="healthText">{{health}}</span>
           <span class="manaText">{{mana}}</span>
         </div>
+        <div class="playerBuffSection">
+          <div *ngFor="let buff of playerBuffs">
+            <img [src]="buff.icon" (mouseover)="showBuffOverlay(buff)" (mouseleave)="hideBuffOverlay()">
+          </div>
+          <div *ngIf="(playerBuffOverlay | json) != '{}'" class="buffOverlay">
+            <img class="playerBuffOverlayIcon" [src]="playerBuffOverlay.icon">
+            <div class="playerBuffOverlayBuffText">
+              Buff
+              <div>{{playerBuffOverlay.title}}</div>
+            </div>
+            <div class="playerBuffOverlayBuffDesc" id="buffDesc"></div>
+          </div>
+        </div>
 
       </div>
       <div class="player-info-card">
@@ -24,8 +37,9 @@
             <input class="levelInputBox" [(ngModel)]="playerLevel">
           </div>
           <div class="titleSection">
-            Test title
-            <button class="wrench-button fa fa-wrench"></button>
+            Title
+            <span class="playerInfoText">{{playerTitle.title}}</span>
+            <button class="wrench-button fa fa-wrench" (click)="openTitleModal()"></button>
           </div>
           <div class="equipmentPointsSection">
             <div>
@@ -130,5 +144,25 @@
         <button class="saveButton">Save</button>
       </div>
     </div>
+    <div *ngIf="showTitleModal === true">
+      <div class="overlay"></div>
+      <div  class="titleModalContainer">
+        <div class="modalContent">
+          <span class="fa fa-times titleCloseButton" (click)="closeTitleModal()"></span>
+          <input class="titleSearchBox" placeholder="title name..." [(ngModel)]="newTitleSearch" [disabled]="!hasTitleData">
+          <div *ngIf="!hasTitleData" class="titleLoadingData">Loading Data...</div>
+          <div *ngIf="hasTitleData" class="title-modal-outer-content">
+            <div *ngFor="let title of titles | titleSearch:newTitleSearch">
+              <div *ngIf="title.description !== ''">
+                <div (click)="setNewTitle(title)" class="titleItem">{{title.title}}</div>
+              </div>
+            </div>
+          </div>
+          <div *ngIf="hasTitleData" class="title-overlay"></div>
+          <button class="titleResetButton" (click)="resetTitle()" [disabled]="!hasTitleData">Reset</button>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
