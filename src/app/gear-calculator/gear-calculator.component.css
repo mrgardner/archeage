@@ -209,10 +209,36 @@
   z-index: 51;
 }
 
+.attributeModalContainer {
+  width: 352px;
+  height: 425px;
+  position: absolute;
+  background-color: #a49359;
+  top: 25%;
+  left: 34%;
+  z-index: 51;
+}
+
+.attributeModalContainer .modalContent {
+  padding-left: 0.5em;
+}
+
 .titleCloseButton {
   font-size: 20px;
   float: right;
   cursor: pointer;
+}
+
+.attributeCloseButton {
+  font-size: 20px;
+  float: right;
+  cursor: pointer;
+}
+
+.attributeSectionTitle {
+  position: relative;
+  left: 30%;
+  font-size: 20px;
 }
 
 .overlay {
@@ -304,4 +330,90 @@
 
 .titleLoadingData {
   text-align: center;
+}
+
+.attributeAgilitySection input,
+.attributeIntelligenceSection input,
+.attributeStaminaSection input,
+.attributeSpiritSection input,
+.attributeStrengthSection input {
+  width: 35px;
+  position: absolute;
+  left: 50%;
+  margin-top: .7em;
+}
+
+.attributeAgilitySection .statCalculation,
+.attributeIntelligenceSection .statCalculation,
+.attributeStaminaSection .statCalculation,
+.attributeSpiritSection .statCalculation,
+.attributeStrengthSection .statCalculation {
+  width: 80px;
+  position: absolute;
+  left: 80%;
+  margin-top: .7em;
+}
+
+.attributeAgilitySection img,
+.attributeIntelligenceSection img,
+.attributeStaminaSection img,
+.attributeSpiritSection img,
+.attributeStrengthSection img {
+  width: 45px;
+}
+
+.attributeAgilitySection,
+.attributeIntelligenceSection,
+.attributeStaminaSection,
+.attributeSpiritSection,
+.attributeStrengthSection {
+  padding-bottom: 0.5em;
+}
+
+.applicableStatsSection  {
+  height: 40px;
+  padding-top: 0.5em;
+}
+
+.appliedStatsSection {
+  height: 50px;
+  padding-top: 1.25em;
+  padding-bottom: 1em;
+}
+
+.attributeButtonContainer {
+  padding-top: 1em;
+}
+
+.attributeResetButton {
+  font-size: 15px;
+  height: 30px;
+  width: 80px;
+}
+
+.applicableStatsText {
+  float: right;
+  padding-right: 2em;
+  color: blue;
+}
+
+.appliedStatsSectionText {
+  float: right;
+  padding-right: 2em;
+}
+
+.maxAppliedStatsText {
+  color: green;
+}
+
+.appliedStatsText {
+  color: blue;
+}
+
+.attributeApplyButton {
+  font-size: 15px;
+  height: 30px;
+  width: 80px;
+  float: right;
+  margin-right: 0.5em;
 }

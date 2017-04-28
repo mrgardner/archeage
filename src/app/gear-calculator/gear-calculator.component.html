@@ -34,7 +34,7 @@
           <h4 class="infoText">Character Info</h4>
           <div class="levelSection">
             <span class="levelText">Level</span>
-            <input class="levelInputBox" [(ngModel)]="playerLevel">
+            <input class="levelInputBox" [(ngModel)]="playerLevel" (change)="checkPlayerLevel()">
           </div>
           <div class="titleSection">
             Title
@@ -81,7 +81,7 @@
             <div class="attributeText">
               Spirit
               <span class="playerInfoText">{{spirit}}</span>
-              <button class="wrench-attribute-button fa fa-wrench"></button>
+              <button class="wrench-attribute-button fa fa-wrench" (click)="openAttributeModal()"></button>
             </div>
             <div class="attributeText">
               Intelligence
@@ -163,6 +163,68 @@
         </div>
       </div>
     </div>
-
+    <div *ngIf="showAttributeModal === true">
+      <div class="overlay"></div>
+      <div  class="attributeModalContainer">
+        <div class="modalContent">
+          <span class="attributeSectionTitle">Stat Migration</span>
+          <span class="fa fa-times attributeCloseButton" (click)="closeAttributeModal()"></span>
+          <div class="applicableStatsSection">
+            Applicable Stats
+            <span class="applicableStatsText">{{applicableStats}}</span>
+          </div>
+          <div class="attributeStrengthSection">
+            <img [src]="strengthStatIcon">
+            <span class="strengthTitle">Strength</span>
+            <input [(ngModel)]="strengthMigrationStat" (change)="strengthMigrationChange()">
+            <span class="statCalculation">
+              (158<span id="strengthId"></span>)
+            </span>
+          </div>
+          <div class="attributeAgilitySection">
+            <img [src]="agilityStatIcon">
+            <span class="agilityTitle">Agility</span>
+            <input [(ngModel)]="agilityMigrationStat" (change)="agilityMigrationChange()">
+            <span class="statCalculation">
+              (158<span id="agilityId"></span>)
+            </span>
+          </div>
+          <div class="attributeStaminaSection">
+            <img [src]="staminaStatIcon">
+            <span class="staminaTitle">Stamina</span>
+            <input [(ngModel)]="staminaMigrationStat" (change)="staminaMigrationChange()">
+            <span class="statCalculation">
+              (158<span id="staminaId"></span>)
+            </span>
+          </div>
+          <div class="attributeIntelligenceSection">
+            <img [src]="intelligenceStatIcon">
+            <span class="intelligenceTitle">Intelligence</span>
+            <input [(ngModel)]="intelligenceMigrationStat" (change)="intelligenceMigrationChange()">
+            <span class="statCalculation">
+              (158<span id="intelligenceId"></span>)
+            </span>
+          </div>
+          <div class="attributeSpiritSection">
+            <img [src]="spiritStatIcon">
+            <span class="spiritTitle">Spirit</span>
+            <input [(ngModel)]="spiritMigrationStat" (change)="spiritMigrationChange()">
+            <span class="statCalculation">
+              (158<span id="spiritId"></span>)
+            </span>
+          </div>
+          <div class="appliedStatsSection">
+            Applied Stats
+            <span class="appliedStatsSectionText">
+              <span class="appliedStatsText">{{appliedStats}}</span>/<span class="maxAppliedStatsText">300</span>
+            </span>
+          </div>
+          <div class="attributeButtonContainer">
+            <button class="attributeResetButton" (click)="resetStatAttributes()">Reset</button>
+            <button class="attributeApplyButton" [disabled]="pendingPoints !== 300">Apply</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
