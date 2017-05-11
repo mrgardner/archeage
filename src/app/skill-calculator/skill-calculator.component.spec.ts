@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { CalculatorComponent } from './calculator.component';
+import { SkillCalculatorComponent } from './skill-calculator.component';
 
 describe('CalculatorComponent', () => {
-  let component: CalculatorComponent;
-  let fixture: ComponentFixture<CalculatorComponent>;
+  let component: SkillCalculatorComponent;
+  let fixture: ComponentFixture<SkillCalculatorComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CalculatorComponent ]
+      declarations: [ SkillCalculatorComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CalculatorComponent);
+    fixture = TestBed.createComponent(SkillCalculatorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
