@@ -1,14 +1,17 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Router, ActivatedRoute} from "@angular/router";
 import {ArcheageDatabaseService} from "../services/database.service";
 import {PagerService} from "../services/pager.service";
+import {Http} from "@angular/http";
+import {Observable} from "rxjs/Observable";
+import 'rxjs/Rx';
 
 @Component({
   selector: 'app-item-table',
   templateUrl: './item-table.component.html',
   styleUrls: ['./item-table.component.css']
 })
-export class ItemTableComponent {
+export class ItemTableComponent implements OnInit{
   private sortColumns: any;
   private daggerNames: Object[];
   private items: Array<Object>;
@@ -19,7 +22,13 @@ export class ItemTableComponent {
   // paged items
   pagedItems: any[];
 
-  constructor(private _database: ArcheageDatabaseService, private _pagerService: PagerService, private router: Router, private route: ActivatedRoute) {
+  theDataSource: Observable<string>;
+
+  constructor(private _database: ArcheageDatabaseService,
+              private _pagerService: PagerService,
+              private router: Router,
+              private route: ActivatedRoute,
+              private _http: Http) {
     let that = this;
     that.columns = [
       {
@@ -3268,22 +3277,21 @@ export class ItemTableComponent {
         console.log('3 params');
         // that.buildId = matrixParams["buildId"];
         // that.savedBuild = that._database.getSavedBuild(that.buildId);
-      }
-      else if (matrixParams.hasOwnProperty('item2')) {
+      } else if (matrixParams.hasOwnProperty('item2')) {
         console.log('2 params');
         // that.buildId = matrixParams["buildId"];
         // that.savedBuild = that._database.getSavedBuild(that.buildId);
-      }
-      else if (matrixParams.hasOwnProperty('item1')) {
+      } else if (matrixParams.hasOwnProperty('item1')) {
         console.log('1 params');
         // that.buildId = matrixParams["buildId"];
         // that.savedBuild = that._database.getSavedBuild(that.buildId);
-      }
-      else {
+      } else {
         console.log('no params');
       }
 
     });
+    that.theDataSource = this._http.get('https://crossorigin.me/http://archeagedatabase.net/query.php?a=weapon&l=us&_=1494528452073')
+      .map(res => res.json());
 
     setTimeout(function(){
       that.setPage(1);
@@ -3293,6 +3301,17 @@ export class ItemTableComponent {
       active: 'id',
       descending: false
     }
+  }
+
+  ngOnInit() {
+    this.theDataSource.subscribe(
+      data => {
+        console.log(data);
+      },
+      err =>
+        console.log('Can\'t get products. Error code: %s, URL: %s ',  err.status, err.url),
+      () => console.log('Product(s) are retrieved')
+    );
   }
 
   setPage(page: number) {
@@ -3315,7 +3334,7 @@ export class ItemTableComponent {
   selectedClass(column): string{
     var sort = this.sortColumns;
 
-    if (sort.active == column) {
+    if (sort.active === column) {
       return sort.descending
         ? 'fa fa-sort-asc'
         : 'fa fa-sort-desc';
@@ -3332,7 +3351,7 @@ export class ItemTableComponent {
 
     let sort = this.sortColumns;
 
-    if (sort.active == column) {
+    if (sort.active === column) {
       sort.descending = !sort.descending;
 
     } else {
@@ -3351,13 +3370,13 @@ export class ItemTableComponent {
     // this._database.removeItems();
     // for (let i = 2000; i <= (this.maxItems + 2000); i++) {
     for (let j = 0; j < 55; j++) {
-      this._database.createItem(this.daggerNames[j],this.daggerNames[j]["id"]);
+      this._database.createItem(this.daggerNames[j], this.daggerNames[j]['id']);
     }
 
     // for (let j = 2125; j <= 2303; j++) {
     //   this._database.createItem(j, 'Sword', '1H Weapon');
     // }
-
+    //
     // for (let j = 2326; j <= 2454; j++) {
     //   this._database.createItem(j, 'Katana', '1H Weapon');
     // }
@@ -3477,5 +3496,6 @@ export class ItemTableComponent {
     // for (let i = 0; i< 207; i++) {
     //   this._database.createBow(i);
     // }
+
   }
 }
