@@ -263,6 +263,15 @@ export class ArcheageDatabaseService {
     return items;
   }
 
+  uploadFile(fileName: Blob, filePath: string, imageName: string) {
+    let storageRef = firebase.storage().ref(`test/${imageName}`);
+    storageRef.put(fileName);
+  }
+
+  downloadFile(fileName: string, filePath: string) {
+    return firebase.storage().ref(`test/${fileName}`);
+  }
+
 
   createAxe(id:any) {
     firebase.database().ref(`Item/Weapon/1H Weapon/Axe/${id}`).set({

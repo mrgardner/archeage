@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ArcheageDatabaseService} from "../services/database.service";
+import {ArcheageDatabaseService} from '../services/database.service';
 
 @Component({
   selector: 'app-gear-calculator',

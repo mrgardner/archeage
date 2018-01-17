@@ -5,17 +5,20 @@ import {PagerService} from "../services/pager.service";
 import {Http} from "@angular/http";
 import {Observable} from "rxjs/Observable";
 import 'rxjs/Rx';
+import {setTimeout} from "timers";
 
 @Component({
   selector: 'app-item-table',
   templateUrl: './item-table.component.html',
   styleUrls: ['./item-table.component.css']
 })
-export class ItemTableComponent implements OnInit{
+export class ItemTableComponent implements OnInit {
   private sortColumns: any;
   private daggerNames: Object[];
+  private daggerData: Object[] = [];
   private items: Array<Object>;
   private columns: Array<Object>;
+  private proxyUrl: string  = 'https://crossorigin.me/';
   // pager object
   pager: any = {};
 
@@ -3290,7 +3293,7 @@ export class ItemTableComponent implements OnInit{
       }
 
     });
-    that.theDataSource = this._http.get('https://crossorigin.me/http://archeagedatabase.net/query.php?a=weapon&l=us&_=1494528452073')
+    that.theDataSource = that._http.get('http://archeagedatabase.net/query.php?a=weapon&type=dagger&l=us&_=1494528452073')
       .map(res => res.json());
 
     setTimeout(function(){
@@ -3307,6 +3310,7 @@ export class ItemTableComponent implements OnInit{
     this.theDataSource.subscribe(
       data => {
         console.log(data);
+        this.mineData(data);
       },
       err =>
         console.log('Can\'t get products. Error code: %s, URL: %s ',  err.status, err.url),
@@ -3332,7 +3336,7 @@ export class ItemTableComponent implements OnInit{
   }
 
   selectedClass(column): string{
-    var sort = this.sortColumns;
+    let sort = this.sortColumns;
 
     if (sort.active === column) {
       return sort.descending
@@ -3366,7 +3370,6 @@ export class ItemTableComponent implements OnInit{
   }
 
   test() {
-    console.log('tsts');
     // this._database.removeItems();
     // for (let i = 2000; i <= (this.maxItems + 2000); i++) {
     for (let j = 0; j < 55; j++) {
@@ -3497,5 +3500,182 @@ export class ItemTableComponent implements OnInit{
     //   this._database.createBow(i);
     // }
 
+  }
+
+  private mineData(data: any) {
+    console.log(data);
+    let that = this;
+    let dataArray = data.data;
+    console.log(dataArray);
+    for (let i = 0; i < 1; i++) {
+      setTimeout(function () {
+        let ImageString = dataArray[i][1].split('src')[1].split('=')[1].split('alt')[0].split('"')[1];
+        let tempNameString = dataArray[i][2].split('<b>')[1].split('</b>')[0];
+        let itemLinkString = dataArray[i][1].split('href="')[1].split('"')[0];
+        let imageSrc = 'http://archeagedatabase.net/' + ImageString;
+        let itemName = tempNameString;
+        let imageName = 'icon_item_' + itemName.toLocaleLowerCase().replace(/ /g, '_').replace('&#39;', "'") + '.jpg';
+        let filePath = 'test';
+        let id = 2000 + i;
+        console.log(dataArray[i][0]);
+        that._http.get('http://archeagedatabase.net/us/item/' + dataArray[i][0] + '/').subscribe(
+          data => {
+            // console.log(data['_body']);
+            that._database.downloadFile(imageName, filePath).getDownloadURL().then(function (url) {
+                let temperingStr = 'Tempering Available';
+                let tempering = '';
+                if (data['_body'].indexOf(temperingStr) !== -1) {
+                  let first = data['_body'].indexOf(temperingStr);
+                  console.log(first, (first + (temperingStr.length)));
+                  let str = data['_body'].substring(first, (first + (temperingStr.length)));
+                  console.log(str);
+                  tempering = str;
+                }
+
+                let lootType = data['_body'].split('<br>')[4].split('Loot type: ')[1];
+                let lootSource = "";
+                let reqLevel = "";
+                let dps = "";
+                let dpsUpper = "";
+                let dpsLower = "";
+                if (data['_body'].split('<br>')[5].indexOf('Loot source') !== -1) {
+                  lootSource = data['_body'].split('<br>')[5].split('Loot source: ')[1].split('</td>')[0];
+                  tempering = data['_body'].split('<br>')[7].split('</td>')[0];
+                }
+                if (data['_body'].split('<tr>')[5].indexOf('Req. Level') !== -1) {
+                  reqLevel = data['_body'].split('<tr>')[5].split('Req. Level: ')[1].split('<br>')[0];
+                }
+                if (data['_body'].split('<tr>')[13].indexOf('DPS') !== -1) {
+                  dps = data['_body'].split('<tr>')[13].split('>')[3].split(' ')[0];
+                  dpsUpper = data['_body'].split('<tr>')[13].split('>')[3].split('(')[1].split(' -')[0];
+                  dpsLower = data['_body'].split('<tr>')[13].split('>')[3].split(')')[0].split(' -')[1];
+                }
+                if (data['_body'].split('<br>')[4].indexOf('Tempering') !== -1 ) {
+                  tempering = data['_body'].split('<br>')[4].split('</td>')[0];
+                } else if (data['_body'].split('<br>')[5].indexOf('Tempering') !== -1) {
+                  tempering = data['_body'].split('<br>')[5].split('</td>')[0];
+                }
+                let pickup = data['_body'].split('<br>')[6].split('</td>')[0];
+                if (data['_body'].split('<br>').indexOf('Pickup') !== -1) {
+                  console.log(data['_body'].split('<br>').indexOf('Pickup'));
+                  let index = data['_body'].split('<br>').indexOf('Pickup');
+                  console.log(data['_body'].split('<br>')[index]);
+                }
+                let salvageable = data['_body'].split('<br>')[7];
+                let weaponType = data['_body'].split('<tr>')[8].split('>')[1].split('<')[0];
+                let attackSpeed = data['_body'].split('<tr>')[9].split('>')[3].split('<')[0];
+                let durability = data['_body'].split('<tr>')[10].split('>')[3].split('<')[0];
+                let itemClass = data['_body'].split('<tr>')[3].split('>')[7].split('<')[0];
+                let grade = data['_body'].split('<tr>')[3].split('>')[9].split('<')[0];
+                let penetrationOrAmputation = data['_body'].split('<tr>')[11].split('>')[1].split('<')[0];
+                let chanceText = data['_body'].split('<tr>')[11].split('>')[3].split('<')[0];
+                let tuple = {
+                  itemClass: itemClass,
+                  itemType: 'weapons',
+                  id: id,
+                  icon: url,
+                  grade: grade,
+                  name: itemName.replace('&#39;', "'"),
+                  lootType: lootType,
+                  lootSource: lootSource,
+                  requiredLevel: reqLevel,
+                  minLevel: dataArray[i][3],
+                  itemLevel: dataArray[i][4],
+                  pickup: pickup,
+                  weaponType: weaponType,
+                  attackSpeed: parseInt(attackSpeed, 10),
+                  durability: durability,
+                  penetrationChance: penetrationOrAmputation === 'Penetration Chance' ? true : false,
+                  amputationChance: penetrationOrAmputation === 'Amputation Chance' ? true : false,
+                  chanceText: chanceText,
+                  dpsLowerText: parseInt(dpsLower, 10),
+                  dpsUpperText: parseInt(dpsUpper, 10),
+                  dps: parseFloat(dps),
+                  attributes: {
+                    magicAttack: 0,
+                    agility: dataArray[i][6] === '' ? 0 : parseInt(dataArray[i][6], 10),
+                    stamina: dataArray[i][7] === '' ? 0 : parseInt(dataArray[i][7], 10),
+                    spirit: dataArray[i][9] === '' ? 0 : parseInt(dataArray[i][9], 10),
+                    strength: dataArray[i][5] === '' ? 0 : parseInt(dataArray[i][5], 10),
+                    intelligence: dataArray[i][8] === '' ? 0 : parseInt(dataArray[i][8], 10),
+                  },
+                  maxGrade: 'Mythic',
+                  salvageable: salvageable,
+                  temper: tempering,
+                  lunagemSlots: 0,
+                  useEffect: false,
+                  comboEffect: true,
+                  comboEffectText1: "",
+                  comboEffectText2: "",
+                  comboEffectStat1: "",
+                  comboEffectStat2: "",
+                  equipEffect: true,
+                  equipEffectText1: '',
+                  equipEffectText2: '',
+                  equipEffectText3: '',
+                  equipEffectStat1: '',
+                  setEffect: false,
+                  setItems: [],
+                  equipmentPoints: 504,
+                  price: '4g15s80c',
+                  shopPrice: '20s79c',
+                  salvageMaterial: [
+                    {
+                      material: 'Sunlight Archeum Essence',
+                      grade: 'basic',
+                      gradeIcon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/misc%2Fitem-grades%2Fitem_icon_grade_basic.png?alt=media&token=9b501433-fa1a-48bc-bbc1-6d4cd163733d',
+                      className: 'basicGradeColor',
+                      lowerLimit: 0,
+                      upperLimit: 0,
+                      icon: 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/misc%2Farcheum%2Ficon_item_sunlight_essence.jpg?alt=media&token=764a3994-a235-424d-b23e-69a30dc588ee'
+                    }
+                  ]
+                };
+                that.daggerData.push(tuple);
+              },
+              err =>
+                console.log('Can\'t get products. Error code: %s, URL: %s ',  err.status, err.url),
+              () => console.log('Product(s) are retrieved')
+            );
+            });
+            // console.log(data['_body']);
+            // console.log(data['_body'].split('<tr>'));
+        // this.getBase64ImageFromUrl(imageSrc)
+        //   .then(result => {
+        //     let blob = this.dataURItoBlob(result, 'image/jpeg');
+        //     console.log(blob);
+        //     this._database.uploadFile(blob, filePath, imageName);
+        //   })
+        //   .catch(err => console.error(err));
+
+
+      }, 1000);
+    }
+    console.log(that.daggerData);
+  }
+
+  async getBase64ImageFromUrl(imageUrl) {
+    let res = await fetch(imageUrl);
+    let blob = await res.blob();
+
+    return new Promise((resolve, reject) => {
+      let reader  = new FileReader();
+      reader.addEventListener('load', function () {
+        resolve(reader.result);
+      }, false);
+
+      reader.onerror = () => {
+        return reject(this);
+      };
+      reader.readAsDataURL(blob);
+    });
+  }
+
+  dataURItoBlob (dataURI, dataTYPE) {
+    let binary = atob(dataURI.split(',')[1]), array = [];
+    for (let i = 0; i < binary.length; i++) {
+      array.push(binary.charCodeAt(i));
+    }
+    return new Blob([new Uint8Array(array)], {type: dataTYPE});
   }
 }
