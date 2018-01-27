@@ -1,5 +1,6 @@
 import {Component, OnInit, ElementRef} from '@angular/core';
-import {Router} from "@angular/router";
+import {Router} from '@angular/router';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-nav-menu',
@@ -1676,83 +1677,63 @@ export class NavMenuComponent implements OnInit {
   updateDatabase(item1: any, item2: any, item3: any, item4: any) {
     if (item1 === 'Item') {
       if (item4 !== undefined) {
-        this.router.navigate(['item', item2.toLowerCase().replace(/ /g,"_"), item3.toLowerCase().replace(/ /g,"_"), item4.toLowerCase().replace(/ /g,"_")]);
-      }
-      else if (item3 !== undefined) {
-        this.router.navigate(['item', item2.toLowerCase().replace(/ /g,"_"), item3.toLowerCase().replace(/ /g,"_")]);
-      }
-      else if (item2 !== undefined) {
-        this.router.navigate(['item', item2.toLowerCase().replace(/ /g,"_")]);
-      }
-      else {
+        this.router.navigate(['item', item2.toLowerCase().replace(/ /g,'_'), item3.toLowerCase().replace(/ /g,'_'), item4.toLowerCase().replace(/ /g,'_')]);
+      } else if (item3 !== undefined) {
+        this.router.navigate(['item', item2.toLowerCase().replace(/ /g,'_'), item3.toLowerCase().replace(/ /g,'_')]);
+      } else if (item2 !== undefined) {
+        this.router.navigate(['item', item2.toLowerCase().replace(/ /g,'_')]);
+      } else {
         this.router.navigate(['item']);
       }
       this.hideMenuSection();
-    }
-    else if (item1 === 'Quest') {
+    } else if (item1 === 'Quest') {
       if (item4 !== undefined) {
         this.router.navigate(['quest', item2.toLowerCase().replace(/ /g,"_"), item3.toLowerCase().replace(/ /g,"_"), item4.toLowerCase().replace(/ /g,"_")]);
-      }
-      else if (item3 !== undefined) {
+      } else if (item3 !== undefined) {
         this.router.navigate(['quest', item2.toLowerCase().replace(/ /g,"_"), item3.toLowerCase().replace(/ /g,"_")]);
-      }
-      else if (item2 !== undefined) {
+      } else if (item2 !== undefined) {
         this.router.navigate(['quest', item2.toLowerCase().replace(/ /g,"_")]);
-      }
-      else {
+      } else {
         this.router.navigate(['quest']);
       }
       this.hideMenuSection();
-    }
-    else if (item1 === 'Achievements') {
+    } else if (item1 === 'Achievements') {
       if (item4 !== undefined) {
         this.router.navigate(['achievements', item2.toLowerCase().replace(/ /g,"_"), item3.toLowerCase().replace(/ /g,"_"), item4.toLowerCase().replace(/ /g,"_")]);
-      }
-      else if (item3 !== undefined) {
+      } else if (item3 !== undefined) {
         this.router.navigate(['achievements', item2.toLowerCase().replace(/ /g,"_"), item3.toLowerCase().replace(/ /g,"_")]);
-      }
-      else if (item2 !== undefined) {
+      } else if (item2 !== undefined) {
         this.router.navigate(['achievements', item2.toLowerCase().replace(/ /g,"_")]);
-      }
-      else {
+      } else {
         this.router.navigate(['achievements']);
       }
       this.hideMenuSection();
-    }
-    else if (item1 === 'NPC') {
+    } else if (item1 === 'NPC') {
       if (item4 !== undefined) {
         this.router.navigate(['npcs', item2.toLowerCase().replace(/ /g,"_"), item3.toLowerCase().replace(/ /g,"_"), item4.toLowerCase().replace(/ /g,"_")]);
-      }
-      else if (item3 !== undefined) {
+      } else if (item3 !== undefined) {
         this.router.navigate(['npcs', item2.toLowerCase().replace(/ /g,"_"), item3.toLowerCase().replace(/ /g,"_")]);
-      }
-      else if (item2 !== undefined) {
+      } else if (item2 !== undefined) {
         this.router.navigate(['npcs', item2.toLowerCase().replace(/ /g,"_")]);
-      }
-      else {
+      } else {
         this.router.navigate(['npcs']);
       }
       this.hideMenuSection();
-    }
-    else if (item1 === 'Design') {
+    } else if (item1 === 'Design') {
       if (item2 !== undefined) {
         this.router.navigate(['recipe', item2.toLowerCase().replace(/ /g,"_")]);
-      }
-      else {
+      } else {
         this.router.navigate(['recipe']);
       }
       this.hideMenuSection();
-    }
-    else if (item1 === 'Skills') {
+    } else if (item1 === 'Skills') {
       if (item2 !== undefined) {
         this.router.navigate(['skills', item2.toLowerCase().replace(/ /g,"_")]);
-      }
-      else {
+      } else {
         this.router.navigate(['skills']);
       }
       this.hideMenuSection();
-    }
-    else if (item1 === 'Title') {
+    } else if (item1 === 'Title') {
       this.router.navigate(['titles']);
     }
     this.hideMenuSection();
@@ -1762,7 +1743,7 @@ export class NavMenuComponent implements OnInit {
     if ('section' in item) {
       item['section'].show = false;
     }
-    var isHovered = $('.database-sub-menu').is(":hover");
+    let isHovered = $('.database-sub-menu').is(':hover');
     if (isHovered === false) {
       this.hideMenuSection();
     }
