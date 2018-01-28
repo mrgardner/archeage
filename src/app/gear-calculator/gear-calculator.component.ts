@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import {ModalService} from '../services/modal.service';
 import {GearCalculatorService} from '../services/gear-calculator.service';
 
@@ -7,51 +7,19 @@ import {GearCalculatorService} from '../services/gear-calculator.service';
   templateUrl: './gear-calculator.component.html',
   styleUrls: ['./gear-calculator.component.css']
 })
-export class GearCalculatorComponent implements OnInit {
+export class GearCalculatorComponent {
 
   private itemsSlots: Array<Object> = [];
   private menuItems: Array<Object> = [];
   private playerLevel: number;
-  private meleeAttack: number;
-  private rangedAttack: number;
-  private magicAttack: number;
-  private healingPower: number;
-  private physicalDefense: number;
-  private magicDefense: number;
-  private equipPoints: number;
-  private strength: number;
-  private agility: number;
-  private stamina: number;
-  private intelligence: number;
-  private spirit: number;
-  private moveSpeed: number;
-  private castTime: number;
-  private attackSpeed: number;
   private healthBar: string;
   private health: number;
   private mana: number;
-  private hasTitleData: boolean = false;
-  private playerTitle: Object = {};
   private playerBuffOverlay: Object = {};
   private playerBuffs: Array<Object> = [];
 
   constructor(private _modalService: ModalService, private _gearCalculatorService: GearCalculatorService) {
     this.playerLevel = 55;
-    this.strength = 158;
-    this.agility = 158;
-    this.stamina = 158;
-    this.intelligence = 158;
-    this.spirit = 158;
-    this.meleeAttack = this.strength / 5;
-    this.rangedAttack = this.agility / 5;
-    this.magicAttack = this.intelligence / 5;
-    this.healingPower = this.spirit  / 5;
-    this.physicalDefense = 0;
-    this.magicDefense = this.spirit;
-    this.equipPoints = 0;
-    this.moveSpeed = 5.4;
-    this.castTime = 100.0;
-    this.attackSpeed = 100.0;
     this.itemsSlots = [
       {
         slotName: 'costume',
@@ -192,22 +160,13 @@ export class GearCalculatorComponent implements OnInit {
     ];
     this.healthBar = 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/gear-calculator%2Fmisc%2Fhealth.png?alt=media&token=61a03500-d07c-4c8c-8268-2507de027d03';
 
-    this._modalService.playerTitle$.subscribe((title) => {
-      this.playerTitle = title;
-    });
-
     this._gearCalculatorService.playerBuffs$.subscribe((buffs) => {
       this.playerBuffs = buffs;
-      console.log(this.playerBuffs);
     });
-  }
 
-  ngOnInit() {
-  }
-
-  openTitleModal() {
-    this.hasTitleData = true;
-    this._modalService.openModal();
+    this._gearCalculatorService.playerLevel$.subscribe((level) => {
+      this.playerLevel = level;
+    });
   }
 
   showBuffOverlay(buff: Object) {

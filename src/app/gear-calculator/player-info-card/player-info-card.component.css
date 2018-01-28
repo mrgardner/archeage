@@ -1,0 +1,115 @@
+.player-info-card {
+  width: 310px;
+  background-color: #ece5a4;
+  position: relative;
+  top: 5em;
+}
+
+.playerInfoText {
+  float: right;
+  color: blue;
+}
+
+.titleSection,
+.equipmentPointsSection,
+.damageSection,
+.attributeSection {
+  padding-left: 0.5em;
+  padding-top: 0.2em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid rgba(1,1,1,0.4);
+}
+
+.titleSection {
+  height: 25px;
+}
+
+.attributeSection {
+  padding-left: 0;
+  height: 70px;
+}
+
+.generalAttackStatsSection {
+  padding-left: 0.5em;
+  padding-bottom: 1em;
+  padding-top: 0.2em;
+}
+
+.attributeText {
+  padding-left: 0.5em;
+  float: left;
+  width: 140px;
+}
+
+.firstColumnAttributeText {
+  margin-right: 20px;
+}
+
+.inner-info-card-section {
+  width: 280px;
+}
+
+.wrench-button,
+.wrench-attribute-button {
+  position: absolute;
+  left: 95%;
+  width: 16px;
+  border: none;
+  background-color: #a49359;
+  padding: 1px;
+}
+
+.wrench-button:focus,
+.wrench-attribute-button:focus,
+.tasks-button:focus {
+  outline: 0;
+}
+
+.infoText {
+  text-align: center;
+  padding-top: 0.5em;
+}
+
+.tasks-button {
+  position: relative;
+  left: 73%;
+  width: 16px;
+  top: 10px;
+  background-color: #a49359;
+  border: none;
+  padding: 1px;
+}
+
+.wrench-button:hover,
+.wrench-attribute-button:hover,
+.tasks-button:hover {
+  color: #ece5a4;
+}
+
+.levelSection {
+  position: relative;
+  padding-left: 2em;
+}
+
+.levelText {
+  position: absolute;
+  padding: 2px 2px 2px 3px;
+  background-color: #a49359;
+  width: 46px;
+  font-size: 14px;
+  color: white;
+  font-weight: 800;
+}
+
+.levelInputBox {
+  width: 65px;
+  font-family: comic sans ms;
+  font-size: 40px;
+  color: #a56a0e;
+  border: 0px;
+  position: relative;
+  bottom: 15px;
+  margin-left: 52px;
+  background: transparent;
+}
+

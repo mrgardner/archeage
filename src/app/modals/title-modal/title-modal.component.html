@@ -3,7 +3,7 @@
   <div  class="titleModalContainer">
     <div class="modalContent">
       <span class="fa fa-times titleCloseButton" (click)="closeTitleModal()"></span>
-      <input class="titleSearchBox" placeholder="title name..." [(ngModel)]="newTitleSearch" [disabled]="!hasTitleData">
+      <input class="titleSearchBox" placeholder="title name..." [(ngModel)]="newTitleSearch">
       <!--<div *ngIf="!hasTitleData" class="titleLoadingData">Loading Data...</div>-->
       <div class="title-modal-outer-content">
         <div *ngFor="let title of titles | titleSearch:newTitleSearch">
@@ -13,7 +13,7 @@
         </div>
       </div>
       <div *ngIf="hasTitleData" class="title-overlay"></div>
-      <button class="titleResetButton" (click)="resetTitle()" [disabled]="!hasTitleData">Reset</button>
+      <button class="titleResetButton" (click)="resetTitle()">Reset</button>
     </div>
   </div>
 </div>

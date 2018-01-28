@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ArcheageDatabaseService} from '../../services/database.service';
 import {ModalService} from '../../services/modal.service';
 import {GearCalculatorService} from '../../services/gear-calculator.service';
@@ -9,7 +9,6 @@ import {GearCalculatorService} from '../../services/gear-calculator.service';
   styleUrls: ['./title-modal.component.css']
 })
 export class TitleModalComponent implements OnInit {
-  @Input() name: string;
   private titles: Array<Object> = [];
   private showTitleModal: boolean;
   private currentTitle: Object = {};
@@ -25,8 +24,6 @@ export class TitleModalComponent implements OnInit {
 
   ngOnInit() {
     this.titles = this._database.getAllTitles();
-    console.log(this.titles);
-    console.log(this.name);
   }
 
   closeTitleModal() {
@@ -45,5 +42,4 @@ export class TitleModalComponent implements OnInit {
     this._gearCalculatorService.removePlayerBff({});
     this.showTitleModal = false;
   }
-
 }

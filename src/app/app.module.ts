@@ -31,6 +31,7 @@ import {TitleSearchPipe} from './gear-calculator/title-search.pipe';
 import { TitleModalComponent } from './modals/title-modal/title-modal.component';
 import {ModalService} from './services/modal.service';
 import {GearCalculatorService} from './services/gear-calculator.service';
+import { PlayerInfoCardComponent } from './gear-calculator/player-info-card/player-info-card.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import {GearCalculatorService} from './services/gear-calculator.service';
     SkillsComponent,
     TitleTableComponent,
     TitleComponent,
-    TitleModalComponent
+    TitleModalComponent,
+    PlayerInfoCardComponent
   ],
   imports: [
     BrowserModule,

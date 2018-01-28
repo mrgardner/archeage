@@ -27,91 +27,7 @@
             <div class="playerBuffOverlayBuffDesc" id="buffDesc"></div>
           </div>
         </div>
-
-      </div>
-      <div class="player-info-card">
-        <div class="inner-info-card-section">
-          <h4 class="infoText">Character Info</h4>
-          <div class="levelSection">
-            <span class="levelText">Level</span>
-            <input class="levelInputBox" [(ngModel)]="playerLevel">
-          </div>
-          <div class="titleSection">
-            Title
-            <span class="playerInfoText">{{playerTitle.title}}</span>
-            <button class="wrench-button fa fa-wrench" (click)="openTitleModal()"></button>
-          </div>
-          <div class="equipmentPointsSection">
-            <div>
-              Equipment Points
-              <span class="playerInfoText">{{equipPoints}}</span>
-            </div>
-          </div>
-          <div class="damageSection">
-            <div>
-              Melee Attack
-              <span class="playerInfoText">{{meleeAttack}}</span>
-            </div>
-            <div>
-              Ranged Attack
-              <span class="playerInfoText">{{rangedAttack}}</span>
-            </div>
-            <div>
-              Magic Attack
-              <span class="playerInfoText">{{magicAttack}}</span>
-            </div>
-            <div>
-              Healing Power
-              <span class="playerInfoText">{{healingPower}}</span>
-            </div>
-            <div>
-              Physical Defense
-              <span class="playerInfoText">{{physicalDefense}}</span>
-            </div>
-            <div>
-              Magic Defense
-              <span class="playerInfoText">{{magicDefense}}</span>
-            </div>
-          </div>
-          <div class="attributeSection">
-            <div class="attributeText">
-              Strength
-              <span class="playerInfoText firstColumnAttributeText">{{strength}}</span>
-            </div>
-            <div class="attributeText">
-              Spirit
-              <span class="playerInfoText">{{spirit}}</span>
-              <button class="wrench-attribute-button fa fa-wrench"></button>
-            </div>
-            <div class="attributeText">
-              Intelligence
-              <span class="playerInfoText firstColumnAttributeText">{{intelligence}}</span>
-            </div>
-            <div class="attributeText">
-              Stamina
-              <span class="playerInfoText">{{stamina}}</span>
-            </div>
-            <div class="attributeText">
-              Agility
-              <span class="playerInfoText firstColumnAttributeText">{{agility}}</span>
-            </div>
-          </div>
-          <div class="generalAttackStatsSection">
-            <div>
-              Move Speed
-              <span class="playerInfoText">{{moveSpeed}} m/s</span>
-            </div>
-            <div>
-              Cast time
-              <span class="playerInfoText">{{castTime}} %</span>
-            </div>
-            <div>
-              Attack Speed
-              <span class="playerInfoText">{{attackSpeed}} %</span>
-              <button class="tasks-button fa fa-tasks"></button>
-            </div>
-          </div>
-        </div>
+        <app-player-info-card></app-player-info-card>
       </div>
     </div>
     <div class="slotContainer">
@@ -144,6 +60,6 @@
         <button class="saveButton">Save</button>
       </div>
     </div>
-    <app-title-modal name="TEST"></app-title-modal>
+    <app-title-modal></app-title-modal>
   </div>
 </div>
