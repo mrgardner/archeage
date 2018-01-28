@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {ArcheageDatabaseService} from '../services/database.service';
+import {ModalService} from '../services/modal.service';
+import {GearCalculatorService} from '../services/gear-calculator.service';
 
 @Component({
   selector: 'app-gear-calculator',
@@ -29,14 +30,12 @@ export class GearCalculatorComponent implements OnInit {
   private healthBar: string;
   private health: number;
   private mana: number;
-  private showTitleModal: boolean = false;
   private hasTitleData: boolean = false;
-  private titles: Array<Object> = [];
-  private playerBuffs: Array<Object> = [];
   private playerTitle: Object = {};
   private playerBuffOverlay: Object = {};
+  private playerBuffs: Array<Object> = [];
 
-  constructor(private _database: ArcheageDatabaseService) {
+  constructor(private _modalService: ModalService, private _gearCalculatorService: GearCalculatorService) {
     this.playerLevel = 55;
     this.strength = 158;
     this.agility = 158;
@@ -192,32 +191,23 @@ export class GearCalculatorComponent implements OnInit {
       }
     ];
     this.healthBar = 'https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/gear-calculator%2Fmisc%2Fhealth.png?alt=media&token=61a03500-d07c-4c8c-8268-2507de027d03';
-    this.titles = this._database.getAllTitles();
+
+    this._modalService.playerTitle$.subscribe((title) => {
+      this.playerTitle = title;
+    });
+
+    this._gearCalculatorService.playerBuffs$.subscribe((buffs) => {
+      this.playerBuffs = buffs;
+      console.log(this.playerBuffs);
+    });
   }
 
   ngOnInit() {
   }
 
   openTitleModal() {
-    this.showTitleModal = true;
     this.hasTitleData = true;
-  }
-
-  closeTitleModal() {
-    this.showTitleModal = false;
-  }
-
-  setNewTitle(title: string) {
-    this.playerTitle = title;
-    this.showTitleModal = false;
-    this.playerBuffs.splice(this.playerBuffs.indexOf(this.playerTitle), 1);
-    this.playerBuffs.push(title);
-  }
-
-  resetTitle() {
-    this.playerTitle = {};
-    this.playerBuffs.splice(this.playerBuffs.indexOf(this.playerTitle), 1);
-    this.showTitleModal = false;
+    this._modalService.openModal();
   }
 
   showBuffOverlay(buff: Object) {

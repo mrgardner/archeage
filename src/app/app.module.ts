@@ -4,15 +4,15 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import {ArcheageDatabaseService} from "./services/database.service";
+import {ArcheageDatabaseService} from './services/database.service';
 import { HomeComponent } from './home/home.component';
 import { ItemTableComponent } from './item-table/item-table.component';
-import {PagerService} from "./services/pager.service";
+import {PagerService} from './services/pager.service';
 import { ItemComponent } from './item/item.component';
-import {routing} from "./app.routes";
+import {routing} from './app.routes';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
-import {OrderByPipe} from "./item-table/item-table.pipe";
-import {LocationStrategy, HashLocationStrategy} from "@angular/common";
+import {OrderByPipe} from './item-table/item-table.pipe';
+import {LocationStrategy, HashLocationStrategy} from '@angular/common';
 import { SkillCalculatorComponent } from './skill-calculator/skill-calculator.component';
 import { GearCalculatorComponent } from './gear-calculator/gear-calculator.component';
 import { QuestTableComponent } from './quest-table/quest-table.component';
@@ -27,7 +27,10 @@ import { SkillsTableComponent } from './skills-table/skills-table.component';
 import { SkillsComponent } from './skills/skills.component';
 import { TitleTableComponent } from './title-table/title-table.component';
 import { TitleComponent } from './title/title.component';
-import {TitleSearchPipe} from "./gear-calculator/title-search.pipe";
+import {TitleSearchPipe} from './gear-calculator/title-search.pipe';
+import { TitleModalComponent } from './modals/title-modal/title-modal.component';
+import {ModalService} from './services/modal.service';
+import {GearCalculatorService} from './services/gear-calculator.service';
 
 @NgModule({
   declarations: [
@@ -51,16 +54,25 @@ import {TitleSearchPipe} from "./gear-calculator/title-search.pipe";
     SkillsTableComponent,
     SkillsComponent,
     TitleTableComponent,
-    TitleComponent
+    TitleComponent,
+    TitleModalComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing,
-
+    routing
   ],
-  providers: [ArcheageDatabaseService, PagerService, {provide: LocationStrategy, useClass: HashLocationStrategy}],
+  providers: [
+    ArcheageDatabaseService,
+    ModalService,
+    GearCalculatorService,
+    PagerService,
+    {
+      provide: LocationStrategy,
+      useClass: HashLocationStrategy
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

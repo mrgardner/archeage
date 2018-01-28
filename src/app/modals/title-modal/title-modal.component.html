@@ -1,0 +1,19 @@
+<div *ngIf="showTitleModal === true">
+  <div class="overlay"></div>
+  <div  class="titleModalContainer">
+    <div class="modalContent">
+      <span class="fa fa-times titleCloseButton" (click)="closeTitleModal()"></span>
+      <input class="titleSearchBox" placeholder="title name..." [(ngModel)]="newTitleSearch" [disabled]="!hasTitleData">
+      <!--<div *ngIf="!hasTitleData" class="titleLoadingData">Loading Data...</div>-->
+      <div class="title-modal-outer-content">
+        <div *ngFor="let title of titles | titleSearch:newTitleSearch">
+          <div *ngIf="title.description !== ''">
+            <div (click)="setNewTitle(title)" class="titleItem">{{title.title}}</div>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="hasTitleData" class="title-overlay"></div>
+      <button class="titleResetButton" (click)="resetTitle()" [disabled]="!hasTitleData">Reset</button>
+    </div>
+  </div>
+</div>
