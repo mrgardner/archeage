@@ -1,0 +1,82 @@
+table {
+  background-color: #19412f;
+  color: white;
+  position: relative;
+}
+
+table tbody tr td {
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: Tahoma,Verdana,Helvetica,sans-serif;
+  border-right: solid 1px black;
+}
+
+table tbody tr:hover {
+  background-color: #32835f;
+}
+
+table tbody tr {
+  border-bottom: solid 1px black;
+}
+
+table tbody tr td:nth-child(1) {
+  border-left: solid 1px black;
+}
+
+table thead tr th:nth-child(1) {
+  border-left: solid 1px black;
+}
+
+table thead tr th {
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  border-bottom: solid 1px black;
+  font-size: 14px;
+  vertical-align: bottom;
+  border-right: solid 1px black;
+}
+
+.loadDataRow {
+  position: absolute;
+  left: 44%;
+  top: 50px;
+}
+
+.skill-id-text,
+.skill-level-text {
+  text-align: center;
+}
+
+.skill-id {
+  width: 50px;
+}
+
+.skill-icon {
+  width: 60px;
+}
+
+.skill-name {
+  width: 500px;
+}
+
+.skill-level {
+  width: 70px;
+}
+
+.skill-type {
+  width: 459px;
+}
+
+.item-link {
+  cursor: pointer;
+  color: white;
+}
+
+.item-link:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.noData {
+  text-align: center;
+}

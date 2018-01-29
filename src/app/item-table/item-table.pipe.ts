@@ -8,6 +8,7 @@ export class OrderByPipe implements PipeTransform  {
   if(value==null) {
     return null;
   }
+  console.log(field);
   if (field.startsWith("-")) {
     field = field.substring(1);
     if (typeof value[0][field] === 'string' || value[0][field] instanceof String) {
@@ -23,18 +24,23 @@ export class OrderByPipe implements PipeTransform  {
     return [...value].sort((a, b) => b[field] - a[field]);
   }
   else {
-    if (typeof value[0][field] === 'string' || value[0][field] instanceof String) {
-      return [...value].sort((a, b) => -b[field].localeCompare(a[field]));
-    }
+    if (value.length > 0) {
+      if (typeof value[0][field] === 'string' || value[0][field] instanceof String) {
+        return [...value].sort((a, b) => -b[field].localeCompare(a[field]));
+      }
 
-    if (field.indexOf('.') > -1)
-    {
-      let attribute = field.split('.');
-      let attribute1 = attribute[0];
-      let attribute2 = attribute[1];
-      return [...value].sort((a, b) => a[attribute1][attribute2] - b[attribute1][attribute2]);
+      if (field.indexOf('.') > -1)
+      {
+        let attribute = field.split('.');
+        let attribute1 = attribute[0];
+        let attribute2 = attribute[1];
+        return [...value].sort((a, b) => a[attribute1][attribute2] - b[attribute1][attribute2]);
+      }
+      return [...value].sort((a, b) => a[field] - b[field]);
     }
-    return [...value].sort((a, b) => a[field] - b[field]);
+    else {
+      return;
+    }
   }
 }
 }

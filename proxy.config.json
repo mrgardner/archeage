@@ -1,0 +1,7 @@
+{
+  "/query": {
+    "target": "http://archeagedatabase.net",
+    "secure": false,
+    "logLevel": "debug"
+  }
+}

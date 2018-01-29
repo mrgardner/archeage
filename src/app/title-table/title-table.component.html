@@ -1,0 +1,49 @@
+<div class="container">
+  <table>
+    <thead>
+    <tr role="row">
+      <th  *ngFor="let column of columns"  (click)="changeSorting(column.id)" [class]="addClass(column.className)">
+        {{column.name}}
+        <i *ngIf="column.id !== ''" class="fa" [class]="selectedClass(column.id)"></i>
+      </th>
+    </tr>
+    </thead>
+    <tbody *ngFor="let item of pagedItems | orderBy: convertSorting()">
+    <tr *ngIf="pagedItems.length !== 0">
+      <td><a class="item-link" (click)="onItemPage(item.id)">{{item.id}}</a></td>
+      <td><img [src]="item.icon"></td>
+      <td><a class="item-link" (click)="onItemPage(item.id)">{{item.title}}</a></td>
+      <td>{{item.description}}</td>
+    </tr>
+    <tr *ngIf="pagedItems.length == 0">
+      <td class="noData"> No data available in table</td>
+    </tr>
+    </tbody>
+    <thead>
+    <tr role="row">
+      <th  *ngFor="let column of columns"  (click)="changeSorting(column.id)" [class]="addClass(column.className)">
+        {{column.name}}
+      </th>
+    </tr>
+    </thead>
+  </table>
+
+  <!-- pager -->
+  <ul *ngIf="pager.pages && pager.pages.length" class="pagination">
+    <li [ngClass]="{disabled:pager.currentPage === 1}">
+      <a (click)="setPage(1)">First</a>
+    </li>
+    <li [ngClass]="{disabled:pager.currentPage === 1}">
+      <a (click)="setPage(pager.currentPage - 1)">Previous</a>
+    </li>
+    <li *ngFor="let page of pager.pages" [ngClass]="{active:pager.currentPage === page}">
+      <a (click)="setPage(page)">{{page}}</a>
+    </li>
+    <li [ngClass]="{disabled:pager.currentPage === pager.totalPages}">
+      <a (click)="setPage(pager.currentPage + 1)">Next</a>
+    </li>
+    <li [ngClass]="{disabled:pager.currentPage === pager.totalPages}">
+      <a (click)="setPage(pager.totalPages)">Last</a>
+    </li>
+  </ul>
+</div>

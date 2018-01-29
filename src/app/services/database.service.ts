@@ -5,9 +5,12 @@ declare var firebase: any;
 @Injectable()
 export class ArcheageDatabaseService {
 
-  private item: Object;
-  private items: Array<Object>;
+  private allItems: Object = {};
+  private skills: Object = {};
+  private titles: Object = {};
+  private AllTitles: Object = {};
   private singleItem: Object = {};
+  private savedBuild: Object = {};
 
   removeItems() {
     firebase.database().ref(`Item/`).remove();
@@ -17,12 +20,41 @@ export class ArcheageDatabaseService {
     firebase.database().ref(`Item/${id}`).update(item);
   }
 
+  createTitle(item:Object,id:any){
+    firebase.database().ref(`Title/${id}`).update(item);
+  }
+
   createSkill(item:Object,id:any){
     firebase.database().ref(`Skill/${id}`).update(item);
   }
 
   removeSkills(){
     firebase.database().ref(`Skill/`).remove();
+  }
+
+  saveBuild(id: number, item:Object) {
+    firebase.database().ref(`SavedBuilds/${id}`).update(item);
+  }
+
+  getSavedBuild(id: number) {
+    let that = this;
+    firebase.database().ref(`SavedBuilds/${id}`)
+      .once('value', function(snapshot) {
+        if(snapshot.val()) {
+            that.savedBuild["leftSkills"] = snapshot.val().leftSkills;
+            that.savedBuild["middleSkills"] = snapshot.val().middleSkills;
+            that.savedBuild["rightSkills"] = snapshot.val().rightSkills;
+            that.savedBuild["leftSkillsTitle"] = snapshot.val().leftSkillsTitle;
+            that.savedBuild["middleSkillsTitle"] = snapshot.val().middleSkillsTitle;
+            that.savedBuild["rightSkillsTitle"] = snapshot.val().rightSkillsTitle;
+            that.savedBuild["leftSkillsPoints"] = snapshot.val().leftSkillsPoints;
+            that.savedBuild["middleSkillsPoints"] = snapshot.val().middleSkillsPoints;
+            that.savedBuild["rightSkillsPoints"] = snapshot.val().rightSkillsPoints;
+            that.savedBuild["skillPoints"] = snapshot.val().skillPoints;
+            that.savedBuild["className"] = snapshot.val().className;
+        }
+      });
+    return that.savedBuild;
   }
 
   getAllSkills() {
@@ -34,15 +66,51 @@ export class ArcheageDatabaseService {
           let total = Object.keys(snapshot.val()).length;
           for (let i = 0; i < total; i++) {
             let id = Object(Object.keys(snapshot.val())[i]);
-            that.item = {};
-            that.item["id"] = snapshot.val()[id].id;
-            that.item["icon"] = snapshot.val()[id].icon;
-            that.item["name"] = snapshot.val()[id].name;
-            that.item["className"] = snapshot.val()[id].className;
-            that.item["type"] = snapshot.val()[id].type;
-            that.item["skillPointsRequired"] = snapshot.val()[id].skillPointsRequired;
-            that.item["selected"] = snapshot.val()[id].selected;
-            items.push(that.item)
+            that.skills = {};
+            that.skills["id"] = snapshot.val()[id].id;
+            that.skills["icon"] = snapshot.val()[id].icon;
+            that.skills["name"] = snapshot.val()[id].name;
+            that.skills["className"] = snapshot.val()[id].className;
+            that.skills["type"] = snapshot.val()[id].type;
+            that.skills["skillPointsRequired"] = snapshot.val()[id].skillPointsRequired;
+            that.skills["selected"] = snapshot.val()[id].selected;
+            that.skills["level"] = snapshot.val()[id].level;
+            items.push(that.skills)
+          }
+        }
+      });
+    return items;
+  }
+
+  getTitle(id: number) {
+    let that = this;
+    firebase.database().ref(`Title/${id}`)
+      .once('value', function(snapshot) {
+        if(snapshot.val()) {
+          that.titles["id"] = snapshot.val().id;
+          that.titles["icon"] = snapshot.val().icon;
+          that.titles["title"] = snapshot.val().title;
+          that.titles["description"] = snapshot.val().description;
+        }
+      });
+    return that.titles;
+  }
+
+  getAllTitles() {
+    let that = this;
+    let items = [];
+    firebase.database().ref(`Title/`)
+      .on('value', function(snapshot) {
+        if(snapshot.val()) {
+          let total = Object.keys(snapshot.val()).length;
+          for (let i = 0; i < total; i++) {
+            let id = Object(Object.keys(snapshot.val())[i]);
+            that.AllTitles = {};
+            that.AllTitles["id"] = snapshot.val()[id].id;
+            that.AllTitles["icon"] = snapshot.val()[id].icon;
+            that.AllTitles["title"] = snapshot.val()[id].title;
+            that.AllTitles["description"] = snapshot.val()[id].description;
+            items.push(that.AllTitles)
           }
         }
       });
@@ -54,6 +122,7 @@ export class ArcheageDatabaseService {
     firebase.database().ref(`Item/${id}`)
       .once('value', function(snapshot) {
         if(snapshot.val()) {
+          that.singleItem["itemClass"] = snapshot.val().itemClass;
           that.singleItem["itemType"] = snapshot.val().itemType;
           that.singleItem["id"] = snapshot.val().id;
           that.singleItem["icon"] = snapshot.val().icon;
@@ -126,45 +195,81 @@ export class ArcheageDatabaseService {
           let total = Object.keys(snapshot.val()).length;
           for (let i = 0; i < total; i++) {
             let id = Object(Object.keys(snapshot.val())[i]);
-            that.item = {};
-            that.item["id"] = snapshot.val()[id].id;
-            that.item["icon"] = snapshot.val()[id].icon;
-            that.item["grade"] = snapshot.val()[id].grade;
-            that.item["name"] = snapshot.val()[id].name;
-            that.item["lootType"] = snapshot.val()[id].lootType;
-            that.item["lootSource"] = snapshot.val()[id].lootSource;
-            that.item["requiredLevel"] = snapshot.val()[id].requiredLevel;
-            that.item["minLevel"] = snapshot.val()[id].minLevel;
-            that.item["itemLevel"] = snapshot.val()[id].itemLevel;
-            that.item["pickup"] = snapshot.val()[id].pickup;
-            that.item["weaponType"] = snapshot.val()[id].weaponType;
-            that.item["attackSpeed"] = snapshot.val()[id].attackSpeed;
-            that.item["durability"] = snapshot.val()[id].durability;
-            that.item["penetrationOrAmputationChance"] = snapshot.val()[id].penetrationOrAmputationChance;
-            that.item["dps"] = snapshot.val()[id].dps;
-            that.item["attributes"] = snapshot.val()[id].attributes;
-            that.item["maxGrade"] = snapshot.val()[id].maxGrade;
-            that.item["salvageable"] = snapshot.val()[id].salvageable;
-            that.item["temper"] = snapshot.val()[id].temper;
-            that.item["lunagemSlots"] = snapshot.val()[id].lunagemSlots;
-            that.item["useEffect"] = snapshot.val()[id].useEffect;
-            that.item["comboEffect"] = snapshot.val()[id].comboEffect;
-            that.item["equipEffect"] = snapshot.val()[id].equipEffect;
-            that.item["setEffect"] = snapshot.val()[id].setEffect;
-            that.item["setEffectText1"] = snapshot.val()[id].setEffectText1;
-            that.item["setEffectText2"] = snapshot.val()[id].setEffectText2;
-            that.item["setEffectStat1"] = snapshot.val()[id].setEffectStat1;
-            that.item["setEffectStat2"] = snapshot.val()[id].setEffectStat2;
-            that.item["setEffectTitle"] = snapshot.val()[id].setEffectTitle;
-            that.item["setItems"] = snapshot.val()[id].setItems;
-            that.item["equipmentPoints"] = snapshot.val()[id].equipmentPoints;
-            that.item["Price"] = snapshot.val()[id].Price;
-            that.item["shopPrice"] = snapshot.val()[id].shopPrice;
-            items.push(that.item)
+            that.allItems = {};
+            that.allItems["itemClass"] = snapshot.val()[id].itemClass;
+            that.allItems["itemType"] = snapshot.val()[id].itemType;
+            that.allItems["id"] = snapshot.val()[id].id;
+            that.allItems["icon"] = snapshot.val()[id].icon;
+            that.allItems["grade"] = snapshot.val()[id].grade;
+            that.allItems["name"] = snapshot.val()[id].name;
+            that.allItems["lootSource"] = snapshot.val()[id].lootSource;
+            that.allItems["lootType"] = snapshot.val()[id].lootType;
+            that.allItems["requiredLevel"] = snapshot.val()[id].requiredLevel;
+            that.allItems["minLevel"] = snapshot.val()[id].minLevel;
+            that.allItems["itemLevel"] = snapshot.val()[id].itemLevel;
+            that.allItems["pickup"] = snapshot.val()[id].pickup;
+            that.allItems["weaponType"] = snapshot.val()[id].weaponType;
+            that.allItems["attackSpeed"] = snapshot.val()[id].attackSpeed;
+            that.allItems["durability"] = snapshot.val()[id].durability;
+            that.allItems["penetrationChance"] = snapshot.val()[id].penetrationChance;
+            that.allItems["amputationChance"] = snapshot.val()[id].amputationChance;
+            that.allItems["chanceText"] = snapshot.val()[id].chanceText;
+            that.allItems["dps"] = snapshot.val()[id].dps;
+            that.allItems["dpsLowerText"] = snapshot.val()[id].dpsLowerText;
+            that.allItems["dpsUpperText"] = snapshot.val()[id].dpsUpperText;
+            that.allItems["attributes"] = snapshot.val()[id].attributes;
+            that.allItems["maxGrade"] = snapshot.val()[id].maxGrade;
+            that.allItems["salvageable"] = snapshot.val()[id].salvageable;
+            that.allItems["temper"] = snapshot.val()[id].temper;
+            that.allItems["lunagemSlots"] = snapshot.val()[id].lunagemSlots;
+            that.allItems["useEffect"] = snapshot.val()[id].useEffect;
+            that.allItems["useEffectText1"] = snapshot.val()[id].useEffectText1;
+            that.allItems["useEffectText2"] = snapshot.val()[id].useEffectText2;
+            that.allItems["useEffectText3"] = snapshot.val()[id].useEffectText3;
+            that.allItems["useEffectText4"] = snapshot.val()[id].useEffectText4;
+            that.allItems["useEffectStat1"] = snapshot.val()[id].useEffectStat1;
+            that.allItems["useEffectStat2"] = snapshot.val()[id].useEffectStat2;
+            that.allItems["useEffectStat3"] = snapshot.val()[id].useEffectStat3;
+            that.allItems["useEffectStat4"] = snapshot.val()[id].useEffectStat4;
+            that.allItems["useEffectStat5"] = snapshot.val()[id].useEffectStat5;
+            that.allItems["comboEffect"] = snapshot.val()[id].comboEffect;
+            that.allItems["comboEffectText1"] = snapshot.val()[id].comboEffectText1;
+            that.allItems["comboEffectText2"] = snapshot.val()[id].comboEffectText2;
+            that.allItems["comboEffectStat1"] = snapshot.val()[id].comboEffectStat1;
+            that.allItems["comboEffectStat2"] = snapshot.val()[id].comboEffectStat2;
+            that.allItems["equipEffect"] = snapshot.val()[id].equipEffect;
+            that.allItems["equipEffectText1"] = snapshot.val()[id].equipEffectText1;
+            that.allItems["equipEffectText2"] = snapshot.val()[id].equipEffectText2;
+            that.allItems["equipEffectText3"] = snapshot.val()[id].equipEffectText3;
+            that.allItems["equipEffectStat1"] = snapshot.val()[id].equipEffectStat1;
+            that.allItems["equipEffectStat2"] = snapshot.val()[id].equipEffectStat2;
+            that.allItems["setEffect"] = snapshot.val()[id].setEffect;
+            that.allItems["setEffectText1"] = snapshot.val()[id].setEffectText1;
+            that.allItems["setEffectText2"] = snapshot.val()[id].setEffectText2;
+            that.allItems["setEffectStat1"] = snapshot.val()[id].setEffectStat1;
+            that.allItems["setEffectStat2"] = snapshot.val()[id].setEffectStat2;
+            that.allItems["setEffectTitle"] = snapshot.val()[id].setEffectTitle;
+            that.allItems["setEffectCountText"] = snapshot.val()[id].setEffectCountText;
+            that.allItems["setItems"] = snapshot.val()[id].setItems;
+            that.allItems["equipmentPoints"] = snapshot.val()[id].equipmentPoints;
+            that.allItems["price"] = snapshot.val()[id].price;
+            that.allItems["shopPrice"] = snapshot.val()[id].shopPrice;
+            that.allItems["salvageMaterial"] = snapshot.val()[id].salvageMaterial;
+            items.push(that.allItems)
           }
         }
       });
+    console.log(items);
     return items;
+  }
+
+  uploadFile(fileName: Blob, filePath: string, imageName: string) {
+    let storageRef = firebase.storage().ref(`test/${imageName}`);
+    storageRef.put(fileName);
+  }
+
+  downloadFile(fileName: string, filePath: string) {
+    return firebase.storage().ref(`test/${fileName}`);
   }
 
 

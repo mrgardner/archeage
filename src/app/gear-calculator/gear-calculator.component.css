@@ -1,0 +1,10 @@
+.healthBarSection {
+  padding-bottom: 3em;
+  bottom: 50px;
+  position: relative;
+}
+
+
+.backgroundSection {
+  background: url("https://firebasestorage.googleapis.com/v0/b/archeage-database-a6d52.appspot.com/o/gear-calculator%2Fmisc%2FArcheAge-dragon-fire-village_1920x1080.jpg?alt=media&token=fdf17cbe-056a-4dd9-a43c-c8dc37e1eb38") no-repeat fixed 40% 65%;
+}

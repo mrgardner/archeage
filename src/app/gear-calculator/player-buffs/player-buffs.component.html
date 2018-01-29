@@ -1,0 +1,13 @@
+<div class="playerBuffSection">
+  <div *ngFor="let buff of playerBuffs">
+    <img [src]="buff.icon" (mouseover)="showBuffOverlay(buff)" (mouseleave)="hideBuffOverlay()">
+  </div>
+  <div *ngIf="(playerBuffOverlay | json) != '{}'" class="buffOverlay">
+    <img class="playerBuffOverlayIcon" [src]="playerBuffOverlay.icon">
+    <div class="playerBuffOverlayBuffText">
+      Buff
+      <div>{{playerBuffOverlay.title}}</div>
+    </div>
+    <div class="playerBuffOverlayBuffDesc" id="buffDesc"></div>
+  </div>
+</div>

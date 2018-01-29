@@ -4,12 +4,21 @@
 }
 
 .container {
-  background: #0d1b0f;
+  background: #162e1a;
   color: white;
 }
 
 .skill-info-box-container {
   padding-top: 2em;
+}
+
+.save-build-input-container {
+  padding-bottom: 2em;
+}
+
+.save-build-input-container input {
+  width: 95%;
+  color: black;
 }
 
 .btn-info {
@@ -103,6 +112,16 @@
 
 .skill-set-container {
   margin-top: 1em;
+  height: 450px;
+}
+.save-build-button-container {
+  width: 160px;
+  margin: 0 auto;
+  padding-top: 1em;
+}
+
+.save-build-container {
+  background-color: #162e1a;
 }
 
 .skill-set-left,
@@ -248,10 +267,15 @@
 
   .skill-set-container {
     margin-top: 3em;
+    height: 1350px;
   }
 
   .class-name-button-button {
     padding-left: 2em;
     padding-right: 0;
+  }
+
+  .calculator-container {
+    padding-bottom: 0;
   }
 }

@@ -1,0 +1,32 @@
+.buffOverlay {
+  background-color: rgba(59,36,9,.7);
+  width: 285px;
+  position: absolute;
+  color: white;
+  z-index: 49;
+}
+
+.playerBuffOverlayIcon {
+  float: left;
+  margin-left: 0.5em;
+  margin-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.playerBuffOverlayBuffText {
+  float: left;
+  margin-left: 0.5em;
+  margin-top: 0.5em;
+  color: white;
+  font-size: 11px;
+}
+
+.playerBuffOverlayBuffDesc {
+  float: left;
+  border-top: 1px solid black;
+  font-size: 12px;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.2em;
+}

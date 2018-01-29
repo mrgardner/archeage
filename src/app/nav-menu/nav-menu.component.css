@@ -18,7 +18,8 @@
 
 /* Buttons */
 .databaseButton,
-.calculatorButton {
+.skillCalculatorButton,
+.gearCalculatorButton {
   color: #c8c8c8;
   background-image: -webkit-linear-gradient(#484e55,#3a3f44 60%,#313539);
   background-image: -o-linear-gradient(#484e55,#3a3f44 60%,#313539);
@@ -34,27 +35,7 @@
 
 /* Menus */
 
-.database-sub-menu,
-.database-item-menu,
-.database-weapons-menu,
-.database-1h-weapon-menu,
-.database-2h-weapon-menu,
-.database-armor-menu,
-.database-instruments-menu,
-.database-cloth-armor-menu,
-.database-leather-armor-menu,
-.database-plate-armor-menu,
-.database-accessory-menu,
-.database-consumables-menu,
-.database-materials-menu,
-.database-regal-ore-menu,
-.database-materials-sub-menu,
-.database-plants-menu,
-.database-indoor-decor-menu,
-.database-machining-menu,
-.database-battle-pets-menu,
-.database-toy-menu,
-.database-toy-crafting-menu {
+.database-sub-menu {
   background-image: -webkit-linear-gradient(#484e55,#3a3f44 60%,#313539);
   background-image: -o-linear-gradient(#484e55,#3a3f44 60%,#313539);
   background-image: linear-gradient(#484e55,#3a3f44 60%,#313539);
@@ -62,171 +43,137 @@
   z-index: 1;
 }
 
+.section {
+  background-image: -webkit-linear-gradient(#484e55,#3a3f44 60%,#313539);
+  background-image: -o-linear-gradient(#484e55,#3a3f44 60%,#313539);
+  background-image: linear-gradient(#484e55,#3a3f44 60%,#313539);
+  position: absolute;
+  z-index: 1;
+  top: -1px;
+  left: 100%;
+  height: 260px;
+  width: 145px;
+  border: 1px solid grey;
+}
+
+/* 1 Items */
+.indoor-decor-menu,
+.toy-crafting-adventure-menu {
+  height: 25px;
+}
+
+/* 2 Items */
+.plants-menu,
+.battle-pets-menu,
+.toy-menu,
+.social-menu {
+  height: 48px;
+}
+
+/* 3 Items */
+.instruments-menu,
+.accessory-menu,
+.combat-menu,
+.adventure-menu{
+  height: 71px;
+}
+
+/* 4 Items */
+.weapons-menu,
+.machining-menu,
+.general-menu,
+.npc-menu,
+.by-zone-menu {
+  height: 94px;
+}
+
+.by-zone-menu {
+  width: 175px;
+}
+
+/* 5 Items */
+.armor-menu,
+.vocation-menu {
+  height: 116px;
+}
+
+/* 6 Items */
+.two-hand-weapons-menu,
+.main-story-menu,
+.achievements-menu,
+.by-grade-menu {
+  height: 139px;
+}
+
+/* 7 Items */
+.one-hand-weapons-menu,
+.cloth-armor-menu,
+.leather-armor-menu,
+.materials-menu,
+.plate-armor-menu {
+  height: 162px;
+}
+
+/* 8 Items */
+.sea-menu {
+  height: 185px;
+}
+
+/* 9 Items */
+.auroria-menu {
+  height: 208px;
+}
+
+/* 10 Items */
+.item-menu,
+.consumables-menu,
+.skills-menu {
+  height: 230px;
+}
+
+/* 11 Items */
+.level-based-menu {
+  height: 252px
+}
+
+/* 13 Items */
+.quest-menu {
+  height: 275px;
+  width: 175px;
+}
+
+/* 14 Items */
+.nuia-menu,
+.haranya-menu {
+  height: 321px;
+  width: 165px;
+}
+
+.dungeon-menu {
+  height: 321px;
+  width: 210px;
+}
+
+/* 15 Items */
+.materials-materials-menu {
+  height: 344px;
+}
+
+/* 16 Items */
+.regal-ore-menu {
+  height: 366px;
+}
+
+/* 22 Items */
+.design-menu {
+  height: 504px;
+}
+
 .database-sub-menu {
   top: 50px;
-  left: 7.8%;
-  height: 180px;
+  left: 9.5%;
+  height: 162px;
   width: 150px;
-}
-
-.database-item-menu {
-  top: 50px;
-  left: 17.8%;
-  height: 285px;
-  width: 145px;
-  border: 1px solid grey;
-}
-
-.database-weapons-menu {
-  top: 50px;
-  left: 27.8%;
-  height: 105px;
-  width: 145px;
-  border: 1px solid grey;
-}
-
-.database-1h-weapon-menu {
-  top: 50px;
-  left: 37.8%;
-  height: 175px;
-  width: 120px;
-  border: 1px solid grey;
-}
-
-.database-2h-weapon-menu {
-  top: 74px;
-  left: 37.8%;
-  height: 155px;
-  width: 120px;
-  border: 1px solid grey;
-}
-
-.database-instruments-menu {
-  top: 97px;
-  left: 37.8%;
-  height: 85px;
-  width: 120px;
-  border: 1px solid grey;
-}
-
-.database-armor-menu {
-  top: 74px;
-  left: 27.8%;
-  height: 120px;
-  width: 145px;
-  border: 1px solid grey;
-}
-
-.database-cloth-armor-menu {
-  top: 74px;
-  left: 37.8%;
-  height: 165px;
-  width: 120px;
-  border: 1px solid grey;
-}
-
-.database-leather-armor-menu {
-  top: 97px;
-  left: 37.8%;
-  height: 165px;
-  width: 120px;
-  border: 1px solid grey;
-}
-
-.database-plate-armor-menu {
-  top: 121px;
-  left: 37.8%;
-  height: 165px;
-  width: 120px;
-  border: 1px solid grey;
-}
-
-.database-accessory-menu {
-  top: 97px;
-  left: 27.8%;
-  height: 75px;
-  width: 120px;
-  border: 1px solid grey;
-}
-
-.database-consumables-menu {
-  top: 195px;
-  left: 27.8%;
-  height: 230px;
-  width: 120px;
-  border: 1px solid grey;
-}
-
-.database-materials-menu{
-  top: 217px;
-  left: 27.8%;
-  height: 170px;
-  width: 145px;
-  border: 1px solid grey;
-}
-
-.database-regal-ore-menu{
-  top: 241px;
-  left: 37.8%;
-  height: 367px;
-  width: 120px;
-  border: 1px solid grey;
-}
-
-.database-materials-sub-menu{
-  top: 263px;
-  left: 37.8%;
-  height: 367px;
-  width: 120px;
-  border: 1px solid grey;
-}
-
-.database-plants-menu {
-  top: 309px;
-  left: 37.8%;
-  height: 50px;
-  width: 120px;
-  border: 1px solid grey;
-}
-
-.database-indoor-decor-menu {
-  top: 332px;
-  left: 37.8%;
-  height: 23px;
-  width: 120px;
-  border: 1px solid grey;
-
-}
-
-.database-machining-menu {
-  top: 240px;
-  left: 27.8%;
-  height: 95px;
-  width: 145px;
-  border: 1px solid grey;
-}
-
-.database-battle-pets-menu {
-  top: 263px;
-  left: 27.8%;
-  height: 50px;
-  width: 145px;
-  border: 1px solid grey;
-}
-
-.database-toy-menu {
-  top: 285px;
-  left: 27.8%;
-  height: 50px;
-  width: 145px;
-  border: 1px solid grey;
-}
-
-.database-toy-crafting-menu {
-  top: 285px;
-  left: 37.8%;
-  height: 25px;
-  width: 145px;
   border: 1px solid grey;
 }
 
@@ -243,67 +190,27 @@
   font-size: 20px;
 }
 
-.database-sub-menu-titles,
-.database-item-menu-titles,
-.database-weapons-menu-titles,
-.database-1h-weapon-menu-titles,
-.database-2h-weapon-menu-titles,
-.database-instruments-menu-titles,
-.database-armor-menu-titles,
-.database-cloth-armor-menu-titles,
-.database-leather-armor-menu-titles,
-.database-plate-armor-menu-titles,
-.database-accessory-menu-titles,
-.database-consumables-menu-titles,
-.database-materials-menu-titles,
-.database-regal-ore-menu-titles,
-.database-materials-sub-menu-titles,
-.database-plants-menu-titles,
-.database-indoor-decor-menu-titles,
-.database-machining-menu-titles,
-.database-battle-pets-menu-titles,
-.database-toy-menu-titles,
-.database-toy-crafting-menu-titles {
+.database-sub-menu-titles {
   color: #c8c8c8;
   padding-left: 1.5em;
   position: relative;
   padding-bottom: 0.2em;
 }
 
-.database-sub-menu-titles:hover,
-.database-item-menu-titles:hover,
-.database-weapons-menu-titles:hover,
-.database-1h-weapon-menu-titles:hover,
-.database-2h-weapon-menu-titles:hover,
-.database-instruments-menu-titles:hover,
-.database-armor-menu-titles:hover,
-.database-cloth-armor-menu-titles:hover,
-.database-leather-armor-menu-titles:hover,
-.database-plate-armor-menu-titles:hover,
-.database-accessory-menu-titles:hover,
-.database-consumables-menu-titles:hover,
-.database-materials-menu-titles:hover,
-.database-regal-ore-menu-titles:hover,
-.database-materials-sub-menu-titles:hover,
-.database-plants-menu-titles:hover,
-.database-indoor-decor-menu-titles:hover,
-.database-machining-menu-titles:hover,
-.database-battle-pets-menu-titles:hover,
-.database-toy-menu-titles:hover,
-.database-toy-crafting-menu-titles:hover {
+.database-sub-menu-titles:hover {
   background-color: black;
   color: white;
 }
 
+.item-title:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 /* Arrows */
 
-.database-sub-menu-arrow,
-.database-item-menu-arrow,
-.database-weapons-menu-arrow,
-.database-armor-menu-arrow,
-.database-materials-menu-arrow,
-.database-toy-menu-arrow {
-  left: 85%;
+.database-sub-menu-arrow {
+  left: 90%;
   position: absolute;
   padding-top: 0.3em;
 }

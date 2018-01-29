@@ -1,0 +1,47 @@
+.slotContainer {
+  padding-left: 30em;
+}
+
+.slot-column-1 {
+  float: left;
+  width: 350px;
+}
+
+.slot-column-2 {
+  float: left;
+  width: 310px;
+  position: relative;
+}
+
+.costumeSection {
+  margin-left: 25%;
+}
+
+.slotItem {
+  margin-bottom: 10px;
+}
+
+.cloakItem {
+  margin-top: 30px;
+}
+
+.underwearItem {
+  margin-top: 45px;
+}
+
+.slotIcon {
+  width: 45px;
+}
+
+.saveButtonContainer {
+  padding-bottom: 0.8em;
+  position: relative;
+  left: 20%;
+  width: 50px;
+}
+
+.saveButton {
+  position: relative;
+  width: 90px;
+  top: 8px;
+}
