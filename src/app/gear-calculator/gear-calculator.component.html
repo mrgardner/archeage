@@ -1,65 +1,14 @@
 <div class="backgroundSection">
   <div class="container">
-    <div class="gear-menu">
-      <div *ngFor="let item of menuItems">
-        <span>{{item.name}} <img [src]="item.icon"></span>
-      </div>
-    </div>
-
+    <app-gear-menu></app-gear-menu>
     <div class="col-md-4">
       <div class="healthBarSection">
-        <div class="healthBarContainer">
-          <div class="healthBarLevelText">{{playerLevel}}</div>
-          <img [src]="healthBar">
-          <span class="healthText">{{health}}</span>
-          <span class="manaText">{{mana}}</span>
-        </div>
-        <div class="playerBuffSection">
-          <div *ngFor="let buff of playerBuffs">
-            <img [src]="buff.icon" (mouseover)="showBuffOverlay(buff)" (mouseleave)="hideBuffOverlay()">
-          </div>
-          <div *ngIf="(playerBuffOverlay | json) != '{}'" class="buffOverlay">
-            <img class="playerBuffOverlayIcon" [src]="playerBuffOverlay.icon">
-            <div class="playerBuffOverlayBuffText">
-              Buff
-              <div>{{playerBuffOverlay.title}}</div>
-            </div>
-            <div class="playerBuffOverlayBuffDesc" id="buffDesc"></div>
-          </div>
-        </div>
+        <app-health-bar></app-health-bar>
+        <app-player-buffs></app-player-buffs>
         <app-player-info-card></app-player-info-card>
       </div>
     </div>
-    <div class="slotContainer">
-      <table>
-        <tr>
-          <td>
-            <div *ngFor="let slot of itemsSlots" [class]="slot.class">
-              <img [src]="slot.icon" *ngIf="slot.float === 'middle'" class="slotIcon">
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td class="slot-column-1">
-            <div *ngFor="let slot of itemsSlots" >
-              <div *ngIf="slot.float === 'left'" [class]="slot.class">
-                <img [src]="slot.icon" class="slotIcon">
-              </div>
-            </div>
-          </td>
-          <td  class="slot-column-2">
-            <div *ngFor="let slot of itemsSlots">
-              <div *ngIf="slot.float === 'right'" [class]="slot.class">
-                <img [src]="slot.icon" class="slotIcon">
-              </div>
-            </div>
-          </td>
-        </tr>
-      </table>
-      <div class="saveButtonContainer">
-        <button class="saveButton">Save</button>
-      </div>
-    </div>
+    <app-equipment-slots></app-equipment-slots>
     <app-title-modal></app-title-modal>
   </div>
 </div>

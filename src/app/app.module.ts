@@ -32,6 +32,10 @@ import { TitleModalComponent } from './modals/title-modal/title-modal.component'
 import {ModalService} from './services/modal.service';
 import {GearCalculatorService} from './services/gear-calculator.service';
 import { PlayerInfoCardComponent } from './gear-calculator/player-info-card/player-info-card.component';
+import { PlayerBuffsComponent } from './gear-calculator/player-buffs/player-buffs.component';
+import { HealthBarComponent } from './gear-calculator/health-bar/health-bar.component';
+import { EquipmentSlotsComponent } from './gear-calculator/equipment-slots/equipment-slots.component';
+import { GearMenuComponent } from './gear-calculator/gear-menu/gear-menu.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +61,11 @@ import { PlayerInfoCardComponent } from './gear-calculator/player-info-card/play
     TitleTableComponent,
     TitleComponent,
     TitleModalComponent,
-    PlayerInfoCardComponent
+    PlayerInfoCardComponent,
+    PlayerBuffsComponent,
+    HealthBarComponent,
+    EquipmentSlotsComponent,
+    GearMenuComponent
   ],
   imports: [
     BrowserModule,

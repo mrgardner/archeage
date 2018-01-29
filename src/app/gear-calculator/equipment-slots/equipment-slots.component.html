@@ -1,0 +1,30 @@
+<div class="slotContainer">
+  <table>
+    <tr>
+      <td>
+        <div *ngFor="let slot of itemsSlots" [class]="slot.class">
+          <img [src]="slot.icon" *ngIf="slot.float === 'middle'" class="slotIcon">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="slot-column-1">
+        <div *ngFor="let slot of itemsSlots" >
+          <div *ngIf="slot.float === 'left'" [class]="slot.class">
+            <img [src]="slot.icon" class="slotIcon">
+          </div>
+        </div>
+      </td>
+      <td  class="slot-column-2">
+        <div *ngFor="let slot of itemsSlots">
+          <div *ngIf="slot.float === 'right'" [class]="slot.class">
+            <img [src]="slot.icon" class="slotIcon">
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <div class="saveButtonContainer">
+    <button class="saveButton">Save</button>
+  </div>
+</div>

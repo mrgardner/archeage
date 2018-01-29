@@ -1,0 +1,10 @@
+.gear-menu {
+  height: 50px;
+}
+
+.gear-menu span {
+  float: right;
+  margin-left: 10px;
+  font-size: 20px;
+  color: #ece5a4;
+}
