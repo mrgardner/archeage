@@ -36,6 +36,7 @@ import { PlayerBuffsComponent } from './gear-calculator/player-buffs/player-buff
 import { HealthBarComponent } from './gear-calculator/health-bar/health-bar.component';
 import { EquipmentSlotsComponent } from './gear-calculator/equipment-slots/equipment-slots.component';
 import { GearMenuComponent } from './gear-calculator/gear-menu/gear-menu.component';
+import { StatMigrationModalComponent } from './modals/stat-migration-modal/stat-migration-modal.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import { GearMenuComponent } from './gear-calculator/gear-menu/gear-menu.compone
     PlayerBuffsComponent,
     HealthBarComponent,
     EquipmentSlotsComponent,
-    GearMenuComponent
+    GearMenuComponent,
+    StatMigrationModalComponent
   ],
   imports: [
     BrowserModule,

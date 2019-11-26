@@ -1,0 +1,126 @@
+.overlay {
+  background-color: rgba(1, 1, 1, 0.7);
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 50;
+}
+
+.modalContent {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.stat-icon {
+  width: 45px;
+  margin-bottom: 5px;
+}
+
+.stat-input {
+  width: 30px;
+  font-size: 12px;
+  padding: 2px;
+  position: absolute;
+  margin-top: 10px;
+  left: 60%;
+}
+
+.stat-value {
+  float: right;
+  position: relative;
+  margin-top: 13px;
+}
+
+.applied-stats-container {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.applied-stats-value {
+  float: right;
+}
+
+.reset-button,
+.apply-button {
+  height: 30px;
+  width: 70px;
+}
+
+.apply-button {
+  float: right;
+}
+
+.applicable-stats-container {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.applicable-stats-value {
+  color: blue;
+  float: right;
+}
+
+.positive {
+  color: blue;
+}
+
+.negative {
+  color: red;
+}
+
+.title-overlay {
+  bottom: 55px;
+  top: 40px;
+  left: 15px;
+  right: 30px;
+  position: absolute;
+  z-index: 50;
+  border: 1px solid;
+  z-index: 50;
+}
+
+.title-modal-inner-content {
+  width: 100%;
+  overflow: visible;
+  box-sizing: border-box;
+}
+
+.title-modal-outer-content {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 205px;
+  padding-left: 1em;
+  padding-right: 1em;
+  position: relative;
+  z-index: 52;
+}
+
+.titleItem {
+  cursor: pointer;
+  padding-left: 1em;
+}
+
+.titleCloseButton {
+  font-size: 20px;
+  float: right;
+  cursor: pointer;
+}
+
+.titleModalContainer {
+  height: 405px;
+  position: absolute;
+  background-color: #a49359;
+  top: 25%;
+  left: 34%;
+  width: 303px;
+  z-index: 51;
+}
+
+.modal-title {
+  position: relative;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}

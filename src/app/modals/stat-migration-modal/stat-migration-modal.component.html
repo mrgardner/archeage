@@ -1,0 +1,29 @@
+<div *ngIf="showStatMigrationModal === true">
+  <div class="overlay"></div>
+  <div  class="titleModalContainer">
+    <span class="fa fa-times titleCloseButton" (click)="closeModal()"></span>
+    <div class="modalContent">
+      <div class="modal-title">Stat Migration</div>
+      <div class="applicable-stats-container">
+        <span>Applicable Stats</span>
+        <span class="applicable-stats-value">{{applicableStats}}</span>
+      </div>
+      <div *ngFor="let stat of statMigrationIcons">
+        <img class="stat-icon" [src]="stat.icon">
+        <input [(ngModel)]="stat.value" class="stat-input" (change)="changeStatValue(stat)">
+        <span>{{stat.name}}</span>
+        <span class="stat-value">
+          (158<span class="positive" *ngIf="stat.positive">+{{stat.newValue}}</span><span class="negative" *ngIf="stat.negative">-{{stat.newValue}}</span>)
+        </span>
+      </div>
+      <div class="applied-stats-container">
+        <span>Applied Stats</span>
+        <span class="applied-stats-value">0/300</span>
+      </div>
+      <div>
+        <button class="reset-button" (click)="resetStats()">Reset</button>
+        <button class="apply-button" (click)="applyStats()">Apply</button>
+      </div>
+    </div>
+  </div>
+</div>

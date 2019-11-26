@@ -27,7 +27,7 @@ export class TitleModalComponent implements OnInit {
   }
 
   closeTitleModal() {
-    this._modalService.closeModal();
+    this._modalService.closeTitleModal();
   }
 
   setNewTitle(title: string) {

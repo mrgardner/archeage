@@ -53,6 +53,20 @@ export class PlayerInfoCardComponent {
     this._modalService.playerTitle$.subscribe((title) => {
       this.playerTitle = title;
     });
+
+    this._modalService.statMigration.subscribe((stats) => {
+      console.log(stats);
+      this.agility = stats[0].value;
+      this.intelligence = stats[1].value;
+      this.spirit = stats[2].value;
+      this.stamina = stats[3].value;
+      this.strength = stats[4].value;
+
+      this.meleeAttack = this.strength / 5;
+      this.rangedAttack = this.agility / 5;
+      this.magicAttack = this.intelligence / 5;
+      this.healingPower = this.spirit  / 5;
+    });
   }
 
   updatePlayerLevel(level) {
@@ -65,6 +79,10 @@ export class PlayerInfoCardComponent {
   }
 
   openTitleModal() {
-    this._modalService.openModal();
+    this._modalService.openTitleModal();
+  }
+
+  openStatMigrationModal() {
+    this._modalService.openStatMigrationModal();
   }
 }
